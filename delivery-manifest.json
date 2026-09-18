@@ -1,0 +1,552 @@
+{
+  "kind": "minimal-sanitized-source-delivery",
+  "generated_at": "2026-09-18T14:31:34+08:00",
+  "database_included": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 278,
+      "sha256": "9b0a97c3c05e3ae02251283d1560e86b51174ea2f5e9ddcb897029581d87d64d"
+    },
+    {
+      "path": "api_server.py",
+      "bytes": 63688,
+      "sha256": "e940978e22068a9b156138351f331be68acf784f015e947c2b9c3dc22fe3edff"
+    },
+    {
+      "path": "classroom_observation.py",
+      "bytes": 69304,
+      "sha256": "a96172d4ddffbb660a1c88df667607d9c08518d4781ac47fda85e69f7ea4e0b2"
+    },
+    {
+      "path": "config/local.env.example",
+      "bytes": 468,
+      "sha256": "4d606c2c247ae07619b602029c2aeeece3bf32c3ea960c958b0d0de913c52168"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/default-avatar.svg",
+      "bytes": 1800,
+      "sha256": "ea70455888574c0a9e98ccece9a19d1519938a2a33c4688fb3eb733c60d3b35b"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/edulink-entry-classroom.jpg",
+      "bytes": 282378,
+      "sha256": "2c4c5ab5cc7364f91bd2530f9d0e7593823c349477124cf904b2c99dc4f18775"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/entry-hero-background.jpg",
+      "bytes": 567930,
+      "sha256": "47a8ede9f150646f936f02974712aa6294e5f3c4ee3f8bf139d0e79cbee89c39"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/guide-mentor.png",
+      "bytes": 1658939,
+      "sha256": "71c691e9e3518672ed57c23e82bb9974be157499fc879487eb50fce5d2489478"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/guide-mentor.svg",
+      "bytes": 6185,
+      "sha256": "06118c857282d0126a084f20ae1a0027321e3bad39e06a499b046e66a9abe246"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/male-guide-mentor.png",
+      "bytes": 1510401,
+      "sha256": "df247441f893460d7c62e43488f2206ce701d6896859e8ad66a2df1284adc922"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/nav-mentor-female.png",
+      "bytes": 1658939,
+      "sha256": "71c691e9e3518672ed57c23e82bb9974be157499fc879487eb50fce5d2489478"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/nav-mentor-male.png",
+      "bytes": 1510401,
+      "sha256": "df247441f893460d7c62e43488f2206ce701d6896859e8ad66a2df1284adc922"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/observation-case-data.js",
+      "bytes": 151,
+      "sha256": "1deb0d17e9b157e33043a8cf588dc83b98edb7481479a8480901a2b8589a8ab7"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/reflection-background-reference.png",
+      "bytes": 2149417,
+      "sha256": "7259d37f3bbf7c10f31be4f57ea8e9b3d4aaa1d584f8ea476937b4574c044713"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/reflection-background-transparent.png",
+      "bytes": 1333603,
+      "sha256": "8487363e412b356e8ee2128c78864917ce1ee727552a6a8d782632dcb75ebaa0"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/reflection-background.png",
+      "bytes": 1397803,
+      "sha256": "2c8cec3a4f9ae34bc26a8b4e18e5e2663e9c5e96dcb70b4689da3b1dae5e239d"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/reflection-icon.png",
+      "bytes": 1384220,
+      "sha256": "9554fb3382c3b3ae95a2f15159357775466fbc15b52c8180099d79b46bff434c"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/reflection-q-cat.png",
+      "bytes": 24949,
+      "sha256": "3810b411972bc97c2ed13b2f6a292bc9e341e403823c8ea4ddf3ff4f725a8bb6"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/reflection-q-character-source.jfif",
+      "bytes": 840950,
+      "sha256": "183a3866b4be32e73a402e638304d0d3ae645c7e83c80c6b95b40aef681a601e"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/reflection-q-character.png",
+      "bytes": 730519,
+      "sha256": "e7676cab9e5a04691b0a5f8c83e21d5c543053ac9b87c33ea25c9857d00f8843"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/dance.jpg",
+      "bytes": 42056,
+      "sha256": "bcde565e0212ba611e7e2f5e7d106c74fd568fb83884e9ae2d8937807414e90e"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/draw.jpg",
+      "bytes": 32296,
+      "sha256": "dde0e5c0e224dd9b2637c3d4ac923b33b75ed4149ee5dbd4f140f6d583b60dec"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/play.jpg",
+      "bytes": 24191,
+      "sha256": "af05f02bb290261aa00ea2b4634320e04964985dc7f8a3df42e9894619f62a6a"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/sing.jpg",
+      "bytes": 46522,
+      "sha256": "930c3c9e793c9b3d8b4e964e7c7f60eb14dcc4d7f7570c4a45d0696b0da084f0"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/sixarts-classroom-bg.png",
+      "bytes": 2052810,
+      "sha256": "1d9d792759c3f74716f968092c1b32456112b0f7121dbc69219cac93f74a6d63"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/sixarts-course-context-bg.jpg",
+      "bytes": 1484096,
+      "sha256": "93844f28f98320f414c48e5c5ad22065c5e890c55ad86601547c02de68afe8b1"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/sixarts-course-hero-bg.png",
+      "bytes": 398649,
+      "sha256": "a1025e914024bef4ea0fc10a4c46482479eacff2ce3113c1a0dd5457bf8706ec"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/speak.jpg",
+      "bytes": 40416,
+      "sha256": "2935ad246a8300f97e612fbe19e36773c8cbfdb6e948ea6bda2bc4bf758ff85d"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts/write.jpg",
+      "bytes": 36652,
+      "sha256": "382950b2793a4dad4d1337eb64ce79324f15a8cabed906b11bfaf039cbee7339"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/sixarts-links-data.js",
+      "bytes": 126,
+      "sha256": "f748cf3aa8f420bce79139ccfd360000084341de86fe6acd117495f48ab723ad"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/一年级数学上册（2024秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/一年级数学下册（2025春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/三年级数学上册（2025秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/三年级数学下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/二年级数学上册（2025秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/二年级数学下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/五年级数学上册（2026秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/五年级数学下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/六年级数学上册（2026秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/六年级数学下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/四年级数学上册（2026秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学数学/四年级数学下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/一年级语文上册（2024秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/一年级语文下册（2025春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/三年级语文上册（2025秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/三年级语文下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/二年级语文上册（2025秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/二年级语文下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/五年级语文上册（2026秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/五年级语文下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/六年级语文上册（2026秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/六年级语文下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/四年级语文上册（2026秋版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/textbooks/小学语文/四年级语文下册（2026春版）.jpg",
+      "bytes": 15138,
+      "sha256": "6278fced9c2b7415616abcdb44cfa2bd5e66d99287fc89b18169343af6c8a4b5"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/theory-directory-data.js",
+      "bytes": 157,
+      "sha256": "78fd56e36ccea3c062d2506cfea14dcf28b7120f629b3674a621ba23c913f395"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/theory-overview-background.png",
+      "bytes": 3219791,
+      "sha256": "769bb13df850a425e0201e2880266eca22e2289b54f14e0dd9095abad9d6ec25"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/theory-references-data.js",
+      "bytes": 105,
+      "sha256": "9b326793f7dca962ef4730f0c70698d3f7b497cd8c61d7c413398416757a7a09"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/theory-representative-links-data.js",
+      "bytes": 136,
+      "sha256": "41ae0e115eaf4a18ba598dd20610e22329b1c4b9433ca2691c6d64a007adeef3"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/theory-source-data.js",
+      "bytes": 90,
+      "sha256": "eff4ea805fe23d5206c744e64479850d4787a0262621bdbf236a1fddbd3fa323"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/vendor/jszip-3.10.1.min.js",
+      "bytes": 97616,
+      "sha256": "7d354e997ccb26f62a8b3edad122aa5b04ac0c3653bdee963f1a8f1faf71bfa6"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/vendor/liquid-glass-LICENSE.txt",
+      "bytes": 1086,
+      "sha256": "f53a4041f05e6e5a40ee84b2137ede1e935e21eb93e8a2353380763fc03334d3"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/assets/vendor/lucide-0.468.0.min.js",
+      "bytes": 357808,
+      "sha256": "4a1df82cb2d94f5ef6e974846e7dede7440f1620cae161c9655cad48356002c2"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/classroom-observation.html",
+      "bytes": 351,
+      "sha256": "9b80cf7f2e5823a5906654620dd8927fba0d3cec00965315acb55cb6b93494c3"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/final-overrides.css",
+      "bytes": 155512,
+      "sha256": "1082a2d35dff5596e35a41062c27a53c19a1466edd825a1303af0132bf385ad7"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/index.html",
+      "bytes": 139811,
+      "sha256": "9243a79052c7727f1a19f53e48a7e1d6754dd254931907dad387e59393c3e29e"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/latest-overrides.css",
+      "bytes": 155065,
+      "sha256": "7e9a95f38c7f1724618f7f135b7a5d8f72a892c9527b36276f0ae2129a752e90"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/lesson-visuals.js",
+      "bytes": 11256,
+      "sha256": "6f73ba0be0f4e82c6a799d0b82c83cffd8367386422ef211de9c4690ce858fd4"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/literature-navigation.css",
+      "bytes": 3898,
+      "sha256": "030231b39738c3b028fdb01fa6ae891031c4ef2b9b447ea2f10af5214dd765b4"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/mentor-final.css",
+      "bytes": 2824,
+      "sha256": "ccbc3a8101f93e4b157495ed090259786a19f500d7a70e56ddcd93d46849f8f2"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/observation-overview.css",
+      "bytes": 6182,
+      "sha256": "a71059a5b9dff6cae4f1659783cebd955e9788b47fa38af97e6927f2e974cde3"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/reflection-transformation.html",
+      "bytes": 367,
+      "sha256": "b56ef8d11116b6964ba7ef8f15679562921008c31ba0467aabd8fbb286bb2837"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/runtime-config.js",
+      "bytes": 402,
+      "sha256": "70703601bcd4b66bb676061d6b0a0ded635dd7368f53cac2d34d6837f9e81374"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/runtime-config.override.js",
+      "bytes": 163,
+      "sha256": "7bbaddc6d25676a11a1417fb7696b5883e40d25be9a613e15f40479da44b9b51"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/script.js",
+      "bytes": 933759,
+      "sha256": "0dbcb3c27fb5b0fd27ba92c4a67a09039d0788918882ddb2d3d523480e2ca703"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/sixarts-detailed-template.css",
+      "bytes": 4430,
+      "sha256": "7ceec41ad13db58e005cd768ecb746002921e6613a913c42b69b56f647a2a27e"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/sixarts-detailed-template.js",
+      "bytes": 19740,
+      "sha256": "95088e4668b0f4fa9e50e50f724533e84159bb163196c5fadd6b54436b61b57d"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/sixarts-evaluation.css",
+      "bytes": 3935,
+      "sha256": "36e4f52a1d5a1721ee6fd786e72beaa1af39f9c6ebeddb10bb536698b388a818"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/sixarts-evaluation.js",
+      "bytes": 12047,
+      "sha256": "6159f1c9c1c0aafc373b1607ec3633abe48c534856ea213a3204a1dc555b17c2"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/sixarts-polish.css",
+      "bytes": 13740,
+      "sha256": "02de8ece61337bc9a31d69adbc24ee42dd7cec0a3fa29552e479f2048b15d1e0"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/sixarts-polish.js",
+      "bytes": 3092,
+      "sha256": "160688a2c229291007dbeadca3893d29d2ae639318531f6ab7e07136592a47e0"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/styles.css",
+      "bytes": 757049,
+      "sha256": "958ff533c088ed3b596b607e1bfb9be9e8bbd92df0a3dd1b8ccc141b4c6a589a"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/textbook-resources.css",
+      "bytes": 6843,
+      "sha256": "3fe2970bc5857fdd8aad130891fe99d9e6a37b7719911f6394a44ce518cac372"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/textbook-resources.js",
+      "bytes": 7749,
+      "sha256": "337f58110e30dd08c7d590b8e605ba940cb71581c7aa506ffc51274263ceba50"
+    },
+    {
+      "path": "EduLink-backend-handoff-2026-09-06/theory-references.js",
+      "bytes": 3270,
+      "sha256": "9ac19106d6b162f234010a67a16243196254f95c6da7b75f140b3a5262eeb59f"
+    },
+    {
+      "path": "funasr_worker.py",
+      "bytes": 9917,
+      "sha256": "c615d8ffb6d72d0a6ebfeffbaff73cf9480b955c2022d309bca26f0c25937849"
+    },
+    {
+      "path": "lesson_plan.py",
+      "bytes": 258839,
+      "sha256": "22d271e205d5537fdab17e799a60395047b747a67a61c5f43516f5ef451b9451"
+    },
+    {
+      "path": "lesson_visuals.py",
+      "bytes": 10964,
+      "sha256": "03d35866ee17186a1ca4fda623c3b81eec0f1a114e4b5d221e286fae846d942f"
+    },
+    {
+      "path": "model_config.py",
+      "bytes": 382,
+      "sha256": "6fe13fcdf4bdbdcae5b224aa5338b82e882e007171b60e58b609d809d69b5cee"
+    },
+    {
+      "path": "rag/__init__.py",
+      "bytes": 74,
+      "sha256": "e93a21ef9a1beba88562d395188deb29dbbb83c4985c3a42fe12712869e7d4ef"
+    },
+    {
+      "path": "rag/bm25.py",
+      "bytes": 10490,
+      "sha256": "0cd0e5f97496cbaed5796c98baf8487dc4c51651f93fba474d762f2d4d7cc575"
+    },
+    {
+      "path": "rag/build_chunks.py",
+      "bytes": 14773,
+      "sha256": "3c4340f9dbd6ad6777e85b826b4a065432b9a8aa98fa5d8d6313437978750d48"
+    },
+    {
+      "path": "rag/data/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rag/run_rag.py",
+      "bytes": 34348,
+      "sha256": "3cf4fbbedd7b136a9b0893fc575c08c849cf492ad2eac0c79ac0d0b095775c1b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2508,
+      "sha256": "a0e1ae21c07630f69923ba187634d4da390326d150221e7f54085514e7026b0a"
+    },
+    {
+      "path": "requirements-asr.txt",
+      "bytes": 152,
+      "sha256": "088129e61fb082d2ed09fae4ad096f5df2b53fe990c96f28a178ff8a4ba098a3"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 279,
+      "sha256": "bcc454f413143f208f90f6ff51c4ece7a116bed2bf4498439fc41e82843e4a77"
+    },
+    {
+      "path": "run_local.py",
+      "bytes": 3733,
+      "sha256": "6a7f32d4d122410251c9014088cb314bf0c5e286036e146cff9728a1be698102"
+    },
+    {
+      "path": "start_edulink.ps1",
+      "bytes": 236,
+      "sha256": "090dfa73d86886d7aca95fe5cee2fd30eea8ee8518ef8a2f7a8c949fa10e8416"
+    },
+    {
+      "path": "teaching_reflection.py",
+      "bytes": 58710,
+      "sha256": "8df28bc7d53bce39cccb4a0aa8df5114fefc6e5979ee32092817c886a250bcb3"
+    },
+    {
+      "path": "theory_chat_history.py",
+      "bytes": 9495,
+      "sha256": "ca87f740062b06dd5d99b810c3924653ec9ce341a05b4a22e85b51c1e26f7561"
+    },
+    {
+      "path": "theory_references.py",
+      "bytes": 3222,
+      "sha256": "6ae2baaf63a535b7ee20adb9b982eca5a2e42e7639663983609a1a353c26eb78"
+    },
+    {
+      "path": "theory_subject_scope.py",
+      "bytes": 3161,
+      "sha256": "dc30fcf9247911243ada2fe5c57cfe6cc96a02cc2630b0ca520b38e076cc8d8a"
+    },
+    {
+      "path": "theory_training.py",
+      "bytes": 161367,
+      "sha256": "4ffe812e425b3446316ea2d8a9d1a48e4e32f37565d5b7b16622303d1eaecb81"
+    },
+    {
+      "path": "verify_delivery.py",
+      "bytes": 1587,
+      "sha256": "5aaf1512ec1442f7b5bee0d8c93b1270b89b34eae53542dcf3b874829ed1d188"
+    },
+    {
+      "path": "教学反思/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "数据补齐清单.md",
+      "bytes": 904,
+      "sha256": "90c0e73ce9ebfd9982680a2717baed02585c6feb45d5d508b4c11fcb1ef33706"
+    },
+    {
+      "path": "知识库/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "艺智备课/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "课堂观察助手/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

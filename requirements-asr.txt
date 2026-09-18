@@ -1,0 +1,5 @@
+# Install in a separate FunASR-compatible environment. Model weights are excluded.
+funasr==1.4.5
+torch==2.6.0
+torchaudio==2.6.0
+modelscope==1.32.0
