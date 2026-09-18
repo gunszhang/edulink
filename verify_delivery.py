@@ -5,7 +5,7 @@ import re
 
 ROOT = Path(__file__).resolve().parent
 SECRET = re.compile(rb"(?:sk[-_]?[A-Za-z0-9_-]{20,}|EduRag-[A-Za-z0-9-]{12,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)")
-BAD_SUFFIXES = {".jsonl", ".db", ".sqlite", ".sqlite3", ".pdf", ".docx", ".log", ".pt", ".pth", ".onnx", ".mp3", ".wav", ".mp4"}
+BAD_SUFFIXES = {".jsonl", ".db", ".sqlite", ".sqlite3", ".pdf", ".docx", ".log", ".pt", ".pth", ".onnx", ".mp3", ".wav"}
 BAD_PREFIXES = ("test_", "convert_", "sync_", "normalize_", "package_", "prepare_")
 
 

@@ -4,6 +4,8 @@
 
 本目录只包含最新版本的运行源码和必要静态界面资源。已排除知识库、教材正文、参考文献、用户记录、上传文件、模型权重、日志、测试脚本及项目开发过程中使用的转换、同步、迁移和打包脚本。模型密钥、服务访问令牌、临时公网地址及开发机绝对路径均未写入交付副本。
 
+仓库根目录的 `edulink_demo.mp4` 仅作为项目主页演示资源，不属于后端数据或模型文件。
+
 ## 运行源码
 
 - `api_server.py`：FastAPI 后端入口和四大模块接口。
@@ -16,6 +18,15 @@
 - `EduLink-backend-handoff-2026-09-06/`：最新前端源码，包含课堂观察总览的最新布局修复。
 
 不在本目录中的 `.py` 文件均属于测试、数据转换、前端数据同步、资料规范化或打包流程，不是应用运行依赖。
+
+## 演示视频
+
+<video controls preload="metadata" width="100%">
+  <source src="https://raw.githubusercontent.com/gunszhang/edulink/main/edulink_demo.mp4" type="video/mp4">
+  <a href="https://raw.githubusercontent.com/gunszhang/edulink/main/edulink_demo.mp4">下载或播放 EduLink 演示视频</a>
+</video>
+
+如果当前 GitHub 页面未显示播放器，可以直接打开上面的备用链接播放视频。
 
 ## 前端预览
 
