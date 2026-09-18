@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">EduLink 默认头像</title>
+  <desc id="desc">紫色背景上的简洁教师人物头像</desc>
+  <defs>
+    <linearGradient id="bg" x1="28" y1="18" x2="224" y2="238" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8A78EF"/>
+      <stop offset="1" stop-color="#5542C8"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="76" y1="172" x2="186" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E3140"/>
+      <stop offset="1" stop-color="#171923"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="128" fill="url(#bg)"/>
+  <circle cx="202" cy="52" r="34" fill="#FFF" opacity=".1"/>
+  <path d="M188 56h30M203 41v30" stroke="#FFF" stroke-width="7" stroke-linecap="round" opacity=".72"/>
+  <path d="M54 240c7-47 33-72 74-72s67 25 74 72H54Z" fill="url(#shirt)"/>
+  <path d="M101 159h54v32c-16 14-38 14-54 0v-32Z" fill="#F0B592"/>
+  <ellipse cx="128" cy="118" rx="52" ry="61" fill="#F6C6A5"/>
+  <path d="M76 111c0-49 22-73 57-73 39 0 58 29 51 77-8-13-16-24-26-34-18 20-44 31-82 30Z" fill="#242531"/>
+  <path d="M84 112c5 45 20 67 45 67 24 0 39-22 45-67" fill="none" stroke="#E8A782" stroke-width="3" opacity=".65"/>
+  <circle cx="108" cy="122" r="5" fill="#282A35"/>
+  <circle cx="150" cy="122" r="5" fill="#282A35"/>
+  <path d="M113 148c10 8 21 8 31 0" fill="none" stroke="#AF665F" stroke-width="5" stroke-linecap="round"/>
+  <path d="M96 106c8-5 16-6 24-2M139 104c8-4 16-3 23 2" fill="none" stroke="#3C3540" stroke-width="5" stroke-linecap="round"/>
+  <path d="m99 180 29 25 29-25 14 60H84l15-60Z" fill="#FFF" opacity=".92"/>
+  <path d="m113 191 15 14 15-14-6 49h-18l-6-49Z" fill="#7562E3"/>
+</svg>

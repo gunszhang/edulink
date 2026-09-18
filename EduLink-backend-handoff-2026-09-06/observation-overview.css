@@ -1,0 +1,195 @@
+/* Use the available workspace width, not the viewport (which includes a sidebar).
+   Keep these fixes isolated from the decoder, report and other assistants. */
+body.workspace-active #workspace-app #observe[data-active-panel="observe-overview"] {
+  container: observation-overview / inline-size;
+  grid-template-rows: none;
+}
+
+body.workspace-active #workspace-app #observe .observe-overview-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+}
+
+body.workspace-active #workspace-app #observe .observe-overview-showcase {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+
+/* The workspace visual editor can leave inline minimum heights from an older
+   layout. Overview cards must grow with content, not reserve those blank areas. */
+body.workspace-active #workspace-app #observe :is(.observe-case-panel, .observe-journey-panel, .observe-overview-lower > .card) {
+  min-height: 0 !important;
+  height: auto;
+}
+
+body.workspace-active #workspace-app #observe .observe-case-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+body.workspace-active #workspace-app #observe .observe-case-cover {
+  min-height: 136px;
+  aspect-ratio: 16 / 9;
+}
+
+body.workspace-active #workspace-app #observe .observe-case-copy {
+  gap: 10px;
+  padding: 12px;
+}
+
+body.workspace-active #workspace-app #observe .observe-case-copy h3 {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+body.workspace-active #workspace-app #observe .observe-case-copy > button {
+  min-height: 36px;
+}
+
+body.workspace-active #workspace-app #observe .observe-section-heading {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body.workspace-active #workspace-app #observe .observe-section-heading > div {
+  min-width: 0;
+}
+
+body.workspace-active #workspace-app #observe .observe-section-heading .kicker {
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+  letter-spacing: .06em;
+}
+
+body.workspace-active #workspace-app #observe .observe-journey-steps {
+  gap: 8px;
+}
+
+body.workspace-active #workspace-app #observe .observe-journey-steps > button {
+  gap: 8px;
+  padding: 4px 0;
+}
+
+body.workspace-active #workspace-app #observe .observe-journey-steps > button b {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  white-space: nowrap;
+}
+
+body.workspace-active #workspace-app #observe .observe-journey-steps > button small {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+}
+
+body.workspace-active #workspace-app #observe .observe-overview-capabilities {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+body.workspace-active #workspace-app #observe .observe-overview-lower {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+}
+
+body.workspace-active #workspace-app #observe .observe-overview-pulse-card {
+  grid-column: 1 / -1;
+}
+
+body.workspace-active #workspace-app #observe .overview-pulse-chart-wrap {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+body.workspace-active #workspace-app #observe #overview-interaction-chart {
+  height: auto;
+  min-height: 145px;
+}
+
+body.workspace-active #workspace-app #observe .observe-recent-card {
+  grid-column: auto;
+}
+
+body.workspace-active #workspace-app #observe .observe-recent-item {
+  padding-block: 12px;
+}
+
+body.workspace-active #workspace-app #observe .observe-signal-list > div {
+  padding-block: 12px;
+}
+
+body.workspace-active #workspace-app #observe :is(.observe-overview-showcase, .observe-overview-lower) button:focus-visible {
+  outline: 2px solid #7551d5;
+  outline-offset: 3px;
+}
+
+@container observation-overview (min-width: 900px) {
+  body.workspace-active #workspace-app #observe .observe-case-grid,
+  body.workspace-active #workspace-app #observe .observe-overview-capabilities {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@container observation-overview (min-width: 1200px) {
+  body.workspace-active #workspace-app #observe .observe-overview-showcase {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+  body.workspace-active #workspace-app #observe .observe-overview-lower {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+  body.workspace-active #workspace-app #observe .observe-overview-pulse-card {
+    grid-column: auto;
+  }
+}
+
+/* A narrow side panel (desktop) and a phone both need a vertical journey. */
+@container observation-overview (min-width: 1200px) or (max-width: 599px) {
+  body.workspace-active #workspace-app #observe .observe-journey-steps {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    padding: 14px 0;
+  }
+  body.workspace-active #workspace-app #observe .observe-journey-steps > svg {
+    display: none;
+  }
+  body.workspace-active #workspace-app #observe .observe-journey-steps > button {
+    grid-template-columns: 38px minmax(0, 1fr);
+    column-gap: 12px;
+    row-gap: 2px;
+    justify-items: start;
+    text-align: left;
+  }
+  body.workspace-active #workspace-app #observe .observe-journey-steps > button > span {
+    grid-row: 1 / 3;
+  }
+  body.workspace-active #workspace-app #observe .observe-journey-steps > button small {
+    grid-column: 2;
+  }
+}
+
+@container observation-overview (max-width: 599px) {
+  body.workspace-active #workspace-app #observe .observe-overview-lower,
+  body.workspace-active #workspace-app #observe .observe-overview-capabilities {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.workspace-active #workspace-app #observe .observe-section-heading h2 {
+    font-size: 18px;
+  }
+}
+
+@container observation-overview (max-width: 499px) {
+  body.workspace-active #workspace-app #observe .observe-case-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.workspace-active #workspace-app #observe .observe-filter-group {
+    gap: 8px 4px;
+  }
+  body.workspace-active #workspace-app #observe .observe-filter-group > button {
+    padding-inline: 10px;
+  }
+  body.workspace-active #workspace-app #observe :is(.observe-case-panel, .observe-journey-panel) {
+    padding: 14px;
+  }
+}

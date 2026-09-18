@@ -1,0 +1,3539 @@
+/* Final visual overrides. This file is loaded after styles.css so historic
+   theme layers cannot override the current design decisions. */
+
+body.workspace-active #workspace-app #theory :is(#theory-directory-nav, #theory-overview-directory-nav) section.open > button,
+body.workspace-active #workspace-app #theory :is(#theory-directory-nav, #theory-overview-directory-nav) .theory-directory-groups > button.active {
+  color: #756124 !important;
+  border-color: rgba(228, 202, 113, .62) !important;
+  background: linear-gradient(110deg, rgba(255, 249, 213, .94), rgba(255, 253, 235, .8)) !important;
+  box-shadow: 0 9px 20px rgba(184, 151, 61, .12), inset 0 1px rgba(255, 255, 255, .92) !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-friend-map-center,
+body.workspace-active #workspace-app #theory .theory-friend-map-satellite,
+body.workspace-active #workspace-app #theory .theory-friend-map-node {
+  cursor: pointer;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body.workspace-active #workspace-app #theory :is(.theory-friend-map-center, .theory-friend-map-satellite, .theory-friend-map-node):focus,
+body.workspace-active #workspace-app #theory :is(.theory-friend-map-center, .theory-friend-map-satellite, .theory-friend-map-node):focus-visible {
+  outline: none !important;
+}
+
+body.workspace-active #workspace-app #theory #theory-library-lens-stage {
+  transition: opacity .48s cubic-bezier(.2, .72, .2, 1), transform .48s cubic-bezier(.2, .72, .2, 1);
+}
+
+body.workspace-active #workspace-app #theory #theory-library-lens-stage.is-map-scene-changing {
+  opacity: .58;
+  transform: translate3d(0, 8px, 0) scale(.985);
+  animation: none !important;
+}
+
+body.workspace-active #workspace-app #reflect .reflect-banner {
+  background:
+    radial-gradient(ellipse 34% 62% at 74% 100%, rgba(255,255,255,.46), rgba(255,255,255,0) 76%),
+    linear-gradient(110deg, #7f7ce0 0%, #929be8 52%, #b4b5f0 100%) !important;
+}
+
+body.workspace-active #workspace-app #reflect .reflection-q-scene {
+  right: 5.5% !important;
+  width: min(47%, 570px) !important;
+}
+
+body.workspace-active #workspace-app #reflect .reflection-banner-art {
+  right: 2% !important;
+  bottom: 1% !important;
+  width: 82% !important;
+  height: 92% !important;
+  opacity: .92 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  mix-blend-mode: normal !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info {
+  display: none;
+}
+
+body.theory-map-workspace-expanded {
+  overflow: hidden !important;
+}
+
+body.theory-map-workspace-expanded #workspace-app .topbar {
+  position: relative;
+  z-index: 6301;
+}
+
+body.theory-map-workspace-expanded #workspace-app .rail {
+  z-index: 6301;
+}
+
+/* A transformed ancestor turns fixed positioning into local positioning. */
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory .theory-library-overview {
+  animation: none !important;
+  transform: none !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded {
+  position: fixed !important;
+  z-index: 6200 !important;
+  inset: var(--theory-map-expanded-top, 84px) var(--theory-map-expanded-right, 0) var(--theory-map-expanded-bottom, 0) var(--theory-map-expanded-left, 290px) !important;
+  display: grid !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+  grid-template-rows: auto minmax(0, 1fr) !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, .88) !important;
+  border-left: 1px solid rgba(255, 255, 255, .7) !important;
+  border-radius: 0 !important;
+  background: linear-gradient(145deg, rgba(252, 250, 255, .98), rgba(240, 235, 250, .94)) !important;
+  box-shadow: -12px 18px 54px rgba(45, 29, 82, .14), inset 0 1px rgba(255, 255, 255, .96) !important;
+  backdrop-filter: blur(28px) saturate(1.24) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(1.24) !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded > header {
+  position: relative;
+  z-index: 8;
+  min-height: 62px;
+  padding: 11px 16px 11px 20px;
+  background: rgba(249, 246, 255, .76);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+}
+
+body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded .theory-library-lens-stage {
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: hidden !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded .theory-friend-map-surface {
+  min-height: 0 !important;
+  height: 100% !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded .theory-friend-map-preview {
+  width: calc(100% - 340px) !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: 100% !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded .theory-friend-map-breadcrumb {
+  right: 354px !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded :is(.theory-friend-map-controls, .theory-friend-map-caption) {
+  right: 358px !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded .theory-map-expanded-info {
+  position: absolute;
+  z-index: 7;
+  top: 78px;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  width: 318px;
+  min-height: 0;
+  flex-direction: column;
+  padding: 20px;
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, .84);
+  border-radius: 28px;
+  color: #4f4264;
+  background: linear-gradient(145deg, rgba(255, 255, 255, .88), rgba(242, 237, 253, .76));
+  box-shadow: 0 20px 48px rgba(66, 43, 111, .14), inset 0 1px rgba(255, 255, 255, .96);
+  backdrop-filter: blur(24px) saturate(1.28);
+  -webkit-backdrop-filter: blur(24px) saturate(1.28);
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory .theory-library-lens-card.is-expanded .theory-map-expanded-info {
+  display: flex !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > header {
+  display: grid;
+  grid-template-columns: 45px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > header > span {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  place-items: center;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(145deg, #987ce7, #7152c5);
+  box-shadow: 0 10px 22px rgba(111, 82, 197, .25);
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > header svg {
+  width: 20px;
+  height: 20px;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > header p,
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > header h3 {
+  margin: 0;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > header p {
+  color: #8b79ad;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > header h3 {
+  margin-top: 4px;
+  color: #3f3158;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-path {
+  margin: 15px 0 0;
+  color: #81758d;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 16px;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-metrics > span {
+  display: grid;
+  min-height: 70px;
+  place-items: center;
+  align-content: center;
+  gap: 3px;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 20px;
+  background: rgba(247, 243, 255, .72);
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-metrics b {
+  color: #714fc1;
+  font-size: 20px;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-metrics small {
+  color: #8a8095;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > section {
+  min-height: 0;
+  margin-top: 18px;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > section > b {
+  color: #55436f;
+  font-size: 14px;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > section > div {
+  display: grid;
+  gap: 7px;
+  margin-top: 9px;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > section button {
+  display: flex;
+  min-height: 43px;
+  gap: 9px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid rgba(139, 112, 196, .14);
+  border-radius: 16px;
+  color: #5b4778;
+  text-align: left;
+  background: rgba(255, 255, 255, .68);
+  transition: transform .25s cubic-bezier(.2, .8, .2, 1), background .25s ease, box-shadow .25s ease;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > section button:hover {
+  background: rgba(249, 245, 255, .96);
+  box-shadow: 0 9px 20px rgba(91, 65, 144, .1);
+  transform: translateX(-3px);
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > section button span {
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > section button em {
+  flex: 0 0 auto;
+  color: #8060cc;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+body.workspace-active #workspace-app #theory .theory-map-expanded-info > section button svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+}
+
+body.workspace-active #workspace-app #theory .theory-banner {
+  background-image:
+    linear-gradient(90deg,
+      rgba(235, 235, 255, .99) 0%,
+      rgba(239, 238, 255, .95) 28%,
+      rgba(237, 235, 255, .72) 49%,
+      rgba(232, 229, 255, .22) 68%,
+      rgba(232, 229, 255, 0) 100%),
+    url("./assets/theory-overview-background.png") !important;
+}
+
+body.workspace-active #workspace-app #sixarts .sixarts-banner,
+body.workspace-active #workspace-app #sixarts .sixarts-course-hero {
+  background-image:
+    linear-gradient(90deg,
+      rgba(235, 235, 255, .99) 0%,
+      rgba(239, 238, 255, .95) 28%,
+      rgba(237, 235, 255, .72) 49%,
+      rgba(232, 229, 255, .22) 68%,
+      rgba(232, 229, 255, 0) 100%),
+    url("./assets/sixarts/sixarts-classroom-bg.png") !important;
+}
+
+@media (max-width: 900px) {
+  body.workspace-active #workspace-app #reflect .reflection-q-scene {
+    right: 0 !important;
+    width: 62% !important;
+  }
+
+  body.workspace-active #workspace-app #reflect .reflection-banner-art {
+    width: 90% !important;
+    height: 92% !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded .theory-friend-map-preview {
+    width: 100% !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded .theory-map-expanded-info {
+    display: none;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded .theory-library-lens-card.is-expanded :is(.theory-friend-map-breadcrumb, .theory-friend-map-controls, .theory-friend-map-caption) {
+    right: 16px !important;
+  }
+}
+
+/* Final authority for expanded-map scrolling. The whole workspace/document
+   grows with the rail; the rail itself is never a nested scroll container. */
+html.theory-map-expanded-document {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+body.theory-map-workspace-expanded {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app {
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .shell {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  align-items: start !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .rail {
+  height: var(--theory-map-expanded-rail-height, auto) !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  align-self: start !important;
+  overflow: visible !important;
+  scrollbar-width: auto !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-progress {
+  margin-top: auto !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .main {
+  height: var(--theory-map-expanded-main-height, auto) !important;
+  max-height: none !important;
+  align-self: start !important;
+  overflow: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host {
+  height: var(--theory-map-expanded-host-height, auto) !important;
+  min-height: 0 !important;
+}
+
+/* 2026-08-31: keep comparison tables fully visible on desktop. */
+@media (min-width: 821px) {
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap {
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap table {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap :is(th, td) {
+    min-width: 0 !important;
+    padding: 12px 13px !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    white-space: pre-line !important;
+    font-size: 13px !important;
+    line-height: 1.62 !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap :is(thead th:first-child, tbody th:first-child) {
+    width: 104px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap thead th:not(:first-child),
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap tbody td {
+    width: calc((100% - 104px) / 2) !important;
+  }
+}
+
+/* Fixed-size, expandable history rail for the current theory dialogue. */
+body.workspace-active #workspace-app .theory-chat-shell {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float {
+  position: absolute !important;
+  z-index: 8 !important;
+  top: 84px !important;
+  right: 0 !important;
+  bottom: 108px !important;
+  display: flex !important;
+  width: 25px !important;
+  min-width: 25px !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(126, 98, 192, .28) !important;
+  border-right: 0 !important;
+  border-radius: 26px 0 0 26px !important;
+  background: linear-gradient(145deg, rgba(255,255,255,.72), rgba(231,223,255,.58)) !important;
+  box-shadow: -10px 12px 28px rgba(74, 47, 139, .12), inset 1px 0 rgba(255,255,255,.88) !important;
+  -webkit-backdrop-filter: blur(22px) saturate(145%) !important;
+  backdrop-filter: blur(22px) saturate(145%) !important;
+  transition: width 420ms cubic-bezier(.2, 1.15, .25, 1), min-width 420ms cubic-bezier(.2, 1.15, .25, 1), box-shadow 420ms ease !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within {
+  width: min(34%, 320px) !important;
+  min-width: 220px !important;
+  box-shadow: -16px 16px 36px rgba(74, 47, 139, .2), inset 1px 0 rgba(255,255,255,.96) !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float > header {
+  display: flex !important;
+  min-height: 42px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 8px !important;
+  border-bottom: 1px solid rgba(121, 91, 184, .12) !important;
+  color: #7656b7 !important;
+  white-space: nowrap !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float > header svg {
+  width: 16px !important;
+  height: 16px !important;
+  flex: 0 0 auto !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float > header span {
+  width: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  font-size: 12px !important;
+  font-weight: 850 !important;
+  transition: width 300ms ease, opacity 260ms ease !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover > header,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within > header {
+  justify-content: flex-start !important;
+  padding-inline: 13px !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover > header span,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within > header span {
+  width: auto !important;
+  opacity: 1 !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list {
+  display: grid !important;
+  min-height: 0 !important;
+  flex: 1 1 auto !important;
+  align-content: start !important;
+  gap: 6px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding: 10px 4px !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(117, 82, 190, .44) transparent !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list::-webkit-scrollbar { width: 5px; }
+body.workspace-active #workspace-app .theory-chat-history-float-list::-webkit-scrollbar-thumb { border-radius: 99px; background: rgba(117, 82, 190, .42); }
+
+body.workspace-active #workspace-app .theory-chat-history-float-list > button {
+  display: flex !important;
+  min-width: 0 !important;
+  min-height: 30px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 6px 3px !important;
+  border: 0 !important;
+  border-radius: 14px !important;
+  color: #51446b !important;
+  text-align: left !important;
+  background: transparent !important;
+  cursor: pointer !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list > button > i,
+body.workspace-active #workspace-app .theory-chat-history-float-empty > i {
+  display: block !important;
+  width: 12px !important;
+  height: 3px !important;
+  flex: 0 0 12px !important;
+  border-radius: 99px !important;
+  background: rgba(127, 103, 173, .28) !important;
+  transition: width 300ms ease, height 300ms ease, background 300ms ease !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list > button.active > i {
+  width: 16px !important;
+  height: 5px !important;
+  background: #6942b2 !important;
+  box-shadow: 0 0 0 3px rgba(105, 66, 178, .11) !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list > button > span {
+  width: 0 !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  transition: width 300ms ease, opacity 220ms ease !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover .theory-chat-history-float-list,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within .theory-chat-history-float-list {
+  padding-inline: 10px !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover .theory-chat-history-float-list > button,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within .theory-chat-history-float-list > button {
+  justify-content: flex-start !important;
+  padding: 8px 9px !important;
+  background: rgba(255,255,255,.34) !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover .theory-chat-history-float-list > button > span,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within .theory-chat-history-float-list > button > span {
+  width: auto !important;
+  flex: 1 1 auto !important;
+  opacity: 1 !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-empty {
+  display: flex !important;
+  justify-content: center !important;
+  padding-top: 14px !important;
+}
+
+body.workspace-active #workspace-app .theory-message.history-focus > div {
+  border-color: rgba(112, 72, 193, .62) !important;
+  box-shadow: 0 0 0 5px rgba(112, 72, 193, .1), 0 14px 30px rgba(83, 55, 149, .13) !important;
+  transition: box-shadow 300ms ease, border-color 300ms ease !important;
+}
+
+/* Give both resource pages a full-height working stage. */
+body.workspace-active #workspace-app #resources .resource-hub-panel {
+  display: flex !important;
+  min-height: clamp(620px, calc(100vh - 260px), 880px) !important;
+  flex-direction: column !important;
+  box-sizing: border-box !important;
+}
+
+body.workspace-active #workspace-app #resources .resource-navigation-grid {
+  flex: 1 1 auto !important;
+  align-content: stretch !important;
+  grid-auto-rows: minmax(112px, 1fr) !important;
+}
+
+body.workspace-active #workspace-app #resources .resource-navigation-grid > :is(a, article) { min-height: 112px !important; }
+
+body.workspace-active #workspace-app #resources .cloud-drive-summary article {
+  min-height: 74px !important;
+  padding: 18px !important;
+}
+
+body.workspace-active #workspace-app #resources .cloud-drive-layout {
+  min-height: 420px !important;
+  flex: 1 1 auto !important;
+}
+
+body.workspace-active #workspace-app #resources .cloud-drive-files,
+body.workspace-active #workspace-app #resources .cloud-drive-dropzone {
+  min-height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Slightly widen and lift the detail pager at the end of the page. */
+body.workspace-active #workspace-app #theory .theory-detail-pager {
+  width: min(100%, 480px) !important;
+  min-height: 68px !important;
+  margin: -34px auto 5px !important;
+  padding: 8px !important;
+  border-radius: 36px !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button {
+  min-height: 50px !important;
+  border-radius: 27px !important;
+  font-size: 14px !important;
+}
+
+body.workspace-active #workspace-app .theory-library-selected-card small { font-size: 12px !important; }
+body.workspace-active #workspace-app .theory-library-selected-card b { font-size: 16px !important; }
+body.workspace-active #workspace-app .theory-library-selected-card em { font-size: 12px !important; }
+body.workspace-active #workspace-app .theory-library-selected-tags { gap: 8px !important; }
+body.workspace-active #workspace-app .theory-library-selected-tags em { padding: 7px 10px !important; font-size: 12px !important; }
+
+@media (min-width: 640px) {
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card {
+    width: calc(100% - 14px) !important;
+    margin-right: 7px !important;
+    margin-left: 7px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body.workspace-active #workspace-app .theory-chat-history-float:hover,
+  body.workspace-active #workspace-app .theory-chat-history-float:focus-within {
+    width: min(43%, 260px) !important;
+    min-width: 190px !important;
+  }
+
+  body.workspace-active #workspace-app #resources .resource-hub-panel {
+    min-height: clamp(560px, calc(100vh - 220px), 760px) !important;
+  }
+}
+
+/* 2026-08-31: keep the comparison readable as a complete two-theory view.
+   Desktop tables use three fixed columns so a long source cannot create a
+   second horizontal viewport. Mobile keeps the existing stacked treatment. */
+@media (min-width: 821px) {
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap {
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap table {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap :is(th, td) {
+    min-width: 0 !important;
+    padding: 12px 13px !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    white-space: pre-line !important;
+    font-size: 13px !important;
+    line-height: 1.62 !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap :is(thead th:first-child, tbody th:first-child) {
+    width: 104px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap thead th:not(:first-child),
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap tbody td {
+    width: calc((100% - 104px) / 2) !important;
+  }
+}
+
+/* A compact history rail for the current dialogue. It is deliberately fixed
+   to the chat shell, so a growing conversation never changes its height. */
+body.workspace-active #workspace-app .theory-chat-shell {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float {
+  position: absolute !important;
+  z-index: 8 !important;
+  top: 84px !important;
+  right: 0 !important;
+  bottom: 108px !important;
+  display: flex !important;
+  width: 25px !important;
+  min-width: 25px !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(126, 98, 192, .28) !important;
+  border-right: 0 !important;
+  border-radius: 26px 0 0 26px !important;
+  background: linear-gradient(145deg, rgba(255,255,255,.72), rgba(231,223,255,.58)) !important;
+  box-shadow: -10px 12px 28px rgba(74, 47, 139, .12), inset 1px 0 rgba(255,255,255,.88) !important;
+  -webkit-backdrop-filter: blur(22px) saturate(145%) !important;
+  backdrop-filter: blur(22px) saturate(145%) !important;
+  transition: width 420ms cubic-bezier(.2, 1.15, .25, 1), min-width 420ms cubic-bezier(.2, 1.15, .25, 1), box-shadow 420ms ease !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within {
+  width: min(34%, 320px) !important;
+  min-width: 220px !important;
+  box-shadow: -16px 16px 36px rgba(74, 47, 139, .2), inset 1px 0 rgba(255,255,255,.96) !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float > header {
+  display: flex !important;
+  min-height: 42px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 8px !important;
+  border-bottom: 1px solid rgba(121, 91, 184, .12) !important;
+  color: #7656b7 !important;
+  white-space: nowrap !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float > header svg {
+  width: 16px !important;
+  height: 16px !important;
+  flex: 0 0 auto !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float > header span {
+  width: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  font-size: 12px !important;
+  font-weight: 850 !important;
+  transition: width 300ms ease, opacity 260ms ease !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover > header,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within > header {
+  justify-content: flex-start !important;
+  padding-inline: 13px !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover > header span,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within > header span {
+  width: auto !important;
+  opacity: 1 !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list {
+  display: grid !important;
+  min-height: 0 !important;
+  flex: 1 1 auto !important;
+  align-content: start !important;
+  gap: 6px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding: 10px 4px !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(117, 82, 190, .44) transparent !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list::-webkit-scrollbar { width: 5px; }
+body.workspace-active #workspace-app .theory-chat-history-float-list::-webkit-scrollbar-thumb { border-radius: 99px; background: rgba(117, 82, 190, .42); }
+
+body.workspace-active #workspace-app .theory-chat-history-float-list > button {
+  display: flex !important;
+  min-width: 0 !important;
+  min-height: 30px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 6px 3px !important;
+  border: 0 !important;
+  border-radius: 14px !important;
+  color: #51446b !important;
+  text-align: left !important;
+  background: transparent !important;
+  cursor: pointer !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list > button > i,
+body.workspace-active #workspace-app .theory-chat-history-float-empty > i {
+  display: block !important;
+  width: 12px !important;
+  height: 3px !important;
+  flex: 0 0 12px !important;
+  border-radius: 99px !important;
+  background: rgba(127, 103, 173, .28) !important;
+  transition: width 300ms ease, height 300ms ease, background 300ms ease !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list > button.active > i {
+  width: 16px !important;
+  height: 5px !important;
+  background: #6942b2 !important;
+  box-shadow: 0 0 0 3px rgba(105, 66, 178, .11) !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-list > button > span {
+  width: 0 !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  transition: width 300ms ease, opacity 220ms ease !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover .theory-chat-history-float-list,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within .theory-chat-history-float-list {
+  padding-inline: 10px !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover .theory-chat-history-float-list > button,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within .theory-chat-history-float-list > button {
+  justify-content: flex-start !important;
+  padding: 8px 9px !important;
+  background: rgba(255,255,255,.34) !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float:hover .theory-chat-history-float-list > button > span,
+body.workspace-active #workspace-app .theory-chat-history-float:focus-within .theory-chat-history-float-list > button > span {
+  width: auto !important;
+  flex: 1 1 auto !important;
+  opacity: 1 !important;
+}
+
+body.workspace-active #workspace-app .theory-chat-history-float-empty {
+  display: flex !important;
+  justify-content: center !important;
+  padding-top: 14px !important;
+}
+
+body.workspace-active #workspace-app .theory-message.history-focus > div {
+  border-color: rgba(112, 72, 193, .62) !important;
+  box-shadow: 0 0 0 5px rgba(112, 72, 193, .1), 0 14px 30px rgba(83, 55, 149, .13) !important;
+  transition: box-shadow 300ms ease, border-color 300ms ease !important;
+}
+
+/* Let the two resource pages use their available vertical stage instead of
+   ending as short cards with a large empty page tail. */
+body.workspace-active #workspace-app #resources .resource-hub-panel {
+  display: flex !important;
+  min-height: clamp(620px, calc(100vh - 260px), 880px) !important;
+  flex-direction: column !important;
+  box-sizing: border-box !important;
+}
+
+body.workspace-active #workspace-app #resources .resource-navigation-grid {
+  flex: 1 1 auto !important;
+  align-content: stretch !important;
+  grid-auto-rows: minmax(112px, 1fr) !important;
+}
+
+body.workspace-active #workspace-app #resources .resource-navigation-grid > :is(a, article) {
+  min-height: 112px !important;
+}
+
+body.workspace-active #workspace-app #resources .cloud-drive-summary article {
+  min-height: 74px !important;
+  padding: 18px !important;
+}
+
+body.workspace-active #workspace-app #resources .cloud-drive-layout {
+  min-height: 420px !important;
+  flex: 1 1 auto !important;
+}
+
+body.workspace-active #workspace-app #resources .cloud-drive-files,
+body.workspace-active #workspace-app #resources .cloud-drive-dropzone {
+  min-height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Widen and lift the detail pager slightly so it reads as a floating control
+   attached to the final detail block rather than a second content row. */
+body.workspace-active #workspace-app #theory .theory-detail-pager {
+  width: min(100%, 480px) !important;
+  min-height: 68px !important;
+  margin: -34px auto 5px !important;
+  padding: 8px !important;
+  border-radius: 36px !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button {
+  min-height: 50px !important;
+  border-radius: 27px !important;
+  font-size: 14px !important;
+}
+
+body.workspace-active #workspace-app .theory-library-selected-card small { font-size: 12px !important; }
+body.workspace-active #workspace-app .theory-library-selected-card b { font-size: 16px !important; }
+body.workspace-active #workspace-app .theory-library-selected-card em { font-size: 12px !important; }
+body.workspace-active #workspace-app .theory-library-selected-tags { gap: 8px !important; }
+body.workspace-active #workspace-app .theory-library-selected-tags em { padding: 7px 10px !important; font-size: 12px !important; }
+
+/* Narrow only the mentor button's hit area by a small amount. Its character
+   stays at the same visual scale while accidental selection at the rail edge
+   becomes less likely. */
+@media (min-width: 640px) {
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card {
+    width: calc(100% - 14px) !important;
+    margin-right: 7px !important;
+    margin-left: 7px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body.workspace-active #workspace-app .theory-chat-history-float:hover,
+  body.workspace-active #workspace-app .theory-chat-history-float:focus-within {
+    width: min(43%, 260px) !important;
+    min-width: 190px !important;
+  }
+
+  body.workspace-active #workspace-app #resources .resource-hub-panel {
+    min-height: clamp(560px, calc(100vh - 220px), 760px) !important;
+  }
+}
+
+/* 2026-08-31: theory detail section pager and source panel rhythm. */
+body.workspace-active #workspace-app #theory .theory-detail-pager {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-height: 72px;
+  margin-top: 22px;
+  padding: 10px 12px;
+  border: 1px solid rgba(121, 91, 190, .18);
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(255,255,255,.58), rgba(236,229,255,.48));
+  box-shadow: 0 16px 32px rgba(83, 57, 145, .09), inset 0 1px rgba(255,255,255,.86);
+  -webkit-backdrop-filter: blur(20px) saturate(135%);
+  backdrop-filter: blur(20px) saturate(135%);
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 138px;
+  min-height: 48px;
+  padding: 9px 16px;
+  border: 1px solid rgba(126, 94, 191, .14);
+  border-radius: 24px;
+  color: #7658ad;
+  background: rgba(250,248,255,.68);
+  font-size: 15px;
+  font-weight: 850;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s, background .35s, color .35s;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button.is-next {
+  color: #fff;
+  border-color: rgba(255,255,255,.38);
+  background: linear-gradient(135deg, #9271df, #7049bb);
+  box-shadow: 0 10px 22px rgba(101, 70, 177, .22), inset 0 1px rgba(255,255,255,.42);
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button:not(:disabled):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(94, 64, 161, .17);
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button.is-next:not(:disabled):hover {
+  box-shadow: 0 15px 28px rgba(94, 64, 161, .28), inset 0 1px rgba(255,255,255,.5);
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button:disabled {
+  cursor: not-allowed;
+  opacity: .38;
+  box-shadow: none;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-status {
+  display: grid;
+  justify-items: center;
+  min-width: 100px;
+  line-height: 1;
+  color: #6e4bad;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-status b {
+  font-size: 18px;
+  font-weight: 950;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-status em {
+  margin-top: 3px;
+  color: #a18bc9;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-status small {
+  margin-top: 7px;
+  color: #584181;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* Classroom examples read as a comparison, so each state gets the full
+   content width and can grow with its own amount of source text. */
+body.workspace-active #workspace-app #theory .theory-classroom-contrast {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-classroom-contrast > section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep the classification canvas inside its lens card at every desktop
+   width. The list itself owns the vertical scroll when the screen is short. */
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article,
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > button,
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > div,
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > div > button {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 820px) {
+  body.workspace-active #workspace-app #theory .theory-detail-pager {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 9px;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-detail-pager-status {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    min-height: 36px;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-detail-pager-button {
+    min-width: 0;
+    min-height: 46px;
+    padding-inline: 10px;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-detail-pager-button.is-previous { grid-column: 1; grid-row: 2; }
+  body.workspace-active #workspace-app #theory .theory-detail-pager-button.is-next { grid-column: 2; grid-row: 2; }
+}
+
+/* 2026-08-30: make the full navigation mentor read as a real character
+   stage. The compact launcher remains reserved for Theory Library. */
+@media (min-width: 640px) {
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card {
+    flex: 0 0 clamp(320px, 40vh, 470px) !important;
+    height: clamp(320px, 40vh, 470px) !important;
+    min-height: 320px !important;
+    margin-top: 12px !important;
+    margin-bottom: 10px !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card img {
+    width: 135% !important;
+    max-width: none !important;
+    height: 100% !important;
+  }
+}
+
+/* 2026-08-30: keep the utility bar readable on laptop and large desktop
+   screens. The search field owns a deliberately compact middle column so the
+   action controls remain on the same row. */
+@media (min-width: 761px) {
+  body.workspace-active #workspace-app .topbar {
+    grid-template-columns: 112px minmax(200px, 430px) minmax(0, 1fr) !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-search {
+    justify-self: start !important;
+    width: 100% !important;
+    min-width: 200px !important;
+    max-width: 430px !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1179px) {
+  body.workspace-active #workspace-app .topbar {
+    grid-template-columns: 92px minmax(190px, 300px) minmax(0, 1fr) !important;
+    gap: 7px !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-browser-controls {
+    width: 92px !important;
+    min-width: 92px !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-search {
+    min-width: 190px !important;
+    max-width: 300px !important;
+  }
+}
+
+/* The mentor becomes a quiet, full-height character in the spare rail area.
+   Theory Library intentionally keeps the compact launcher for denser reading. */
+@media (min-width: 640px) {
+  body.workspace-active #workspace-app .rail:not(.rail-mentor-room) .rail-mentor-card {
+    grid-template-columns: 38px minmax(0, 1fr) 22px !important;
+    min-height: 60px !important;
+    margin: 12px 0 9px !important;
+    padding: 6px 8px !important;
+    border-radius: 24px !important;
+  }
+
+  body.workspace-active #workspace-app .rail:not(.rail-mentor-room) .rail-mentor-card img {
+    width: 38px !important;
+    height: 45px !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card {
+    display: grid !important;
+    width: 100% !important;
+    height: clamp(218px, 27vh, 330px) !important;
+    min-height: 218px !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
+    place-items: end center !important;
+    margin: 13px 0 10px !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card::after {
+    z-index: 0 !important;
+    inset: auto 4% 1% !important;
+    width: 92% !important;
+    height: 74% !important;
+    border-radius: 50% !important;
+    background: radial-gradient(ellipse, rgba(163, 132, 231, .2), transparent 68%) !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card::before {
+    position: absolute;
+    z-index: 3;
+    top: 4px;
+    left: 50%;
+    max-width: calc(100% - 12px);
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, .86);
+    border-radius: 18px 18px 18px 7px;
+    color: #58428d;
+    background: rgba(255, 255, 255, .78);
+    box-shadow: 0 12px 24px rgba(89, 62, 148, .15), inset 0 1px rgba(255, 255, 255, .94);
+    backdrop-filter: blur(16px) saturate(1.15);
+    -webkit-backdrop-filter: blur(16px) saturate(1.15);
+    content: "点击进入和我对话学习哦";
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.35;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -7px) scale(.88);
+    transform-origin: 50% 100%;
+    transition: opacity 360ms ease, transform 460ms cubic-bezier(.2, 1.35, .3, 1);
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:hover::before,
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:focus-visible::before {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card > span,
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card > svg {
+    display: none !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card img {
+    z-index: 2;
+    display: block !important;
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    align-self: end !important;
+    width: min(100%, 226px) !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    filter: drop-shadow(0 18px 16px rgba(76, 47, 143, .2)) !important;
+    transform-origin: 50% 100% !important;
+    transition: transform 520ms cubic-bezier(.2, 1.5, .3, 1), filter 520ms ease !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:hover img,
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:focus-visible img {
+    transform: translateY(-7px) rotate(-2deg) scale(1.045) !important;
+    filter: drop-shadow(0 25px 22px rgba(76, 47, 143, .28)) saturate(1.06) !important;
+  }
+}
+
+/* Reference-aligned Knowledge Path panel: selected theory, six numbered
+   routes, and a final recommendation. */
+@media (min-width: 1260px) {
+  body.workspace-active #workspace-app #theory .theory-library-overview-layout {
+    grid-template-columns: minmax(238px, .78fr) minmax(470px, 1.55fr) minmax(318px, .96fr) !important;
+    gap: 16px !important;
+  }
+}
+
+@media (min-width: 980px) {
+body.workspace-active #workspace-app #theory .theory-library-abilities {
+    display: grid !important;
+    min-width: 0 !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto minmax(0, 1fr) !important;
+    gap: 12px !important;
+    padding: 22px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(255, 255, 255, .82) !important;
+    border-radius: 31px !important;
+    background: linear-gradient(145deg, rgba(255, 255, 255, .78), rgba(243, 237, 255, .54)) !important;
+    box-shadow: 0 18px 42px rgba(91, 64, 147, .1), inset 0 1px rgba(255, 255, 255, .96) !important;
+    backdrop-filter: blur(24px) saturate(125%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(125%) !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-abilities > header {
+    min-width: 0 !important;
+    align-items: start !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-abilities > header p {
+    margin-bottom: 8px !important;
+    color: #7651c8 !important;
+    font-size: 11px !important;
+    letter-spacing: .06em !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-abilities > header h3 {
+    color: #302342 !important;
+    font-size: 21px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-abilities > header span {
+    margin-top: 7px !important;
+    color: #8d829e !important;
+    font-size: 12px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-abilities > header > b {
+    color: #6441b8 !important;
+    font-size: 30px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-ability-detail {
+    grid-row: 2 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-ability-list {
+    display: grid !important;
+    grid-row: 3 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    align-content: start !important;
+    gap: 7px !important;
+    padding: 0 2px 2px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    scrollbar-width: thin !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-path-label {
+    display: grid !important;
+    gap: 3px !important;
+    margin: 0 3px 5px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-path-label b {
+    color: #3b2b52 !important;
+    font-size: 13px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-path-label span {
+    color: #9b90a7 !important;
+    font-size: 10px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-card {
+    display: block !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 14px !important;
+    border: 1px solid rgba(187, 161, 242, .4) !important;
+    border-radius: 22px !important;
+    color: #3d2c54 !important;
+    background: linear-gradient(135deg, rgba(249, 246, 255, .86), rgba(235, 226, 255, .66)) !important;
+    box-shadow: 0 10px 24px rgba(94, 62, 157, .08), inset 0 1px rgba(255, 255, 255, .9) !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-card > div:first-child {
+    display: flex !important;
+    min-width: 0 !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-card > div:first-child > span {
+    display: grid !important;
+    flex: 0 0 42px !important;
+    width: 42px !important;
+    height: 42px !important;
+    place-items: center !important;
+    border-radius: 15px !important;
+    color: #7049c5 !important;
+    background: rgba(255, 255, 255, .78) !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-card > div:first-child > span svg { width: 21px !important; height: 21px !important; }
+  body.workspace-active #workspace-app #theory .theory-library-selected-card section { min-width: 0 !important; }
+  body.workspace-active #workspace-app #theory .theory-library-selected-card small { color: #866fd0 !important; font-size: 10px !important; }
+  body.workspace-active #workspace-app #theory .theory-library-selected-card b { display: block !important; margin-top: 4px !important; overflow: hidden !important; color: #312143 !important; font-size: 15px !important; line-height: 1.25 !important; text-overflow: ellipsis !important; white-space: nowrap !important; }
+  body.workspace-active #workspace-app #theory .theory-library-selected-card em { display: block !important; margin-top: 3px !important; overflow: hidden !important; color: #9b8bb2 !important; font-size: 10px !important; font-style: normal !important; text-overflow: ellipsis !important; white-space: nowrap !important; }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 5px !important;
+    margin-top: 10px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-tags em {
+    display: inline-flex !important;
+    margin: 0 !important;
+    padding: 4px 7px !important;
+    border-radius: 999px !important;
+    color: #7650c2 !important;
+    background: rgba(222, 210, 255, .58) !important;
+    font-size: 9px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-card > button {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 40px !important;
+    gap: 7px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 12px !important;
+    padding: 0 12px !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    color: #fff !important;
+    background: linear-gradient(100deg, #6842bd, #7d55d2) !important;
+    box-shadow: 0 10px 18px rgba(105, 67, 190, .2) !important;
+    font-size: 12px !important;
+    font-weight: 800 !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-card > button svg { width: 15px !important; height: 15px !important; }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-card.is-empty {
+    min-height: 116px !important;
+    align-content: center !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-selected-card.is-empty > span {
+    display: block !important;
+    margin-top: 8px !important;
+    color: #9285a5 !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button:not(.theory-library-recommendation) {
+    display: grid !important;
+    min-width: 0 !important;
+    min-height: 59px !important;
+    grid-template-columns: 42px minmax(0, 1fr) 16px !important;
+    gap: 10px !important;
+    align-items: center !important;
+    padding: 8px 10px !important;
+    border: 1px solid transparent !important;
+    border-radius: 18px !important;
+    color: #51435f !important;
+    background: rgba(255, 255, 255, .48) !important;
+    text-align: left !important;
+    transition: transform 360ms cubic-bezier(.2, 1.1, .3, 1), background 320ms ease, border-color 320ms ease, box-shadow 320ms ease !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button:not(.theory-library-recommendation):hover,
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button:not(.theory-library-recommendation).active {
+    border-color: rgba(177, 148, 238, .34) !important;
+    color: #5835a8 !important;
+    background: linear-gradient(100deg, rgba(237, 228, 255, .9), rgba(249, 246, 255, .76)) !important;
+    box-shadow: 0 8px 17px rgba(90, 59, 154, .08), inset 0 1px rgba(255, 255, 255, .9) !important;
+    transform: translateX(3px) !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button:not(.theory-library-recommendation) > span,
+  body.workspace-active #workspace-app #theory .theory-library-recommendation > span {
+    display: grid !important;
+    width: 42px !important;
+    height: 42px !important;
+    place-items: center !important;
+    border-radius: 15px !important;
+    color: #7148c5 !important;
+    background: rgba(235, 226, 255, .78) !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button:not(.theory-library-recommendation) > span svg,
+  body.workspace-active #workspace-app #theory .theory-library-recommendation > span svg { width: 20px !important; height: 20px !important; }
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button > div { display: grid !important; min-width: 0 !important; gap: 3px !important; }
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button b { overflow: hidden !important; color: inherit !important; font-size: 13px !important; text-overflow: ellipsis !important; white-space: nowrap !important; }
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button small { overflow: hidden !important; color: #9a8fa6 !important; font-size: 10px !important; text-overflow: ellipsis !important; white-space: nowrap !important; }
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button > svg { width: 15px !important; height: 15px !important; color: #8f7ba9 !important; }
+
+  body.workspace-active #workspace-app #theory .theory-library-ability-list > button.theory-library-recommendation {
+    display: grid !important;
+    min-height: 57px !important;
+    grid-template-columns: 42px minmax(0, 1fr) 16px !important;
+    gap: 10px !important;
+    align-items: center !important;
+    margin-top: 4px !important;
+    padding: 8px 10px !important;
+    border: 1px solid rgba(189, 161, 244, .42) !important;
+    border-radius: 18px !important;
+    color: #6943b9 !important;
+    background: linear-gradient(100deg, rgba(234, 222, 255, .82), rgba(247, 241, 255, .72)) !important;
+    text-align: left !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-recommendation:hover { transform: translateX(3px) !important; box-shadow: 0 9px 18px rgba(97, 59, 173, .1) !important; }
+}
+
+@media (min-width: 980px) and (max-width: 1259px) {
+  body.workspace-active #workspace-app #theory .theory-library-overview-layout {
+    grid-template-columns: minmax(210px, .72fr) minmax(390px, 1.28fr) !important;
+    gap: 14px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-abilities {
+    grid-column: 1 / -1 !important;
+    min-height: 410px !important;
+  }
+}
+
+@media (max-width: 979px) {
+  body.workspace-active #workspace-app #theory .theory-library-abilities {
+    grid-template-rows: auto auto auto !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-ability-list {
+    overflow: visible !important;
+  }
+}
+
+/* Classification view has its own responsive canvas. The map keeps its
+   visual proportions, while classification cards are allowed to shrink and
+   scroll inside the lens card instead of being clipped by it. */
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure {
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  max-height: none !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: 0 !important;
+  scrollbar-width: thin !important;
+  scrollbar-gutter: stable !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage {
+  display: grid !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 11px !important;
+  box-sizing: border-box !important;
+  padding: 14px !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article {
+  min-width: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 10px !important;
+  border-radius: 20px !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > button {
+  min-width: 0 !important;
+  min-height: 50px !important;
+  grid-template-columns: 30px minmax(0, 1fr) 16px !important;
+  gap: 8px !important;
+  padding: 4px !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > button > span {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 11px !important;
+  font-size: 10px !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > button div,
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > button b,
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > button small {
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+  white-space: normal !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > button b {
+  font-size: 13px !important;
+  line-height: 1.35 !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > button small {
+  font-size: 10px !important;
+  line-height: 1.35 !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > div {
+  min-width: 0 !important;
+  gap: 4px !important;
+  margin-top: 6px !important;
+  padding-top: 7px !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > div button {
+  min-width: 0 !important;
+  min-height: 34px !important;
+  padding: 5px 7px !important;
+  gap: 6px !important;
+  font-size: 10.5px !important;
+  line-height: 1.35 !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > div button span {
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+  white-space: normal !important;
+}
+
+@media (max-width: 1180px) {
+  body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure {
+    min-height: 0 !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 9px !important;
+    padding: 11px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Give the reflection banner art a little more presence without changing its
+   position or the existing floating-card choreography. */
+body.workspace-active #workspace-app #reflect .reflection-banner-art {
+  right: 1% !important;
+  bottom: -2% !important;
+  width: 86% !important;
+  height: 96% !important;
+}
+
+@media (max-width: 900px) {
+  body.workspace-active #workspace-app #reflect .reflection-banner-art {
+    right: 0 !important;
+    bottom: -1% !important;
+    width: 94% !important;
+    height: 96% !important;
+  }
+}
+
+/* 2026-08-30: adapt the navigation mentor to the actual vertical room. */
+body.workspace-active #workspace-app .rail-mentor-card {
+  grid-template-columns: 38px minmax(0, 1fr) 22px !important;
+  min-height: 60px !important;
+  margin: 12px 0 9px !important;
+  padding: 6px 8px !important;
+  border-radius: 24px !important;
+}
+
+body.workspace-active #workspace-app .rail-mentor-card img {
+  width: 38px !important;
+  height: 45px !important;
+}
+
+body.workspace-active #workspace-app .rail-mentor-card b { font-size: 13px !important; }
+body.workspace-active #workspace-app .rail-mentor-card small { font-size: 10px !important; }
+
+body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card {
+  grid-template-columns: minmax(0, 1fr) 92px 22px !important;
+  min-height: 158px !important;
+  align-items: end !important;
+  padding: 12px 9px 10px 14px !important;
+  background: linear-gradient(145deg, rgba(255,255,255,.78), rgba(236,229,255,.44)) !important;
+}
+
+body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card img {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: end;
+  width: 92px !important;
+  height: 142px !important;
+  transform-origin: bottom center;
+}
+
+body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card > span {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+}
+
+body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card > svg {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+}
+
+body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card b { font-size: 15px !important; }
+body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card small { font-size: 11px !important; }
+body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:hover img { transform: translateY(-7px) rotate(-3deg) scale(1.07); }
+
+/* The practice page is a setup surface here; the quiz implementation stays
+   in the DOM and can be re-enabled when the training interaction is wired in. */
+body.workspace-active #workspace-app #theory .theory-scenario-panel .scenario-card,
+body.workspace-active #workspace-app #theory .theory-scenario-panel .scenario-progress {
+  display: none !important;
+}
+
+/* Keep the selected-theory path beside the map on laptop and desktop widths.
+   The three columns compress before they stack, so the right panel never
+   drops below the map merely because the viewport is moderately narrow. */
+@media (min-width: 980px) {
+  body.workspace-active #workspace-app #theory .theory-library-overview-layout {
+    grid-template-columns: minmax(174px, .72fr) minmax(330px, 1.32fr) minmax(225px, .86fr) !important;
+    gap: 12px !important;
+    height: 610px !important;
+    min-height: 610px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-overview-directory,
+  body.workspace-active #workspace-app #theory .theory-library-lens-card,
+  body.workspace-active #workspace-app #theory .theory-library-abilities {
+    grid-row: 1 !important;
+    height: 610px !important;
+    min-height: 610px !important;
+    max-height: 610px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-overview-directory { grid-column: 1 !important; }
+  body.workspace-active #workspace-app #theory .theory-library-lens-card { grid-column: 2 !important; }
+  body.workspace-active #workspace-app #theory .theory-library-abilities {
+    grid-column: 3 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto minmax(0, 1fr) auto !important;
+    overflow: hidden !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-friend-map {
+    min-width: 0 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-friend-map-preview {
+    min-width: 0 !important;
+    min-height: 0 !important;
+  }
+}
+
+@media (min-width: 1181px) {
+  body.workspace-active #workspace-app #theory .theory-library-overview-layout {
+    grid-template-columns: minmax(215px, .78fr) minmax(455px, 1.5fr) minmax(292px, .9fr) !important;
+    gap: 14px !important;
+  }
+}
+
+@media (max-width: 979px) {
+  body.workspace-active #workspace-app #theory .theory-library-abilities {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+
+/* 2026-08-30: keep the desktop utility bar in one stable row. The browser
+   controls are intentionally icon-only so the search field keeps the space
+   it needs without shrinking the account control into a second line. */
+@media (min-width: 761px) {
+  body.workspace-active #workspace-app .topbar {
+    display: grid !important;
+    grid-template-columns: auto minmax(200px, 1fr) auto !important;
+    align-items: center !important;
+    gap: 10px !important;
+    min-width: 0 !important;
+    flex-wrap: nowrap !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-browser-controls {
+    width: 112px !important;
+    min-width: 112px !important;
+    padding: 3px !important;
+    gap: 1px !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-browser-controls button {
+    width: 34px !important;
+    min-width: 34px !important;
+    height: 32px !important;
+    padding: 0 !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-browser-controls button span { display: none !important; }
+  body.workspace-active #workspace-app .workspace-browser-controls svg { width: 16px !important; height: 16px !important; }
+
+  body.workspace-active #workspace-app .workspace-search {
+    width: auto !important;
+    min-width: 200px !important;
+    max-width: none !important;
+    flex: 1 1 auto !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions {
+    min-width: 0 !important;
+    gap: 6px !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions > * { flex: 0 0 auto !important; }
+  body.workspace-active #workspace-app .top-actions > .sync-state { display: none !important; }
+  body.workspace-active #workspace-app .top-actions > button,
+  body.workspace-active #workspace-app .top-actions .render-quality-trigger {
+    min-height: 40px !important;
+    padding-inline: 10px !important;
+    font-size: 11px !important;
+    white-space: nowrap !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions .user-entry {
+    max-width: 145px !important;
+    grid-template-columns: 34px minmax(48px, 1fr) 12px !important;
+    gap: 6px !important;
+    min-height: 42px !important;
+    padding-inline: 5px !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions .user-entry img { width: 34px !important; height: 34px !important; }
+  body.workspace-active #workspace-app .top-actions .user-entry small,
+  body.workspace-active #workspace-app .top-actions .user-entry b { white-space: nowrap !important; }
+}
+
+/* Scenario practice follows the supplied composition: a focused working
+   column, a quiet tip panel, and a persistent recent-practice footer. */
+body.workspace-active #workspace-app #theory .theory-scenario-panel {
+  min-width: 0;
+  padding-bottom: 26px;
+}
+
+body.workspace-active #workspace-app #theory .scenario-head {
+  margin-bottom: 13px;
+}
+
+body.workspace-active #workspace-app #theory .scenario-head h2 {
+  font-size: clamp(27px, 2.5vw, 38px);
+  letter-spacing: 0;
+}
+
+body.workspace-active #workspace-app #theory .scenario-head .scenario-score { display: none; }
+
+.scenario-feature-row {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin: 0 0 17px;
+}
+
+.scenario-feature-row > span {
+  display: grid;
+  grid-template-columns: 30px minmax(0, auto);
+  grid-template-rows: auto auto;
+  column-gap: 8px;
+  align-items: center;
+  min-width: 0;
+}
+
+.scenario-feature-row > span > svg {
+  grid-row: 1 / 3;
+  width: 23px;
+  height: 23px;
+  padding: 5px;
+  border-radius: 9px;
+  color: #805be0;
+  background: rgba(239, 233, 255, .92);
+}
+
+.scenario-feature-row b,
+.scenario-feature-row small { display: block; min-width: 0; }
+.scenario-feature-row b { color: #3e2d5d; font-size: 13px; }
+.scenario-feature-row small { margin-top: 2px; color: #958aa4; font-size: 10px; }
+
+.scenario-training-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 25%);
+  gap: 17px;
+  align-items: start;
+}
+
+.scenario-main-column { min-width: 0; }
+
+body.workspace-active #workspace-app #theory .scenario-mode-panel {
+  max-width: none;
+  margin: 0;
+  padding: clamp(18px, 2vw, 24px);
+  border-radius: 28px;
+}
+
+/* The editable theory field is the single source of truth in this layout;
+   keep the legacy context row in the DOM for state updates, but avoid showing
+   the same theory name twice. */
+body.workspace-active #workspace-app #theory .scenario-theory-context { display: none; }
+
+.scenario-theory-input {
+  position: relative;
+  margin-top: 18px;
+  padding-top: 1px;
+}
+
+.scenario-theory-input > label {
+  display: block;
+  margin-bottom: 7px;
+  color: #493869;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.scenario-theory-input-shell {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) 28px;
+  gap: 7px;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 8px 0 11px;
+  border: 1px solid #beaaf0;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .72);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.58);
+}
+
+.scenario-theory-input-shell > svg { width: 17px; height: 17px; color: #8159d5; }
+.scenario-theory-input-shell input { width: 100%; min-width: 0; border: 0; outline: 0; color: #49336c; background: transparent; font-size: 13px; font-weight: 800; }
+.scenario-theory-input-shell button { display: grid; width: 26px; height: 26px; place-items: center; border: 0; border-radius: 50%; color: #a297b1; background: transparent; }
+.scenario-theory-input-shell button:hover { color: #7150c5; background: #f1ebff; }
+.scenario-theory-input-shell button svg { width: 16px; height: 16px; }
+.scenario-theory-input > small { display: block; margin-top: 6px; color: #9a90aa; font-size: 10px; }
+
+.scenario-suggestion-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.scenario-suggestion-tags button { min-height: 27px; padding: 0 9px; border: 1px solid #e1d9f1; border-radius: 14px; color: #726687; background: rgba(255,255,255,.68); font-size: 10px; white-space: nowrap; }
+.scenario-suggestion-tags button:hover { border-color: #aa91ec; color: #6746b6; background: #f5f0ff; }
+
+.scenario-start-button {
+  min-width: 135px;
+  min-height: 42px;
+  margin: 17px 0 0 auto;
+  border: 0 !important;
+  border-radius: 14px !important;
+}
+
+body.workspace-active #workspace-app #theory .scenario-progress { margin-top: 13px; }
+body.workspace-active #workspace-app #theory .scenario-card { max-width: none; min-height: 420px; margin: 13px 0 0; padding: clamp(21px, 2.3vw, 30px); border-radius: 28px; }
+
+.scenario-tip-card {
+  min-width: 0;
+  min-height: 252px;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .84);
+  border-radius: 27px;
+  background: linear-gradient(145deg, rgba(255,255,255,.78), rgba(241,235,255,.55));
+  box-shadow: 0 16px 35px rgba(63, 39, 121, .08), inset 0 1px rgba(255,255,255,.95);
+}
+
+.scenario-tip-card > header { display: flex; align-items: center; gap: 9px; color: #392756; }
+.scenario-tip-card > header svg { width: 19px; height: 19px; color: #8160d8; }
+.scenario-tip-card > header b { font-size: 15px; }
+.scenario-tip-card > p { margin: 17px 0 0; color: #756987; font-size: 12px; line-height: 1.7; }
+.scenario-tip-visual { position: relative; display: grid; height: 118px; margin: 11px -2px -6px; place-items: center; overflow: hidden; border-radius: 20px; }
+.scenario-tip-visual::after { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, rgba(247,243,255,.05), rgba(247,243,255,.76)); }
+.scenario-tip-visual img { position: absolute; width: 145%; height: 145%; object-fit: cover; opacity: .42; filter: saturate(.7) blur(.2px); }
+.scenario-tip-visual > svg { z-index: 1; width: 47px; height: 47px; padding: 13px; border-radius: 17px; color: #825ee0; background: rgba(255,255,255,.78); box-shadow: 0 11px 28px rgba(117,80,208,.16); }
+
+.scenario-recent-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+  padding: 14px 18px;
+  border: 1px solid rgba(255,255,255,.9);
+  border-radius: 21px;
+  background: rgba(255,255,255,.62);
+  box-shadow: 0 10px 25px rgba(67,43,125,.06);
+}
+
+.scenario-recent-icon { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 50%; color: #fff; background: linear-gradient(135deg, #9d7aee, #7050ce); box-shadow: 0 8px 17px rgba(112,80,206,.2); }
+.scenario-recent-icon svg { width: 18px; height: 18px; }
+.scenario-recent-card b, .scenario-recent-card small { display: block; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.scenario-recent-card b { color: #463565; font-size: 12px; }
+.scenario-recent-card small { margin-top: 4px; color: #988ea8; font-size: 10px; }
+.scenario-recent-card button { display: inline-flex; align-items: center; gap: 5px; color: #7551cc; font-size: 11px; font-weight: 900; white-space: nowrap; }
+.scenario-recent-card button svg { width: 15px; height: 15px; }
+
+@media (max-width: 900px) and (min-width: 761px) {
+  body.workspace-active #workspace-app .top-actions > #load-sample,
+  body.workspace-active #workspace-app .top-actions > #run-analysis {
+    width: 36px !important;
+    min-width: 36px !important;
+    padding: 0 !important;
+    font-size: 0 !important;
+    gap: 0 !important;
+  }
+  body.workspace-active #workspace-app .top-actions > #load-sample span,
+  body.workspace-active #workspace-app .top-actions > #run-analysis span { display: none; }
+  body.workspace-active #workspace-app .top-actions .user-entry { max-width: 116px !important; }
+  body.workspace-active #workspace-app .top-actions .user-entry > span { display: none; }
+  body.workspace-active #workspace-app .top-actions .user-entry { grid-template-columns: 34px 12px !important; justify-content: center; }
+  body.workspace-active #workspace-app .scenario-training-layout { grid-template-columns: minmax(0, 1fr) 205px; }
+}
+
+@media (min-width: 1500px) {
+  body.workspace-active #workspace-app .top-actions > .sync-state {
+    display: inline-flex !important;
+    font-size: 10px !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1499px) {
+  body.workspace-active #workspace-app .top-actions > .sync-state {
+    display: inline-flex !important;
+    max-width: 92px !important;
+    overflow: hidden !important;
+    color: #4f7468 !important;
+    font-size: 9px !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions > #load-sample,
+  body.workspace-active #workspace-app .top-actions > #run-analysis {
+    width: 36px !important;
+    min-width: 36px !important;
+    padding: 0 !important;
+    font-size: 0 !important;
+    gap: 0 !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions > #load-sample svg,
+  body.workspace-active #workspace-app .top-actions > #run-analysis svg {
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .scenario-feature-row { gap: 14px; }
+  .scenario-feature-row > span { grid-template-columns: 26px minmax(0, 1fr); }
+  .scenario-feature-row b { font-size: 12px; }
+  .scenario-feature-row small { font-size: 9px; }
+  .scenario-training-layout { grid-template-columns: 1fr; }
+  .scenario-tip-card { min-height: 0; }
+  .scenario-recent-card { grid-template-columns: 36px minmax(0, 1fr); }
+  .scenario-recent-card button { grid-column: 2; justify-self: start; }
+}
+
+/* 2026-08-30: assistant entry routing, account registration and resource hub. */
+.entry-evidence[data-entry-destination],
+.entry-assistant-list article[data-entry-destination] {
+  cursor: pointer;
+}
+
+.entry-evidence[data-entry-destination]:focus-visible,
+.entry-assistant-list article[data-entry-destination]:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, .9);
+  outline-offset: 5px;
+}
+
+.entry-evidence[data-entry-destination]:hover,
+.entry-assistant-list article[data-entry-destination]:hover {
+  transform: translateY(-8px) scale(1.025);
+  filter: brightness(1.04);
+}
+
+.rail-mentor-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) 28px;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  min-height: 76px;
+  margin: 18px 0 10px;
+  padding: 8px 11px 8px 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .76);
+  border-radius: 25px;
+  color: #34205f;
+  text-align: left;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .66), rgba(235, 227, 255, .32));
+  box-shadow: 0 14px 30px rgba(111, 78, 172, .12), inset 0 1px rgba(255, 255, 255, .86);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  transition: transform 380ms cubic-bezier(.2, .8, .2, 1), box-shadow 380ms ease, background 380ms ease;
+}
+
+.rail-mentor-card::after {
+  position: absolute;
+  inset: -40% 34% auto -18%;
+  height: 160%;
+  content: "";
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 255, 255, .62), transparent 63%);
+}
+
+.rail-mentor-card:hover,
+.rail-mentor-card:focus-visible {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 22px 44px rgba(111, 78, 172, .2), inset 0 1px rgba(255, 255, 255, .96);
+}
+
+.rail-mentor-card img {
+  z-index: 1;
+  align-self: end;
+  width: 54px;
+  height: 64px;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 8px 8px rgba(76, 47, 143, .18));
+  transition: transform 460ms cubic-bezier(.2, 1.5, .3, 1);
+}
+
+.rail-mentor-card:hover img { transform: translateY(-4px) rotate(-3deg) scale(1.08); }
+.rail-mentor-card > span { z-index: 1; min-width: 0; }
+.rail-mentor-card b,
+.rail-mentor-card small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rail-mentor-card b { font-size: 14px; line-height: 1.3; }
+.rail-mentor-card small { margin-top: 4px; color: #756b8f; font-size: 11px; }
+.rail-mentor-card > svg { z-index: 1; width: 20px; height: 20px; color: #7951d8; }
+
+.workspace-browser-controls {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, .72);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, .44);
+  box-shadow: 0 10px 22px rgba(80, 52, 130, .08), inset 0 1px rgba(255, 255, 255, .9);
+  backdrop-filter: blur(16px) saturate(1.15);
+  -webkit-backdrop-filter: blur(16px) saturate(1.15);
+}
+
+.workspace-browser-controls button {
+  display: inline-flex;
+  min-width: 38px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 17px;
+  color: #6849b8;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 800;
+  transition: background 280ms ease, transform 280ms ease, color 280ms ease;
+}
+
+.workspace-browser-controls button:hover:not(:disabled) { transform: translateY(-2px); color: #4f2aa4; background: rgba(255, 255, 255, .72); }
+.workspace-browser-controls button:disabled { cursor: not-allowed; opacity: .34; }
+.workspace-browser-controls svg { width: 17px; height: 17px; }
+
+.assistant-switcher {
+  max-width: min(100%, 760px);
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-radius: 24px;
+}
+
+.assistant-switcher::-webkit-scrollbar { display: none; }
+.assistant-switcher .assistant-tab { flex: 0 0 auto; min-width: 82px; min-height: 42px; border-radius: 19px; font-size: 12px; }
+.assistant-switcher .assistant-tab-icon { display: grid; width: 27px; height: 27px; place-items: center; border-radius: 50%; }
+.assistant-switcher .assistant-tab-icon svg { width: 16px; height: 16px; }
+.assistant-switcher .assistant-tab-label { white-space: nowrap; }
+.assistant-switcher .assistant-tab.active { color: #fff; background: linear-gradient(135deg, #8d68e5, #6744be); box-shadow: 0 8px 18px rgba(103, 68, 190, .18); }
+
+.auth-mode-switch {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 18px 0 18px;
+  padding: 4px;
+  border-radius: 18px;
+  background: #f3effd;
+}
+
+.auth-mode-switch button {
+  min-height: 36px;
+  border: 0;
+  border-radius: 14px;
+  color: #817696;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.auth-mode-switch button.active { color: #5c39b7; background: #fff; box-shadow: 0 7px 16px rgba(90, 52, 174, .12); }
+.auth-register-field[hidden] { display: none !important; }
+
+.auth-gender-field {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  margin: 15px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.auth-gender-field legend { grid-column: 1 / -1; margin-bottom: 1px; color: #4a3b68; font-size: 12px; font-weight: 800; }
+.auth-gender-field legend small { margin-left: 4px; color: #998eab; font-weight: 600; }
+.auth-gender-field > label { position: relative; min-width: 0; cursor: pointer; }
+.auth-gender-field input { position: absolute; opacity: 0; }
+.auth-gender-field label > span { display: grid; grid-template-columns: 26px minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 7px; align-items: center; min-height: 52px; padding: 8px 10px; border: 1px solid #e5def5; border-radius: 16px; color: #776c8e; background: #faf9ff; }
+.auth-gender-field label > span svg { grid-row: 1 / 3; width: 19px; height: 19px; color: #8662de; }
+.auth-gender-field label > span b { color: #48386a; font-size: 13px; }
+.auth-gender-field label > span small { font-size: 10px; }
+.auth-gender-field input:checked + span { border-color: #9b7bea; color: #6144bb; background: #f0eaff; box-shadow: inset 0 0 0 1px #b39af2; }
+
+.scenario-mode-panel {
+  max-width: 970px;
+  margin: 18px auto 0;
+  padding: 19px 22px 20px;
+  border: 1px solid rgba(255, 255, 255, .78);
+  border-radius: 26px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .88), rgba(246, 242, 255, .66));
+  box-shadow: 0 14px 35px rgba(64, 36, 121, .07), inset 0 1px rgba(255, 255, 255, .92);
+}
+
+.scenario-mode-panel > header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.scenario-mode-panel > header > div { display: flex; align-items: center; gap: 10px; }
+.scenario-mode-panel > header svg { width: 22px; height: 22px; color: #7651d3; }
+.scenario-mode-panel > header b, .scenario-mode-panel > header small { display: block; }
+.scenario-mode-panel > header b { color: #33234d; font-size: 15px; }
+.scenario-mode-panel > header small { margin-top: 3px; color: #9489a6; font-size: 11px; }
+.scenario-mode-panel > header em { color: #7e7194; font-size: 11px; font-style: normal; }
+.scenario-mode-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.scenario-mode-options button { display: flex; min-height: 68px; align-items: center; gap: 10px; padding: 10px 13px; border: 1px solid #e7e1f2; border-radius: 20px; color: #665b7c; text-align: left; background: rgba(255, 255, 255, .58); }
+.scenario-mode-options button > span { display: grid; flex: 0 0 auto; width: 36px; height: 36px; place-items: center; border-radius: 13px; color: #8060d7; background: #f0eaff; }
+.scenario-mode-options button > span svg { width: 19px; height: 19px; }
+.scenario-mode-options button > div { min-width: 0; flex: 1; }
+.scenario-mode-options button b, .scenario-mode-options button small { display: block; }
+.scenario-mode-options button b { color: #3d2c5b; font-size: 14px; }
+.scenario-mode-options button small { margin-top: 4px; overflow: hidden; color: #948ba2; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.scenario-mode-options button > svg { width: 18px; height: 18px; color: #c5badb; }
+.scenario-mode-options button.active { border-color: #a48bed; background: #f8f4ff; box-shadow: 0 8px 18px rgba(121, 80, 215, .1); }
+.scenario-mode-options button.active > span { color: #fff; background: linear-gradient(135deg, #936de9, #6c48c2); }
+.scenario-mode-options button.active > svg { color: #7955d2; }
+.scenario-theory-context { display: flex; align-items: center; gap: 9px; margin-top: 15px; color: #897d9e; font-size: 11px; }
+.scenario-theory-context b { color: #5d3ab8; font-size: 13px; }
+.scenario-theory-context small { margin-left: auto; color: #a198b0; }
+
+.resource-hub-panel { padding: clamp(22px, 3vw, 38px); border: 1px solid rgba(255, 255, 255, .8); border-radius: 32px; background: linear-gradient(135deg, rgba(255, 255, 255, .78), rgba(245, 241, 255, .58)); box-shadow: 0 22px 55px rgba(62, 37, 116, .1), inset 0 1px rgba(255, 255, 255, .92); }
+.resource-hub-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 25px; padding-bottom: 22px; border-bottom: 1px solid rgba(116, 91, 166, .13); }
+.resource-hub-head h2 { margin: 6px 0 8px; color: #342050; font-size: clamp(25px, 2.3vw, 38px); line-height: 1.15; }
+.resource-hub-head span { color: #7f7392; font-size: 13px; }
+.resource-smart-link { flex: 0 0 auto; text-decoration: none; }
+.resource-navigation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; margin-top: 22px; }
+.resource-navigation-grid > a, .resource-navigation-grid > article { display: grid; grid-template-columns: 46px minmax(0, 1fr) 22px; gap: 13px; align-items: center; min-height: 94px; padding: 14px 16px; border: 1px solid rgba(255, 255, 255, .84); border-radius: 25px; color: inherit; text-decoration: none; background: rgba(255, 255, 255, .58); box-shadow: 0 9px 22px rgba(71, 46, 125, .06); transition: transform 320ms ease, box-shadow 320ms ease, background 320ms ease; }
+.resource-navigation-grid > a:hover { transform: translateY(-4px); background: rgba(255, 255, 255, .84); box-shadow: 0 16px 28px rgba(71, 46, 125, .12); }
+.resource-navigation-grid > a > span, .resource-navigation-grid > article > span { display: grid; width: 46px; height: 46px; place-items: center; border-radius: 18px; color: #7754d0; background: #f0eaff; }
+.resource-navigation-grid svg { width: 20px; height: 20px; }
+.resource-navigation-grid b, .resource-navigation-grid small { display: block; }
+.resource-navigation-grid b { color: #40305b; font-size: 14px; }
+.resource-navigation-grid small { margin-top: 5px; color: #9388a4; font-size: 11px; line-height: 1.45; }
+.resource-navigation-grid > a > svg { width: 17px; color: #a48adf; }
+.resource-navigation-grid > article { opacity: .82; }
+.resource-navigation-grid > article em { grid-column: 3; color: #9b8caf; font-size: 10px; font-style: normal; white-space: nowrap; }
+
+.cloud-drive-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 23px 0 20px; }
+.cloud-drive-summary article { display: flex; align-items: center; gap: 12px; padding: 15px; border: 1px solid rgba(255, 255, 255, .8); border-radius: 21px; background: rgba(255, 255, 255, .5); }
+.cloud-drive-summary article > span { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 15px; color: #7754d0; background: #f0eaff; }
+.cloud-drive-summary article b, .cloud-drive-summary article small { display: block; }
+.cloud-drive-summary article b { color: #3e2e59; font-size: 18px; }
+.cloud-drive-summary article small { margin-top: 3px; color: #968ba4; font-size: 11px; }
+.cloud-drive-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(260px, .8fr); gap: 17px; }
+.cloud-drive-files, .cloud-drive-dropzone { min-width: 0; padding: 19px; border: 1px solid rgba(255, 255, 255, .84); border-radius: 25px; background: rgba(255, 255, 255, .54); }
+.cloud-drive-files > header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 13px; border-bottom: 1px solid rgba(122, 92, 169, .12); }
+.cloud-drive-files h3 { margin: 0; color: #3e2c58; font-size: 17px; }
+.cloud-drive-files header span { display: block; margin-top: 4px; color: #9a8fa8; font-size: 10px; }
+.cloud-drive-files header button { border: 0; color: #7050c6; background: transparent; font-size: 11px; font-weight: 800; }
+#cloud-drive-file-list { display: grid; gap: 9px; padding-top: 12px; }
+.cloud-drive-file-list article, #cloud-drive-file-list article { display: grid; grid-template-columns: 37px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 9px; border-radius: 16px; background: rgba(249, 247, 255, .72); }
+.cloud-file-icon { display: grid; width: 37px; height: 37px; place-items: center; border-radius: 13px; color: #7e5ad3; background: #efeaff; }
+.cloud-file-icon svg { width: 17px; height: 17px; }
+#cloud-drive-file-list b, #cloud-drive-file-list small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#cloud-drive-file-list b { color: #4d3b64; font-size: 12px; }
+#cloud-drive-file-list small, #cloud-drive-file-list em { color: #9b91a9; font-size: 10px; font-style: normal; }
+.cloud-drive-empty { display: grid; min-height: 150px; place-items: center; align-content: center; gap: 7px; color: #9b91ac; text-align: center; }
+.cloud-drive-empty svg { width: 27px; height: 27px; color: #9475dc; }
+.cloud-drive-empty b { color: #5c4a75; font-size: 14px; }
+.cloud-drive-empty span { font-size: 11px; }
+.cloud-drive-dropzone { display: grid; min-height: 230px; place-items: center; align-content: center; text-align: center; border: 1px dashed rgba(126, 89, 214, .38); background: linear-gradient(145deg, rgba(246, 241, 255, .72), rgba(255, 255, 255, .44)); transition: transform 320ms ease, border-color 320ms ease, background 320ms ease; }
+.cloud-drive-dropzone.is-dragging, .cloud-drive-dropzone:hover { transform: translateY(-3px); border-color: #8f6be1; background: #f5efff; }
+.cloud-drive-dropzone > svg { width: 34px; height: 34px; color: #825ed5; }
+.cloud-drive-dropzone h3 { margin: 12px 0 5px; color: #4a3864; font-size: 16px; }
+.cloud-drive-dropzone p { margin: 0; color: #9589a6; font-size: 11px; line-height: 1.55; }
+.cloud-drive-dropzone button { margin-top: 15px; padding: 8px 15px; border: 0; border-radius: 15px; color: #fff; background: #7956d1; font-size: 11px; font-weight: 800; }
+
+.theory-library-selected-card { margin-bottom: 13px; padding: 14px; border: 1px solid rgba(173, 143, 239, .48); border-radius: 22px; background: linear-gradient(135deg, rgba(124, 85, 212, .94), rgba(139, 108, 224, .82)); color: #fff; box-shadow: 0 14px 26px rgba(92, 55, 174, .18); }
+.theory-library-selected-card > div { display: flex; align-items: center; gap: 10px; }
+.theory-library-selected-card > div > span { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 14px; color: #7653c8; background: rgba(255, 255, 255, .86); }
+.theory-library-selected-card > div > span svg { width: 19px; height: 19px; }
+.theory-library-selected-card section { min-width: 0; }
+.theory-library-selected-card small, .theory-library-selected-card b, .theory-library-selected-card em { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.theory-library-selected-card small { color: rgba(255, 255, 255, .7); font-size: 10px; }
+.theory-library-selected-card b { margin-top: 3px; font-size: 14px; }
+.theory-library-selected-card em { margin-top: 2px; color: rgba(255, 255, 255, .72); font-size: 10px; font-style: normal; }
+.theory-library-selected-card > button { width: 100%; margin-top: 12px; padding: 8px 10px; border: 1px solid rgba(255, 255, 255, .32); border-radius: 14px; color: #fff; background: rgba(255, 255, 255, .16); font-size: 11px; font-weight: 800; }
+.theory-library-current-scope > p { margin: 0; color: #9b91a8; font-size: 10px; }
+
+@media (min-width: 1101px) {
+  body.workspace-active #workspace-app #theory .theory-library-abilities {
+    grid-template-rows: auto auto minmax(270px, 1fr) !important;
+  }
+  body.workspace-active #workspace-app #theory .theory-library-ability-detail {
+    grid-row: 2;
+    max-height: 270px;
+    overflow: auto;
+  }
+  body.workspace-active #workspace-app #theory .theory-library-ability-list {
+    grid-row: 3;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 1180px) {
+  .workspace-browser-controls button span { display: none; }
+  .workspace-browser-controls button { width: 34px; padding: 0; }
+  .assistant-switcher .assistant-tab { min-width: 70px; padding: 0 8px; }
+  .cloud-drive-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .topbar { flex-wrap: wrap; }
+  .workspace-browser-controls { order: 0; }
+  .workspace-search { order: 1; width: 100%; }
+  .top-actions { order: 2; width: 100%; justify-content: flex-end; }
+  .assistant-switcher { width: 100%; }
+  .scenario-mode-options, .resource-navigation-grid, .cloud-drive-summary { grid-template-columns: 1fr; }
+  .scenario-mode-panel > header { align-items: flex-start; flex-direction: column; }
+  .scenario-theory-context { flex-wrap: wrap; }
+  .scenario-theory-context small { width: 100%; margin-left: 0; }
+  .resource-hub-head { align-items: flex-start; flex-direction: column; }
+  .resource-smart-link { width: 100%; justify-content: center; }
+}
+
+/* 2026-08-31: reserve a real column for the local-save status. The search
+   field may grow, but it must never consume the status or action controls. */
+@media (min-width: 761px) {
+  body.workspace-active #workspace-app .topbar {
+    display: grid !important;
+    grid-template-columns: 112px minmax(300px, 1fr) minmax(max-content, auto) !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-search {
+    justify-self: stretch !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions {
+    min-width: max-content !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions > .sync-state {
+    flex: 0 0 auto !important;
+    min-width: max-content !important;
+    width: auto !important;
+    height: auto !important;
+    display: inline-flex !important;
+    font-size: 12px !important;
+    max-width: none !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1279px) {
+  body.workspace-active #workspace-app .topbar {
+    grid-template-columns: 92px minmax(210px, 1fr) minmax(max-content, auto) !important;
+    gap: 7px !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-browser-controls {
+    width: 92px !important;
+    min-width: 92px !important;
+  }
+
+  body.workspace-active #workspace-app .workspace-search {
+    width: 100% !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions {
+    gap: 5px !important;
+  }
+
+  body.workspace-active #workspace-app .top-actions > .sync-state {
+    font-size: 11px !important;
+  }
+}
+
+/* 2026-08-31: the resource center has no second-level page switcher. */
+body.workspace-active #workspace-app .page-heading-actions[hidden] {
+  display: none !important;
+}
+
+/* The detail pager is a small floating control at the bottom edge of the
+   final detail block. The old center status was redundant with the tabs. */
+body.workspace-active #workspace-app #theory .theory-detail-pager {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  width: min(100%, 360px);
+  min-height: 52px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: -25px auto 12px;
+  padding: 6px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(255,255,255,.64), rgba(236,229,255,.5));
+  box-shadow: 0 18px 30px rgba(83,57,145,.13), inset 0 1px rgba(255,255,255,.9);
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button {
+  min-width: 0;
+  min-height: 40px;
+  padding: 7px 12px;
+  border-radius: 22px;
+  font-size: 13px;
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button.is-previous {
+  color: #8669bb;
+  background: rgba(245,241,255,.74);
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-button.is-next {
+  color: #fff;
+  background: linear-gradient(135deg, #9271df, #7049bb);
+}
+
+body.workspace-active #workspace-app #theory .theory-detail-pager-status { display: none !important; }
+
+/* Keep the section count in one non-shrinking column in the classification
+   cards, while the directory name owns all remaining width. */
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > div button {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) max-content !important;
+  align-items: center !important;
+  justify-content: initial !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > div button span {
+  min-width: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-library-lens-stage.is-structure .theory-structure-stage article > div button em {
+  min-width: max-content !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+/* The two non-clickable resource rows need a content-sized status column;
+   the previous 22px column forced “即将接入” outside its card. */
+body.workspace-active #workspace-app #resources .resource-navigation-grid > a,
+body.workspace-active #workspace-app #resources .resource-navigation-grid > article {
+  grid-template-columns: 46px minmax(0, 1fr) max-content !important;
+}
+
+body.workspace-active #workspace-app #resources .resource-navigation-grid > article em {
+  min-width: max-content !important;
+  justify-self: end !important;
+  white-space: nowrap !important;
+}
+
+/* 2026-08-29: detail relation map follows the supplied reference: the
+   current theory sits above a vertical relation spine, while related theories
+   alternate left and right along it. */
+body.workspace-active #workspace-app #theory .theory-reference-relation-map {
+  display: block !important;
+  position: relative !important;
+  height: clamp(350px, 30vw, 410px) !important;
+  min-height: 0 !important;
+  margin-top: 16px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 24px !important;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(218, 204, 255, .42), transparent 34%),
+    linear-gradient(145deg, rgba(255, 255, 255, .74), rgba(245, 240, 255, .42)) !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map::before,
+body.workspace-active #workspace-app #theory .theory-reference-relation-map::after {
+  display: none !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .theory-relation-spine {
+  position: absolute;
+  z-index: 1;
+  top: 78px;
+  bottom: 22px;
+  left: 50%;
+  width: 10px;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border: 1px solid rgba(148, 122, 220, .18);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(190, 172, 255, .56), rgba(148, 119, 220, .36)),
+    repeating-linear-gradient(180deg, rgba(255,255,255,.48) 0 12px, rgba(255,255,255,0) 12px 25px);
+  box-shadow: inset 1px 0 2px rgba(255,255,255,.78), 0 0 16px rgba(115, 82, 190, .1);
+  animation: theoryRelationSpineFlow 6.5s ease-in-out infinite;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .theory-relation-spine::after {
+  content: "";
+  position: absolute;
+  inset: -20% 0;
+  background: linear-gradient(180deg, transparent, rgba(255,255,255,.76), transparent);
+  animation: theoryRelationSpineShimmer 4.8s ease-in-out infinite;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .theory-reference-orbit-center {
+  position: absolute !important;
+  z-index: 4;
+  top: 16px;
+  left: 50%;
+  display: grid;
+  width: min(57%, 164px);
+  min-height: 50px;
+  place-items: center;
+  padding: 9px 14px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(105, 80, 170, .24);
+  border-radius: 16px;
+  color: #332650;
+  background: linear-gradient(145deg, rgba(255,255,255,.92), rgba(239,232,255,.72));
+  box-shadow: 0 12px 23px rgba(87, 61, 146, .14), inset 0 1px rgba(255,255,255,.95);
+  backdrop-filter: blur(14px) saturate(125%);
+  -webkit-backdrop-filter: blur(14px) saturate(125%);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.3;
+  text-align: center;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node {
+  position: absolute !important;
+  z-index: 3;
+  display: grid;
+  width: min(43%, 170px);
+  height: 48px;
+  min-height: 48px;
+  margin: 0 !important;
+  padding: 9px 12px;
+  place-items: center;
+  transform: none !important;
+  border: 1px solid rgba(120, 93, 181, .2);
+  border-radius: 17px;
+  color: #4b367e;
+  background: linear-gradient(145deg, rgba(255,255,255,.88), rgba(240,233,255,.72));
+  box-shadow: 0 10px 22px rgba(86, 60, 142, .12), inset 0 1px rgba(255,255,255,.9);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.3;
+  text-align: center;
+  animation: theoryRelationRailFloat 5.6s ease-in-out infinite;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 45px;
+  height: 1px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, rgba(124, 93, 201, .08), rgba(124, 93, 201, .55));
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translateY(-50%);
+  border: 1px solid rgba(118, 85, 190, .55);
+  border-radius: 50%;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 0 0 3px rgba(174, 149, 235, .14);
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node:is(.relation-node-1, .relation-node-3) {
+  left: 5%;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node:is(.relation-node-2, .relation-node-4) {
+  right: 5%;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-1 { top: 88px; }
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-2 { top: 151px; }
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-3 { top: 214px; }
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-4 { top: 277px; }
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node:is(.relation-node-1, .relation-node-3)::after {
+  right: -45px;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node:is(.relation-node-1, .relation-node-3)::before {
+  right: -50px;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node:is(.relation-node-2, .relation-node-4)::after {
+  left: -45px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node:is(.relation-node-2, .relation-node-4)::before {
+  left: -50px;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node:hover {
+  border-color: rgba(112, 79, 188, .42);
+  box-shadow: 0 15px 28px rgba(86,60,142,.19), inset 0 1px rgba(255,255,255,.95);
+  background: linear-gradient(145deg, rgba(255,255,255,.96), rgba(235,225,255,.84));
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-label {
+  display: block;
+  max-width: 100%;
+  max-height: 2.6em;
+  overflow-wrap: anywhere;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@keyframes theoryRelationSpineFlow {
+  0%, 100% { opacity: .76; }
+  50% { opacity: 1; }
+}
+
+@keyframes theoryRelationSpineShimmer {
+  0%, 100% { transform: translateY(-100%); opacity: 0; }
+  35%, 65% { opacity: .78; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+@keyframes theoryRelationRailFloat {
+  0%, 100% { margin-top: 0 !important; }
+  50% { margin-top: -4px !important; }
+}
+
+@media (max-width: 760px) {
+  body.workspace-active #workspace-app #theory .theory-reference-relation-map {
+    height: 360px !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node {
+    width: min(44%, 170px);
+    font-size: 12px;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-1 { top: 86px; }
+  body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-2 { top: 148px; }
+  body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-3 { top: 210px; }
+  body.workspace-active #workspace-app #theory .theory-reference-relation-map .relation-node-4 { top: 272px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.workspace-active #workspace-app #theory .theory-reference-relation-map :is(.theory-relation-spine, .theory-relation-spine::after, .relation-node) {
+    animation: none !important;
+  }
+}
+
+/* Final expanded-map model: the rail keeps its normal controls and grows
+   with its content; the document/workspace owns the vertical scroll. */
+html.theory-map-expanded-document {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+body.theory-map-workspace-expanded {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .shell {
+  overflow: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .rail {
+  height: var(--theory-map-expanded-rail-height, auto) !important;
+  max-height: none !important;
+  overflow: visible !important;
+  scrollbar-width: auto !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar {
+  width: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.workspace-active #workspace-app #theory #theory-library-lens-stage {
+    transition: none !important;
+  }
+}
+
+/* 2026-08-28: expanded theory map is a right-pane replacement view. It stays
+   inside the main glass panel and scrolls with that panel instead of floating
+   over the page while the original content moves underneath it. */
+body.workspace-active.theory-map-workspace-expanded #workspace-app .main {
+  height: var(--theory-map-expanded-main-height, 1120px) !important;
+  max-height: none !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  overscroll-behavior: contain;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .topbar {
+  position: sticky !important;
+  top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .page-heading {
+  display: none !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory {
+  position: static !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > [data-workspace-panel] {
+  display: none !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host {
+  display: block !important;
+  height: var(--theory-map-expanded-host-height, 980px) !important;
+  min-height: 0 !important;
+  margin-left: calc(-1 * var(--theory-map-expanded-content-left, 34px)) !important;
+  margin-right: calc(-1 * var(--theory-map-expanded-content-right, 34px)) !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background: linear-gradient(145deg, rgba(252, 250, 255, .985), rgba(242, 238, 251, .975)) !important;
+  box-shadow: inset 0 1px rgba(255, 255, 255, .96) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-friend-map-surface {
+  min-height: calc(100% + 260px) !important;
+  height: calc(100% + 260px) !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-map-expanded-info {
+  top: 78px !important;
+  bottom: auto !important;
+  display: none !important;
+  height: min(236px, calc(100% - 104px)) !important;
+  max-height: 236px !important;
+  overflow: auto !important;
+  overscroll-behavior: contain;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map + .theory-map-expanded-info {
+  display: flex !important;
+}
+
+/* 2026-08-27: source-accurate theory detail rebuilt from the reference layout. */
+body.workspace-active #workspace-app #theory .theory-detail-tabs {
+  grid-template-columns: repeat(6, minmax(112px, 1fr));
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.62fr) minmax(330px, .78fr);
+  gap: 18px;
+  align-items: start;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-side {
+  grid-template-rows: minmax(410px, 1.18fr) minmax(334px, .96fr);
+}
+
+body.workspace-active #workspace-app #theory :is(.theory-reference-map-card, .theory-reference-related-card) {
+  min-height: 0;
+}
+
+body.workspace-active #workspace-app #theory :is(.theory-reference-basic-card, .theory-reference-map-card, .theory-reference-related-card, .theory-reference-concepts, .theory-v3-panel) {
+  border: 1px solid rgba(121, 91, 190, .15);
+  border-radius: 30px;
+  background: linear-gradient(145deg, rgba(255,255,255,.91), rgba(248,245,255,.78));
+  box-shadow: 0 20px 46px rgba(77, 54, 133, .08), inset 0 1px rgba(255,255,255,.92);
+  backdrop-filter: blur(18px) saturate(132%);
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-basic-card,
+body.workspace-active #workspace-app #theory .theory-reference-concepts,
+body.workspace-active #workspace-app #theory .theory-v3-panel { padding: 24px; }
+body.workspace-active #workspace-app #theory .theory-reference-side { display: grid; gap: 18px; }
+body.workspace-active #workspace-app #theory .theory-reference-map-card,
+body.workspace-active #workspace-app #theory .theory-reference-related-card { padding: 20px; }
+
+body.workspace-active #workspace-app #theory .theory-reference-section-head,
+body.workspace-active #workspace-app #theory .theory-v3-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(105, 79, 163, .12);
+}
+body.workspace-active #workspace-app #theory :is(.theory-reference-section-head, .theory-v3-heading) > span {
+  display: grid;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 15px;
+  color: #7251c8;
+  background: linear-gradient(145deg, rgba(233,225,255,.9), rgba(249,246,255,.74));
+  box-shadow: inset 0 1px rgba(255,255,255,.92), 0 8px 17px rgba(106, 78, 171, .1);
+}
+body.workspace-active #workspace-app #theory :is(.theory-reference-section-head, .theory-v3-heading) svg { width: 21px; height: 21px; }
+body.workspace-active #workspace-app #theory :is(.theory-reference-section-head, .theory-v3-heading) p { margin: 0; color: #927ac9; font-size: 12px; font-weight: 900; }
+body.workspace-active #workspace-app #theory :is(.theory-reference-section-head, .theory-v3-heading) h3 { margin: 3px 0 0; color: #332650; font-size: 22px; }
+
+body.workspace-active #workspace-app #theory :is(.theory-reference-info-list, .theory-reference-concept-list) { display: grid; gap: 0; margin: 18px 0 0; }
+body.workspace-active #workspace-app #theory .theory-reference-info-row {
+  display: grid;
+  grid-template-columns: 184px minmax(0, 1fr);
+  align-items: stretch;
+  min-width: 0;
+  border-bottom: 1px solid rgba(111, 88, 159, .1);
+}
+body.workspace-active #workspace-app #theory .theory-reference-info-row:last-child { border-bottom: 0; }
+body.workspace-active #workspace-app #theory .theory-reference-info-row dt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 16px 16px 16px 8px;
+  color: #583b9b;
+  border-right: 1px solid rgba(111, 88, 159, .12);
+  font-size: 15px;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-info-row dt b {
+  line-height: 1.4;
+  text-align: center;
+}
+body.workspace-active #workspace-app #theory .theory-reference-info-row dt > span {
+  display: grid;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(231, 221, 255, .72);
+}
+body.workspace-active #workspace-app #theory .theory-reference-info-row dt svg { width: 17px; height: 17px; }
+body.workspace-active #workspace-app #theory .theory-reference-info-row dd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  margin: 0;
+  padding: 15px 8px 15px 18px;
+  color: #453d50;
+}
+body.workspace-active #workspace-app #theory .theory-reference-info-row dd .theory-source-line {
+  width: 100%;
+  color: #453d50 !important;
+  font-size: 16px;
+  line-height: 1.78;
+  overflow-wrap: break-word;
+}
+body.workspace-active #workspace-app #theory .theory-reference-info-row dd .theory-source-line.is-numbered { display: grid; }
+body.workspace-active #workspace-app #theory .theory-reference-info-row dd .theory-source-line + .theory-source-line { margin-top: 7px; }
+body.workspace-active #workspace-app #theory .theory-reference-info-row dd .theory-source-line.is-numbered { grid-template-columns: 26px minmax(0,1fr); }
+
+body.workspace-active #workspace-app #theory .theory-reference-orbit {
+  position: relative;
+  display: grid;
+  min-height: 350px;
+  margin-top: 16px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 24px;
+  background: radial-gradient(circle at center, rgba(219,205,255,.58), rgba(247,244,255,.26) 43%, transparent 70%);
+}
+body.workspace-active #workspace-app #theory .theory-reference-orbit::before,
+body.workspace-active #workspace-app #theory .theory-reference-orbit::after { content: ""; position: absolute; border: 1px dashed rgba(116, 82, 190, .24); border-radius: 50%; }
+body.workspace-active #workspace-app #theory .theory-reference-orbit::before { width: min(76%, 290px); height: min(76%, 290px); animation: theoryRelationOrbit 14s linear infinite; }
+body.workspace-active #workspace-app #theory .theory-reference-orbit::after { width: min(48%, 182px); height: min(48%, 182px); animation: theoryRelationOrbit 9s linear reverse infinite; }
+body.workspace-active #workspace-app #theory .theory-reference-links { position: absolute; z-index: 1; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+body.workspace-active #workspace-app #theory .theory-reference-links path { fill: none; stroke: rgba(108, 75, 188, .55); stroke-width: 1.35; stroke-dasharray: 5 7; stroke-linecap: round; animation: theoryRelationLinkFlow 5.6s linear infinite; }
+body.workspace-active #workspace-app #theory .theory-reference-orbit-center {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  width: 126px;
+  min-height: 126px;
+  place-items: center;
+  padding: 14px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(145deg, #9679e3, #6845ba);
+  box-shadow: 0 14px 30px rgba(94, 62, 167, .28), inset 0 1px rgba(255,255,255,.55);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: center;
+}
+body.workspace-active #workspace-app #theory .relation-node {
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  width: min(36%, 142px);
+  min-height: 52px;
+  place-items: center;
+  padding: 9px 12px;
+  border: 1px solid rgba(123,91,191,.2);
+  border-radius: 16px;
+  color: #5d4594;
+  background: rgba(255,255,255,.82);
+  box-shadow: 0 9px 20px rgba(86, 60, 142, .1);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+}
+body.workspace-active #workspace-app #theory .relation-node { animation: theoryRelationFloat 5.4s ease-in-out infinite; }
+body.workspace-active #workspace-app #theory .relation-node-2 { animation-delay: -1.35s; }
+body.workspace-active #workspace-app #theory .relation-node-3 { animation-delay: -2.7s; }
+body.workspace-active #workspace-app #theory .relation-node-4 { animation-delay: -4.05s; }
+body.workspace-active #workspace-app #theory button.relation-node { cursor: pointer; transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+body.workspace-active #workspace-app #theory button.relation-node:hover { box-shadow: 0 14px 26px rgba(86,60,142,.17); }
+body.workspace-active #workspace-app #theory .relation-node-1 { top: 22px; left: 50%; transform: translateX(-50%); }
+body.workspace-active #workspace-app #theory .relation-node-2 { top: 50%; right: 14px; transform: translateY(-50%); }
+body.workspace-active #workspace-app #theory .relation-node-3 { bottom: 22px; left: 50%; transform: translateX(-50%); }
+body.workspace-active #workspace-app #theory .relation-node-4 { top: 50%; left: 14px; transform: translateY(-50%); }
+
+@keyframes theoryRelationOrbit { to { transform: rotate(360deg); } }
+@keyframes theoryRelationLinkFlow { to { stroke-dashoffset: -96; } }
+@keyframes theoryRelationFloat { 0%,100% { margin-top: 0; } 50% { margin-top: -7px; } }
+
+body.workspace-active #workspace-app #theory .theory-reference-related-list { display: grid; gap: 9px; margin-top: 14px; }
+body.workspace-active #workspace-app #theory .theory-reference-related-list > :is(button, div) {
+  display: grid;
+  grid-template-columns: 32px minmax(0,1fr) 20px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 58px;
+  padding: 10px 12px;
+  border: 1px solid rgba(125,95,188,.13);
+  border-radius: 18px;
+  color: #413651;
+  background: rgba(255,255,255,.68);
+  text-align: left;
+}
+body.workspace-active #workspace-app #theory .theory-reference-related-list > :is(button, div) > span { color: #8b70c8; font-size: 12px; font-weight: 900; }
+body.workspace-active #workspace-app #theory .theory-reference-related-list b { display: block; font-size: 15px; }
+body.workspace-active #workspace-app #theory .theory-reference-related-list small { display: block; margin-top: 3px; color: #8a8096; font-size: 12px; }
+body.workspace-active #workspace-app #theory .theory-reference-related-list svg { width: 16px; color: #8165bd; }
+body.workspace-active #workspace-app #theory .theory-reference-concepts { margin-top: 18px; }
+body.workspace-active #workspace-app #theory .theory-reference-concept-list .theory-reference-info-row { grid-template-columns: 220px minmax(0,1fr); }
+
+body.workspace-active #workspace-app #theory .theory-comparison-picker {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 12px 14px;
+  border: 1px solid rgba(119, 85, 186, .14);
+  border-radius: 22px;
+  background: rgba(245, 241, 255, .64);
+}
+body.workspace-active #workspace-app #theory .theory-comparison-picker > span { color: #634696; font-size: 14px; font-weight: 850; white-space: nowrap; }
+body.workspace-active #workspace-app #theory .theory-comparison-picker > div { display: flex; gap: 8px; min-width: 0; overflow-x: auto; padding-bottom: 2px; }
+body.workspace-active #workspace-app #theory .theory-comparison-picker button { flex: 0 0 auto; min-height: 36px; padding: 7px 12px; border: 1px solid rgba(121, 92, 189, .17); border-radius: 15px; color: #5d477d; background: rgba(255,255,255,.76); font-size: 13px; font-weight: 750; transition: transform .28s cubic-bezier(.2,.8,.2,1), background .28s, color .28s, box-shadow .28s; }
+body.workspace-active #workspace-app #theory .theory-comparison-picker button:hover { transform: translateY(-2px); }
+body.workspace-active #workspace-app #theory .theory-comparison-picker button.active { color: #fff; border-color: transparent; background: linear-gradient(135deg,#9779dc,#7350c5); box-shadow: 0 8px 18px rgba(96,65,165,.24); }
+body.workspace-active #workspace-app #theory .theory-participant-tags .comparison-target { color: #5a3e8a; background: rgba(235, 226, 255, .76); }
+
+body.workspace-active #workspace-app #reflect .trajectory-sparkline { padding: 0; }
+body.workspace-active #workspace-app #reflect .trajectory-sparkline svg { display: block; width: 100%; }
+body.workspace-active #workspace-app #reflect .trajectory-mini-meta { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+body.workspace-active #workspace-app #reflect .trajectory-mini-meta span { min-width: 0; text-align: center; }
+
+@media (max-width: 1180px) {
+  body.workspace-active #workspace-app #theory .theory-reference-side { grid-template-rows: auto; }
+  body.workspace-active #workspace-app #theory .theory-reference-orbit { min-height: 320px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.workspace-active #workspace-app #theory :is(.theory-reference-orbit::before, .theory-reference-orbit::after, .relation-node, .theory-reference-links path) { animation: none !important; }
+}
+
+body.workspace-active #workspace-app #theory .theory-v3-heading { margin-bottom: 18px; }
+body.workspace-active #workspace-app #theory .theory-core-logic { padding: 20px 22px; border: 1px solid rgba(123,91,194,.15); border-radius: 24px; background: linear-gradient(120deg, rgba(233,225,255,.7), rgba(255,255,255,.62)); }
+body.workspace-active #workspace-app #theory .theory-core-logic > div { display: flex; align-items: center; gap: 9px; color: #6f4fc1; }
+body.workspace-active #workspace-app #theory .theory-core-logic strong { font-size: 18px; }
+body.workspace-active #workspace-app #theory .theory-core-logic p { margin: 12px 0 0; color: #4b4257; font-size: 16px; line-height: 1.82; }
+body.workspace-active #workspace-app #theory .theory-general-applications { margin-top: 22px; }
+body.workspace-active #workspace-app #theory .theory-general-applications > h4 { margin: 0 0 12px; color: #392d50; font-size: 19px; }
+body.workspace-active #workspace-app #theory .theory-general-applications > div { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+body.workspace-active #workspace-app #theory .theory-general-applications article { display: flex; align-items: flex-start; gap: 12px; min-width: 0; padding: 17px; border: 1px solid rgba(120,94,174,.13); border-radius: 22px; background: rgba(255,255,255,.64); }
+body.workspace-active #workspace-app #theory .theory-general-applications article > span,
+body.workspace-active #workspace-app #theory .theory-subject-applications > article > header span { display: grid; flex: 0 0 32px; width: 32px; height: 32px; place-items: center; border-radius: 50%; color: #6d4abb; background: #eee7ff; font-size: 12px; font-weight: 900; }
+body.workspace-active #workspace-app #theory .theory-general-applications h5 { margin: 3px 0 8px; color: #3d3152; font-size: 16px; }
+body.workspace-active #workspace-app #theory .theory-general-applications .theory-source-line { font-size: 15px; line-height: 1.75; }
+
+body.workspace-active #workspace-app #theory .theory-v3-subject-tabs { display: flex; gap: 9px; overflow-x: auto; padding: 7px 7px 10px; border-radius: 22px; background: rgba(235,229,247,.56); scrollbar-width: thin; }
+body.workspace-active #workspace-app #theory .theory-v3-subject-tabs button { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; min-height: 48px; padding: 9px 14px; border: 1px solid transparent; border-radius: 17px; color: #62576d; background: rgba(255,255,255,.62); font-size: 14px; font-weight: 800; transition: transform .32s cubic-bezier(.2,.85,.2,1), background .32s, box-shadow .32s; }
+body.workspace-active #workspace-app #theory .theory-v3-subject-tabs button.active { color: #fff; border-color: rgba(255,255,255,.62); background: linear-gradient(135deg,#9272dd,#7653c7); box-shadow: 0 10px 21px rgba(102,73,171,.21), inset 0 1px rgba(255,255,255,.5); }
+body.workspace-active #workspace-app #theory .theory-v3-subject-tabs button:hover { transform: translateY(-2px); }
+body.workspace-active #workspace-app #theory .theory-v3-subject-tabs svg { width: 17px; height: 17px; }
+body.workspace-active #workspace-app #theory .theory-v3-subject-tabs small { display: grid; min-width: 24px; height: 24px; place-items: center; border-radius: 12px; background: rgba(119,86,190,.1); font-size: 11px; }
+body.workspace-active #workspace-app #theory .theory-v3-subject-tabs button.active small { background: rgba(255,255,255,.2); }
+body.workspace-active #workspace-app #theory .theory-subject-group { margin-top: 18px; }
+body.workspace-active #workspace-app #theory .theory-subject-group > header { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+body.workspace-active #workspace-app #theory .theory-subject-group > header p { margin: 0; color: #8b74be; font-size: 12px; font-weight: 800; }
+body.workspace-active #workspace-app #theory .theory-subject-group > header h4 { margin: 4px 0 0; color: #372a4d; font-size: 21px; }
+body.workspace-active #workspace-app #theory .theory-subject-group > header > span { color: #79679a; font-size: 13px; }
+body.workspace-active #workspace-app #theory .theory-subject-applications { display: grid; gap: 12px; }
+body.workspace-active #workspace-app #theory .theory-subject-applications > article { padding: 18px; border: 1px solid rgba(119,91,177,.13); border-radius: 24px; background: rgba(255,255,255,.64); }
+body.workspace-active #workspace-app #theory .theory-subject-applications > article.limitation { background: rgba(255,249,235,.74); border-color: rgba(210,161,77,.2); }
+body.workspace-active #workspace-app #theory .theory-subject-applications > article > header { display: flex; align-items: center; gap: 10px; }
+body.workspace-active #workspace-app #theory .theory-subject-applications h4 { margin: 0; color: #3b3050; font-size: 17px; }
+body.workspace-active #workspace-app #theory .theory-subject-applications .theory-source-line { margin-top: 10px; font-size: 15px; line-height: 1.78; }
+body.workspace-active #workspace-app #theory .theory-v2-case { margin-top: 12px; padding: 15px 16px; border: 1px solid rgba(119,92,178,.14); border-left: 4px solid #9b7be1; border-radius: 18px; background: rgba(248,245,255,.7); }
+body.workspace-active #workspace-app #theory .theory-v2-case > header { display: flex; align-items: center; gap: 8px; color: #6847b0; }
+body.workspace-active #workspace-app #theory .theory-v2-case strong { font-size: 15px; }
+
+body.workspace-active #workspace-app #theory .theory-classroom-cases { display: grid; gap: 16px; margin-top: 18px; }
+body.workspace-active #workspace-app #theory .theory-classroom-case { padding: 20px; border: 1px solid rgba(119,91,177,.14); border-radius: 26px; background: rgba(255,255,255,.66); }
+body.workspace-active #workspace-app #theory .theory-classroom-case > header { display: flex; align-items: center; gap: 12px; }
+body.workspace-active #workspace-app #theory .theory-classroom-case > header > span { display: grid; flex: 0 0 40px; width: 40px; height: 40px; place-items: center; border-radius: 50%; color: #fff; background: linear-gradient(145deg,#9b7de0,#714fc0); font-size: 13px; font-weight: 900; }
+body.workspace-active #workspace-app #theory .theory-classroom-case > header p { margin: 0; color: #8d77bd; font-size: 12px; font-weight: 800; }
+body.workspace-active #workspace-app #theory .theory-classroom-case > header h4 { margin: 3px 0 0; color: #362a4c; font-size: 19px; }
+body.workspace-active #workspace-app #theory .theory-classroom-contrast { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-top: 16px; }
+body.workspace-active #workspace-app #theory .theory-classroom-contrast > section { min-width: 0; padding: 17px; border-radius: 22px; }
+body.workspace-active #workspace-app #theory .theory-classroom-contrast > section.normal { border: 1px solid rgba(206,139,114,.2); background: rgba(255,245,240,.68); }
+body.workspace-active #workspace-app #theory .theory-classroom-contrast > section.quality { border: 1px solid rgba(119,91,190,.16); background: rgba(245,241,255,.74); }
+body.workspace-active #workspace-app #theory .theory-classroom-contrast header { display: flex; align-items: center; gap: 8px; margin-bottom: 9px; color: #6343ad; }
+body.workspace-active #workspace-app #theory .theory-classroom-contrast .normal header { color: #a45d43; }
+body.workspace-active #workspace-app #theory .theory-classroom-contrast b { font-size: 16px; }
+body.workspace-active #workspace-app #theory .theory-classroom-contrast .theory-source-line { font-size: 15px; line-height: 1.78; }
+body.workspace-active #workspace-app #theory .theory-case-overview { margin-top: 14px; padding: 14px 16px; border-radius: 19px; background: rgba(247,244,253,.7); }
+body.workspace-active #workspace-app #theory .theory-case-interpretation { margin-top: 12px; border-top: 1px dashed rgba(113,85,172,.22); }
+body.workspace-active #workspace-app #theory .theory-case-interpretation summary { display: flex; align-items: center; gap: 8px; padding: 14px 2px 3px; color: #6746af; cursor: pointer; font-size: 15px; font-weight: 800; list-style: none; }
+body.workspace-active #workspace-app #theory .theory-case-interpretation summary svg:last-child { margin-left: auto; }
+body.workspace-active #workspace-app #theory .theory-case-interpretation > div { padding: 12px 14px; border-radius: 18px; background: rgba(241,236,253,.62); }
+body.workspace-active #workspace-app #theory .theory-case-interpretation .theory-source-line { font-size: 15px; line-height: 1.78; }
+
+body.workspace-active #workspace-app #theory .theory-comparison-group > h4 { margin: 0; color: #392c4f; font-size: 21px; }
+body.workspace-active #workspace-app #theory .theory-participant-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 13px; }
+body.workspace-active #workspace-app #theory .theory-participant-tags > span { display: flex; align-items: center; gap: 7px; padding: 8px 11px; border: 1px solid rgba(126,95,190,.14); border-radius: 18px; color: #655775; background: rgba(250,248,255,.78); font-size: 13px; font-weight: 800; }
+body.workspace-active #workspace-app #theory .theory-participant-tags > span.mapped { color: #6541af; background: #eee7ff; }
+body.workspace-active #workspace-app #theory .theory-participant-tags svg { width: 15px; height: 15px; }
+body.workspace-active #workspace-app #theory .theory-participant-tags small { padding-left: 6px; border-left: 1px solid currentColor; font-size: 10px; opacity: .67; }
+body.workspace-active #workspace-app #theory .theory-comparison-table-wrap { margin-top: 16px; overflow-x: auto; border: 1px solid rgba(115,88,171,.14); border-radius: 22px; }
+body.workspace-active #workspace-app #theory .theory-comparison-table-wrap table { width: max-content; min-width: 100%; border-collapse: collapse; table-layout: auto; }
+body.workspace-active #workspace-app #theory .theory-comparison-table-wrap :is(th,td) { min-width: 240px; padding: 15px 16px; border-right: 1px solid rgba(113,87,166,.1); border-bottom: 1px solid rgba(113,87,166,.1); color: #50475b; font-size: 14px; line-height: 1.72; text-align: left; vertical-align: top; white-space: pre-line; }
+body.workspace-active #workspace-app #theory .theory-comparison-table-wrap th:first-child { position: sticky; z-index: 2; left: 0; min-width: 130px; width: 130px; color: #6042a5; background: #f1ebff; font-weight: 900; }
+body.workspace-active #workspace-app #theory .theory-comparison-table-wrap thead th { color: #4e377e; background: #eee7fb; font-weight: 900; }
+body.workspace-active #workspace-app #theory .theory-comparison-table-wrap thead th:first-child { z-index: 3; }
+body.workspace-active #workspace-app #theory .theory-comparison-mobile { display: none; }
+body.workspace-active #workspace-app #theory .theory-comparison-summary { display: flex; gap: 11px; margin-top: 14px; padding: 16px 18px; border: 1px solid rgba(210,166,75,.22); border-radius: 20px; color: #6a5639; background: rgba(255,249,232,.76); }
+body.workspace-active #workspace-app #theory .theory-comparison-summary svg { flex: 0 0 20px; color: #b1802a; }
+body.workspace-active #workspace-app #theory .theory-comparison-summary b { font-size: 16px; }
+body.workspace-active #workspace-app #theory .theory-comparison-summary p { margin: 6px 0 0; font-size: 15px; line-height: 1.75; }
+
+@media (max-width: 1180px) {
+  body.workspace-active #workspace-app #theory .theory-reference-layout { grid-template-columns: 1fr; }
+  body.workspace-active #workspace-app #theory .theory-reference-side { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  body.workspace-active #workspace-app #theory .theory-reference-orbit { min-height: 310px; }
+}
+
+@media (max-width: 820px) {
+  body.workspace-active #workspace-app #theory .theory-detail-tabs { display: flex; overflow-x: auto; }
+  body.workspace-active #workspace-app #theory .theory-detail-tabs button { flex: 0 0 136px; }
+  body.workspace-active #workspace-app #theory .theory-reference-side,
+  body.workspace-active #workspace-app #theory .theory-general-applications > div,
+  body.workspace-active #workspace-app #theory .theory-classroom-contrast { grid-template-columns: 1fr; }
+  body.workspace-active #workspace-app #theory .theory-reference-info-row,
+  body.workspace-active #workspace-app #theory .theory-reference-concept-list .theory-reference-info-row { grid-template-columns: 1fr; }
+  body.workspace-active #workspace-app #theory .theory-reference-info-row dt { padding: 12px 8px 8px; border-right: 0; }
+  body.workspace-active #workspace-app #theory .theory-reference-info-row dd { padding: 7px 8px 14px 52px; }
+  body.workspace-active #workspace-app #theory .theory-comparison-table-wrap { display: none; }
+  body.workspace-active #workspace-app #theory .theory-comparison-mobile { display: grid; gap: 10px; margin-top: 14px; }
+  body.workspace-active #workspace-app #theory .theory-comparison-mobile > section { padding: 15px; border: 1px solid rgba(114,87,170,.13); border-radius: 20px; background: rgba(250,248,255,.74); }
+  body.workspace-active #workspace-app #theory .theory-comparison-mobile h5 { margin: 0 0 10px; color: #6545aa; font-size: 17px; }
+  body.workspace-active #workspace-app #theory .theory-comparison-mobile dl { margin: 9px 0 0; }
+  body.workspace-active #workspace-app #theory .theory-comparison-mobile dt { color: #3d3150; font-size: 14px; font-weight: 900; }
+  body.workspace-active #workspace-app #theory .theory-comparison-mobile dd { margin: 4px 0 0; color: #5b5363; font-size: 14px; line-height: 1.72; }
+}
+
+/* 2026-08-28: compact expanded-map frame and single-scroll ownership. */
+body.workspace-active.theory-map-workspace-expanded #workspace-app .rail {
+  height: var(--theory-map-expanded-rail-height, auto) !important;
+  min-height: 0 !important;
+  max-height: var(--theory-map-expanded-rail-height, none) !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded {
+  overflow: hidden !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage {
+  height: 100% !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  scrollbar-width: none;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map .theory-friend-map-surface {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: calc(100% - 340px) !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scrollbar-gutter: stable;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map .theory-friend-map-preview {
+  width: 100% !important;
+  height: calc(100% + 260px) !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map :is(.theory-friend-map-breadcrumb, .theory-friend-map-controls, .theory-friend-map-caption) {
+  right: 356px !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map .theory-friend-map-caption {
+  position: absolute !important;
+  bottom: 15px !important;
+  z-index: 8 !important;
+  left: 16px !important;
+  max-width: calc(100% - 372px) !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map .theory-friend-map-controls {
+  position: absolute !important;
+  bottom: 58px !important;
+  z-index: 8 !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map .theory-friend-map-breadcrumb {
+  position: absolute !important;
+  z-index: 8 !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map .theory-map-expanded-info {
+  bottom: auto !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage:not(.is-friend-map) {
+  overflow: auto !important;
+  scrollbar-width: thin;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage:not(.is-friend-map) {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scrollbar-gutter: stable;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-friend-map-surface {
+  overflow: hidden !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-map-expanded-info {
+  top: 78px !important;
+  bottom: auto !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* On compact desktop screens the expanded map still shares the viewport with
+   the full rail. Tighten the rail's vertical rhythm so its footer stays
+   visible instead of being clipped below the fold. */
+@media (min-width: 1061px) and (max-width: 1450px) {
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail {
+    padding: 14px 14px 10px !important;
+    overflow-y: auto !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(116, 83, 191, .42) transparent !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar-thumb {
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: rgba(116, 83, 191, .38);
+    background-clip: padding-box;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .brand {
+    min-height: 52px !important;
+    margin-bottom: 13px !important;
+    padding-bottom: 8px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .nav-caption {
+    margin-bottom: 5px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .nav-caption-spaced {
+    margin-top: 13px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .assistant-tree {
+    gap: 4px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .assistant-tree > .assistant-branch > .assistant-nav {
+    min-height: 43px !important;
+    padding: 4px 8px !important;
+    gap: 8px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .assistant-tree > .assistant-branch > .assistant-nav > span {
+    width: 30px !important;
+    height: 30px !important;
+    flex-basis: 30px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .secondary-nav {
+    gap: 5px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .secondary-nav > .nav-link {
+    min-height: 41px !important;
+    padding: 4px 8px !important;
+    gap: 8px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .secondary-nav > .nav-link > span {
+    width: 30px !important;
+    height: 30px !important;
+    flex-basis: 30px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-progress {
+    margin-top: 9px !important;
+    padding: 10px 11px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-progress .signal {
+    margin: 6px 0 !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-progress p {
+    line-height: 1.35 !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-footer {
+    grid-template-columns: 30px minmax(0, 1fr) 28px !important;
+    gap: 6px !important;
+    margin-top: 8px !important;
+    padding: 7px 3px 0 !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-footer .avatar {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-footer .icon-button {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+/* Low-height desktop windows cannot show the full rail at once. Preserve
+   normal navigation sizing and expose an independent rail scrollbar instead
+   of squeezing the controls into unreadable strips. */
+@media (min-width: 1451px) and (max-height: 900px) {
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail {
+    padding: 17px 18px 12px !important;
+    overflow-y: auto !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(116, 83, 191, .42) transparent !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar-thumb {
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: rgba(116, 83, 191, .38);
+    background-clip: padding-box;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-footer {
+    margin-top: 12px !important;
+    padding-top: 12px !important;
+  }
+}
+
+/* Keep the rail controls at their normal proportions in expanded mode. When
+   a short viewport cannot contain the whole rail, scroll the rail itself and
+   preserve a real gap before the study-plan card instead of collapsing it
+   against the resource buttons. */
+@media (min-width: 1061px) {
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail {
+    padding: 20px 18px 16px !important;
+    overflow-y: auto !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(116, 83, 191, .42) transparent !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar-thumb {
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: rgba(116, 83, 191, .38);
+    background-clip: padding-box;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-progress {
+    margin-top: 16px !important;
+    flex: 0 0 auto !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app .rail-footer {
+    margin-top: 16px !important;
+    padding: 12px 4px 0 !important;
+    flex: 0 0 auto !important;
+  }
+}
+
+/* The side stack stretches to the basic-information card, so the two right
+   cards finish on the same baseline without leaving a detached lower gap. */
+body.workspace-active #workspace-app #theory .theory-reference-layout {
+  align-items: stretch !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-side {
+  height: 100% !important;
+  grid-template-rows: minmax(430px, 1.16fr) minmax(360px, 1fr) !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-reference-orbit {
+  min-height: 390px !important;
+}
+
+body.workspace-active #workspace-app #theory .theory-general-applications > div {
+  align-items: start;
+}
+
+body.workspace-active #workspace-app #theory .theory-general-applications article:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+body.workspace-active #workspace-app #theory .theory-source-line.is-subheading {
+  white-space: normal !important;
+}
+
+body.workspace-active #workspace-app #reflect .reflection-q-scene {
+  right: 8.5% !important;
+  width: min(48%, 590px) !important;
+}
+
+body.workspace-active #workspace-app #reflect .reflect-banner {
+  background:
+    radial-gradient(ellipse 42% 62% at 72% 100%, rgba(255,255,255,.68), rgba(255,255,255,0) 76%),
+    linear-gradient(110deg, #8a87e2 0%, #a1a7eb 52%, #c1c3f3 100%) !important;
+}
+
+body.workspace-active #workspace-app #reflect .reflection-banner-art {
+  right: 4% !important;
+  bottom: 0 !important;
+  width: 78% !important;
+  height: 88% !important;
+}
+
+@media (max-width: 1180px) {
+  body.workspace-active #workspace-app #theory .theory-reference-side {
+    height: auto !important;
+    grid-template-rows: none !important;
+  }
+
+  body.workspace-active #workspace-app #theory .theory-reference-orbit {
+    min-height: 350px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map .theory-friend-map-surface {
+    width: 100% !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map :is(.theory-friend-map-breadcrumb, .theory-friend-map-controls, .theory-friend-map-caption) {
+    right: 16px !important;
+  }
+
+  body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host > .theory-library-lens-card.is-expanded .theory-library-lens-stage.is-friend-map .theory-friend-map-caption {
+    left: 16px !important;
+    max-width: calc(100% - 32px) !important;
+  }
+
+  body.workspace-active #workspace-app #reflect .reflection-q-scene {
+    right: 2% !important;
+    width: 58% !important;
+  }
+
+  body.workspace-active #workspace-app #reflect .reflection-banner-art {
+    right: 2% !important;
+    width: 88% !important;
+    height: 90% !important;
+  }
+}
+
+/* 2026-08-29 final rail/map height model. Keep the rail's normal internal
+   proportions and let the whole workspace/document grow vertically. */
+html.theory-map-expanded-document {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded {
+  overflow: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app {
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .shell {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  align-items: start !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .rail {
+  height: var(--theory-map-expanded-rail-height, auto) !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  align-self: start !important;
+  overflow: visible !important;
+  scrollbar-width: auto !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .rail::-webkit-scrollbar {
+  display: none !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app .main {
+  height: var(--theory-map-expanded-main-height, auto) !important;
+  max-height: none !important;
+  align-self: start !important;
+  overflow: visible !important;
+}
+
+body.workspace-active.theory-map-workspace-expanded #workspace-app #theory > .theory-map-expanded-host {
+  height: var(--theory-map-expanded-host-height, auto) !important;
+  min-height: 0 !important;
+}

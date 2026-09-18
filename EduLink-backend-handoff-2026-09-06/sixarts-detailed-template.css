@@ -1,0 +1,46 @@
+/* Reading order and table structure follow the September detailed Word. */
+.sixarts-template-document, .sixarts-template-process { display: grid; gap: 22px; min-width: 0; }
+.sixarts-template-section { min-width: 0; padding: clamp(18px, 3vw, 30px); border: 1px solid #e3def3; border-radius: 18px; background: #fff; box-shadow: 0 4px 18px #35236806; }
+.sixarts-template-section h3 { margin: 0 0 20px; color: #49367b; font-size: 19px; line-height: 1.6; text-align: left; }
+.sixarts-template-section h3 small { font-size: 14px; font-weight: 400; color: #756987; }
+.sixarts-template-section h4 { margin: 24px 0 14px; color: #49367b; line-height: 1.7; }
+.sixarts-template-subsection + .sixarts-template-subsection { margin-top: 24px; padding-top: 4px; border-top: 1px solid #eeeaf6; }
+.sixarts-template-fields { display: grid; gap: 14px; }
+.sixarts-template-field { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; line-height: 1.85; color: #4a4556; }
+.sixarts-template-field > b { color: #63517d; }
+.sixarts-template-field > div { flex: 1 1 280px; min-width: 0; }
+.sixarts-template-section [contenteditable] { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.85; border-radius: 4px; }
+.sixarts-template-section [contenteditable]:focus { outline: 2px solid #b9a5e3; background: #faf8ff; }
+.sixarts-template-table-wrap { max-width: 100%; overflow-x: auto; border: 1px solid #e3def3; border-radius: 10px; }
+.sixarts-template-table { border-collapse: collapse; width: 100%; table-layout: fixed; color: #4a4556; font-size: 14px; }
+.sixarts-template-table th { background: #f2edf9; color: #584176; text-align: left; font-weight: 600; }
+.sixarts-template-table th, .sixarts-template-table td { padding: 12px 16px; border-bottom: 1px solid #e8e2f2; border-right: 1px solid #e8e2f2; vertical-align: top; line-height: 1.85; overflow-wrap: anywhere; }
+.sixarts-template-table th:last-child, .sixarts-template-table td:last-child { border-right: 0; }
+.sixarts-template-table tr:last-child td { border-bottom: 0; }
+.sixarts-template-table th:first-child { width: 18%; }
+.sixarts-template-table:has(th:nth-child(4)) { min-width: 610px; }
+.sixarts-template-table:has(th:nth-child(4)) th:not(:last-child) { width: 15%; }
+.sixarts-template-steps { padding-left: 24px; line-height: 1.9; }
+.sixarts-template-steps > li + li { margin-top: 12px; }
+.sixarts-template-step-details { margin-top: 6px; }
+.sixarts-template-step-details summary { color: #795f9f; cursor: pointer; font-size: 13px; }
+.sixarts-template-step-details .sixarts-template-field { margin-top: 10px; }
+.sixarts-template-notes { display: grid; gap: 12px; margin-top: 22px; padding: 18px; background: #f8f6fc; border-radius: 10px; }
+.sixarts-template-evaluation { display: grid; gap: 22px; min-width: 0; }
+.sixarts-template-evaluation .sixarts-template-section > p { margin: -8px 0 20px; color: #776e85; line-height: 1.8; }
+.sixarts-template-evaluation .sixarts-template-table:has(th:nth-child(6)) { min-width: 960px; }
+.sixarts-template-evaluation .sixarts-template-table:has(th:nth-child(6)) th:first-child { width: 7%; }
+.sixarts-template-evaluation .sixarts-template-table:has(th:nth-child(6)) th:nth-child(5) { width: 180px; }
+.sixarts-template-evaluation .sixarts-template-table:has(th:nth-child(3)):not(:has(th:nth-child(4))) th:last-child { width: 180px; }
+.sixarts-template-evaluation .sixarts-evaluation-text textarea { width: 100%; box-sizing: border-box; min-width: 0; }
+#sixarts .sixarts-template-evaluation .sixarts-template-table { min-width: 0; }
+#sixarts .sixarts-template-evaluation .sixarts-template-table:has(th:nth-child(3)) { min-width: 560px; }
+#sixarts .sixarts-template-evaluation .sixarts-template-table:has(th:nth-child(6)) { min-width: 960px; }
+body.workspace-active #workspace-app #sixarts .sixarts-template-evaluation .sixarts-grade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 128px; min-width: 0; gap: 6px; margin: 0; }
+body.workspace-active #workspace-app #sixarts .sixarts-template-evaluation .sixarts-grade label { justify-content: center; gap: 4px; padding: 5px; min-width: 0; }
+@media (max-width: 650px) {
+  .sixarts-template-section { padding: 16px; }
+  .sixarts-template-field > div { flex-basis: 100%; }
+  .sixarts-template-table th, .sixarts-template-table td { padding: 10px; }
+  .sixarts-template-table th:first-child { width: 23%; }
+}

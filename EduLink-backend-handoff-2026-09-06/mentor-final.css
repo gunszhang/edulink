@@ -1,0 +1,70 @@
+/* Final navigation mentor treatment. Keep the full-body asset crisp and
+   separate from the compact Theory Library launcher. */
+@media (min-width: 640px) {
+  body.workspace-active #workspace-app .rail.rail-mentor-room {
+    overflow: visible !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card {
+    position: relative !important;
+    display: block !important;
+    flex: 0 0 clamp(340px, 43vh, 510px) !important;
+    width: 100% !important;
+    height: clamp(340px, 43vh, 510px) !important;
+    min-height: 340px !important;
+    margin: 12px 0 10px !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+
+  /* The former card's broad radial sheen is what made the rail look foggy. */
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card::after {
+    display: none !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card > span,
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card > svg {
+    display: none !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card img {
+    position: absolute !important;
+    z-index: 2 !important;
+    left: calc(50% + 5px) !important;
+    bottom: -4px !important;
+    display: block !important;
+    width: 140% !important;
+    max-width: none !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    filter: none !important;
+    transform: translateX(-50%) !important;
+    transform-origin: 50% 100% !important;
+    transition: transform 520ms cubic-bezier(.2, 1.5, .3, 1) !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:hover img,
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:focus-visible img {
+    transform: translateX(-50%) translateY(-8px) scale(1.035) !important;
+  }
+
+  /* Keep the prompt beside the head instead of over the character. */
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card::before {
+    top: 12px !important;
+    left: calc(50% + 42px) !important;
+    max-width: 152px !important;
+    transform: translate(0, -7px) scale(.88) !important;
+    transform-origin: 0 100% !important;
+  }
+
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:hover::before,
+  body.workspace-active #workspace-app .rail.rail-mentor-room .rail-mentor-card:focus-visible::before {
+    transform: translate(0, 0) scale(1) !important;
+  }
+}

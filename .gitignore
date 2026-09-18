@@ -1,0 +1,17 @@
+.runtime/
+.venv/
+.venv-asr/
+__pycache__/
+*.py[cod]
+config/local.env
+.env
+rag/data/*
+!rag/data/.gitkeep
+知识库/*
+!知识库/.gitkeep
+艺智备课/*
+!艺智备课/.gitkeep
+课堂观察助手/*
+!课堂观察助手/.gitkeep
+教学反思/*
+!教学反思/.gitkeep

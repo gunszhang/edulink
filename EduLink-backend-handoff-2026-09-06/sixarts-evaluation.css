@@ -1,0 +1,40 @@
+#sixarts .sixarts-editable-evaluation .sixarts-grade {
+  display: flex; flex-wrap: nowrap; gap: 6px; border: 0; padding: 4px 0; margin: 8px 0; min-width: 164px;
+}
+#sixarts .sixarts-grade legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+#sixarts .sixarts-grade label { display: flex; align-items: center; gap: 3px; cursor: pointer; margin: 0; color: #4d4066; font-size: 14px; }
+#sixarts .sixarts-grade input { appearance: auto; width: 16px; height: 16px; margin: 0; accent-color: #7356c2; }
+#sixarts .sixarts-grade label:has(input:checked) { color: #603bb6; font-weight: 700; }
+#sixarts .sixarts-grade input:focus-visible { outline: 2px solid #7356c2; outline-offset: 3px; }
+#sixarts .sixarts-evaluation-text { display: grid; gap: 6px; margin: 12px 0; min-width: 0; text-align: left; }
+#sixarts .sixarts-evaluation-text > span { font-size: 13px; color: #665b76; }
+#sixarts .sixarts-evaluation-text textarea { display: block; width: 100%; min-height: 84px; box-sizing: border-box; resize: vertical; padding: 10px; border: 1px solid #d9d1e7; border-radius: 8px; background: #fff; color: #30293d; font: inherit; line-height: 1.6; }
+#sixarts .sixarts-evaluation-check { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; }
+#sixarts .sixarts-evaluation-check input { appearance: auto; flex: 0 0 auto; width: 18px; height: 18px; margin-top: 3px; accent-color: #7356c2; }
+#sixarts .sixarts-editable-evaluation table { min-width: 850px; }
+#sixarts .sixarts-editable-evaluation th:last-child { min-width: 190px; }
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-summary-table-wrap { overflow-x: auto; }
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-section { scroll-margin-top: 100px; }
+#sixarts .sixarts-evaluation-hint { color: #6c617c; line-height: 1.6; }
+body.workspace-active #workspace-app #sixarts .sixarts-evaluation-details.is-detailed-evaluation { display: block !important; min-width: 0; }
+body.workspace-active #workspace-app #sixarts [data-workspace-panel="sixarts-evaluate"] .sixarts-rubric-shell { display: none !important; }
+#sixarts .sixarts-editable-evaluation { display: grid; gap: 18px; min-width: 0; }
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-section { min-width: 0; }
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-tabs { display: flex; gap: 8px; overflow-x: auto; }
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-tabs button { flex: 1 0 auto; border: 1px solid #e2dbee; border-radius: 10px; padding: 10px; background: #f7f4fc; color: #54416f; cursor: pointer; }
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-heading { display: flex; align-items: start; gap: 12px; margin-bottom: 16px; }
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-grid,
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-student-grid,
+#sixarts .sixarts-editable-evaluation .sixarts-self-reflection-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-card,
+#sixarts .sixarts-editable-evaluation .sixarts-detailed-student-card { padding: 18px; border: 1px solid #e3ddec; border-radius: 14px; min-width: 0; }
+@media (max-width: 700px) {
+  #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-grid,
+  #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-grid,
+  #sixarts .sixarts-editable-evaluation .sixarts-self-reflection-columns { grid-template-columns: minmax(0, 1fr); }
+  body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-list > div {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 8px;
+  }
+  body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-grade { justify-content: flex-start; }
+}

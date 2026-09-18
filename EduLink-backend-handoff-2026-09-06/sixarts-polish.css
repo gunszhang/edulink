@@ -1,0 +1,98 @@
+/* Shared color and alignment for concise/detailed evaluation and visual assets. */
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation { --ink: #413556; --muted: #80748e; --accent: #7954c6; color: var(--ink); gap: 24px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-section { background: #fff; border: 1px solid #e8e1f0; border-radius: 22px; padding: 24px; box-shadow: 0 6px 24px #67518b08; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-heading { align-items: center; margin-bottom: 20px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation :is(.sixarts-detailed-evaluation-heading, .sixarts-detailed-teacher-card > header, .sixarts-detailed-student-card > header) { justify-content: flex-start !important; text-align: left !important; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation :is(.sixarts-detailed-evaluation-heading, .sixarts-detailed-teacher-card > header) > div { margin-left: 0 !important; text-align: left !important; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-heading > span { display: grid; place-items: center; background: #eee7fb; color: #7851c1; min-width: 42px; height: 42px; border-radius: 13px; font-size: 17px; font-weight: 800; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-heading h3 { margin: 0 0 5px; color: #49365f; font-size: 18px; line-height: 1.45; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-heading p { margin: 0; color: #8c7e9d; font-size: 13px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-tabs { background: #f4effb; padding: 8px; border: 1px solid #e4daf3; border-radius: 16px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-tabs button { background: #fff; color: #7050a8; border: 0; border-radius: 11px; min-height: 46px; font-weight: 600; white-space: nowrap; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-tabs button b { margin-right: 7px; color: #997cc6; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-grid { align-items: start; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-card { border-color: #e4d9f5; background: #f9f6ff; padding: 18px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .teacher-tone-2 { border-color: #d7e5fb; background: #f3f7ff; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .teacher-tone-3 { border-color: #f1dcea; background: #fff5fa; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .teacher-tone-4 { border-color: #eedfc6; background: #fff9ef; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-card > header { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #8460a91c; padding: 0 0 14px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-card > header > span { color: #936fbf; font-weight: 800; font-size: 20px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-card > header small { display: block; color: #998aa6; font-size: 12px; margin-top: 4px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-list > div { display: grid; grid-template-columns: minmax(0,1fr); gap: 8px; padding: 16px 0; border-bottom: 1px solid #8b69ab16; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-list strong { color: #7351a3; font-size: 14px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-teacher-list p { font-size: 14px; line-height: 1.75; margin: 0; color: #62566f; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-grade { margin: 2px 0; gap: 10px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-grade label { padding: 6px 9px; border: 1px solid #dfd5eb; border-radius: 8px; background: #ffffffb8; gap: 5px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-grade label:has(input:checked) { color: #6742a6; background: #eee4ff; border-color: #a886d5; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-summary-table { border-collapse: separate; border-spacing: 0; width: 100%; background: #fff; font-size: 13px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-summary-table th { padding: 14px 12px; color: #74549e; background: #f2ecfb; border: 0; text-align: left; white-space: nowrap; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-summary-table td { padding: 14px 12px; border: 0; border-bottom: 1px solid #ede7f4; vertical-align: top; line-height: 1.65; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-summary-table tr:nth-child(even) td { background: #fcfaff; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-summary-table td:nth-last-child(2) { min-width: 230px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-summary-table td:last-child { min-width: 240px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-grid { align-items: stretch; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-card { display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #ab90dc; background: #faf7ff; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-card:nth-child(2n) { background: #f2f8ff; border-top-color: #91b6e6; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-card:nth-child(3n) { background: #fff8f0; border-top-color: #dcb889; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-card > header { display: flex; gap: 12px; align-items: center; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-card > header > span { display: inline-flex; align-items: center; gap: 6px; color: #7c59a6; font-weight: 800; font-size: 20px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-card svg { width: 24px; height: 24px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-student-card > .sixarts-evaluation-text { margin-top: auto; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-self-reflection-columns { align-items: start; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-self-reflection-columns > div { background: #f8f4fd; border: 1px solid #e8ddf3; border-radius: 15px; padding: 20px; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-self-reflection-columns ul { padding: 0; list-style: none; }
+body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-self-reflection-columns li { padding: 12px 0; border-bottom: 1px solid #e6ddf0; }
+/* Concise process: short overview first, source details can be expanded. */
+body.workspace-active[data-sixarts-detail="concise"] #workspace-app #sixarts #sixarts-process-output { display: block !important; width: 100% !important; }
+#sixarts .sixarts-concise-timeline { width: 100%; }
+#sixarts .sixarts-concise-timeline { display: grid; gap: 22px; min-width: 0; }
+#sixarts .concise-stage-card { background: #fff; border: 1px solid #e5dbf0; border-radius: 22px; padding: 24px; min-width: 0; box-shadow: 0 7px 25px #71529808; }
+#sixarts .concise-stage-card > header { display: flex; align-items: center; gap: 14px; padding-bottom: 18px; border-bottom: 1px solid #eee7f5; }
+#sixarts .concise-stage-number { display: grid; place-items: center; width: 48px; height: 48px; flex-shrink: 0; border-radius: 14px; color: #835dc1; background: #eee7fa; font-size: 22px; font-weight: 800; }
+#sixarts .concise-stage-card h3 { margin: 0 0 5px; font-size: 19px; color: #4c375f; }
+#sixarts .concise-stage-card [data-stage-time] { color: #9482a5; font-size: 13px; }
+#sixarts .concise-stage-art { margin-left: auto; padding: 9px 12px; border-radius: 12px; background: #f5f0fc; color: #8663b2; font-size: 12px; max-width: 40%; }
+#sixarts .concise-stage-actors, #sixarts .concise-stage-notes { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin-top: 18px; }
+#sixarts .concise-stage-actors > section { padding: 18px; background: #f8f5fc; border-radius: 14px; }
+#sixarts .concise-stage-actors > section + section { background: #f1f7fd; }
+#sixarts .concise-stage-card h4 { color: #77559d; font-size: 14px; margin: 0 0 9px; }
+#sixarts .concise-stage-card [data-stage-field] { color: #64586e; font-size: 14px; line-height: 1.85; overflow-wrap: anywhere; }
+#sixarts .concise-stage-fusion { margin-top: 18px; padding: 16px 18px; border-left: 3px solid #aa8bcf; border-radius: 0 12px 12px 0; background: #faf5ff; }
+#sixarts .concise-stage-steps { margin-top: 18px; }
+#sixarts .concise-process-details { margin-top: 18px; border-top: 1px solid #eee7f5; padding-top: 12px; }
+#sixarts .concise-process-details summary { cursor: pointer; color: #9271b9; font-size: 13px; padding: 5px 0; }
+#sixarts .concise-process-details summary span { margin-left: 10px; color: #b1a1c2; }
+#sixarts .concise-process-details article { padding: 16px; margin-top: 10px; background: #fcfaff; border: 1px solid #eee6f7; border-radius: 12px; }
+#sixarts .concise-process-details dl { display: grid; grid-template-columns: 90px minmax(0,1fr); gap: 8px; font-size: 13px; line-height: 1.75; margin: 0; }
+#sixarts .concise-process-details dt { color: #9480a8; }
+#sixarts .concise-process-details dd { margin: 0; color: #665872; }
+/* Board images keep their native aspect ratio and readable captions. */
+#sixarts .sixarts-board-panel { margin-top: 28px; display: grid; gap: 20px; min-width: 0; }
+#sixarts .lesson-visual-heading { padding: 0 6px; display: flex; gap: 20px; align-items: center; justify-content: space-between; }
+#sixarts .lesson-visual-heading span { color: #a08ab6; font-size: 12px; }
+#sixarts .lesson-visual-heading h2 { font-size: 23px; margin: 6px 0; color: #523866; }
+#sixarts .lesson-visual-heading p { font-size: 13px; color: #9d8cab; }
+#sixarts .lesson-visual-card { padding: 24px; border-radius: 22px; border: 1px solid #e4daef; background: #fff; min-width: 0; }
+#sixarts .lesson-visual-card > header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+#sixarts .lesson-visual-kicker { font-size: 10px; letter-spacing: 2px; color: #aa96bd; }
+#sixarts .lesson-visual-card h3 { margin: 7px 0 16px; font-size: 19px; color: #5a4070; }
+#sixarts .lesson-visual-origin { color: #9573b5; background: #f5eefd; padding: 6px 10px; border-radius: 20px; font-size: 12px; }
+#sixarts .lesson-visual-card figure { margin: 0 0 15px; background: #f7f4fa; border: 1px solid #ede5f4; border-radius: 14px; overflow: hidden; }
+#sixarts .lesson-visual-card img { display: block; width: 100%; height: auto; max-height: 680px; object-fit: contain; }
+#sixarts .lesson-visual-card figcaption { display: flex; align-items: center; gap: 12px; justify-content: space-between; padding: 13px; color: #927da5; font-size: 12px; flex-wrap: wrap; }
+#sixarts .lesson-visual-card button { cursor: pointer; padding: 10px 16px; color: #fff; background: #8966bd; border: 0; border-radius: 10px; font: inherit; font-size: 13px; }
+#sixarts .lesson-visual-card button:disabled { opacity: .5; cursor: wait; }
+#sixarts .lesson-visual-empty, #sixarts .lesson-visual-progress { color: #9d8aaf; font-size: 14px; padding: 20px; background: #faf7fd; border-radius: 12px; }
+#sixarts .lesson-visual-error { color: #a15d6e; background: #fff4f6; padding: 14px; border-radius: 12px; }
+#sixarts .lesson-visual-brief { display: grid; gap: 10px; font-size: 13px; color: #876e9d; margin: 14px 0; }
+#sixarts .lesson-visual-brief textarea { padding: 12px; border: 1px solid #e3d7ee; border-radius: 10px; resize: vertical; font: inherit; }
+@media(max-width:700px) {
+  body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-detailed-evaluation-section { padding: 16px; }
+  body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-grade { gap: 5px; flex-wrap: wrap; }
+  body.workspace-active #workspace-app #sixarts .sixarts-editable-evaluation .sixarts-grade label { padding: 6px; }
+  #sixarts .concise-stage-card, #sixarts .lesson-visual-card { padding: 16px; }
+  #sixarts .concise-stage-card > header { flex-wrap: wrap; }
+  #sixarts .concise-stage-art { margin-left: 0; max-width: none; }
+  #sixarts .concise-stage-actors, #sixarts .concise-stage-notes { grid-template-columns: minmax(0,1fr); }
+  #sixarts .lesson-visual-heading { flex-direction: column; align-items: start; gap: 0; }
+}

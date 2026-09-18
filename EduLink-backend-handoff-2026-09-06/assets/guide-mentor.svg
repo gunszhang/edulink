@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 760" role="img" aria-labelledby="title desc">
+  <title id="title">EduLink 虚拟讲解员小智</title>
+  <desc id="desc">穿紫色外套、手持教学平板并作讲解手势的女性虚拟人物</desc>
+  <defs>
+    <linearGradient id="hair" x1="92" y1="116" x2="328" y2="462" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3b253b"/>
+      <stop offset=".52" stop-color="#251827"/>
+      <stop offset="1" stop-color="#17121d"/>
+    </linearGradient>
+    <linearGradient id="jacket" x1="116" y1="334" x2="334" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b6a9ff"/>
+      <stop offset=".55" stop-color="#8f7bea"/>
+      <stop offset="1" stop-color="#725bce"/>
+    </linearGradient>
+    <linearGradient id="trousers" x1="146" y1="504" x2="292" y2="724" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#e9e9f3"/>
+    </linearGradient>
+    <linearGradient id="tablet" x1="82" y1="410" x2="190" y2="544" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7c68dc"/>
+      <stop offset="1" stop-color="#4d3aa8"/>
+    </linearGradient>
+    <radialGradient id="skin" cx="45%" cy="30%" r="75%">
+      <stop stop-color="#ffe4d4"/>
+      <stop offset="1" stop-color="#edb89f"/>
+    </radialGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="221" cy="726" rx="128" ry="19" fill="#4b3479" opacity=".18" filter="url(#softShadow)"/>
+  <circle cx="338" cy="186" r="28" fill="#b5a4ff" opacity=".16" filter="url(#glow)"/>
+  <path d="M346 166v40M326 186h40" stroke="#8b72ea" stroke-width="4" stroke-linecap="round" opacity=".66"/>
+
+  <path d="M114 244c-27 54-22 151 12 203 18 28 42 41 68 42h77c33-7 59-28 70-62 19-59 10-137-13-183-21-43-59-67-107-67-50 0-85 22-107 67Z" fill="url(#hair)"/>
+  <path d="M137 260c-15 51-10 126 11 169 7 15 20 31 36 39-24-55-19-150 5-205l-52-3Zm166-4c20 55 25 142 4 199 17-10 29-24 36-45 13-42 6-111-12-153l-28-1Z" fill="#6b4568" opacity=".45"/>
+
+  <path d="M179 318h84v70c-14 22-69 23-84 0v-70Z" fill="url(#skin)"/>
+  <ellipse cx="220" cy="257" rx="88" ry="103" fill="url(#skin)"/>
+  <ellipse cx="134" cy="270" rx="14" ry="22" fill="#efb79e"/>
+  <ellipse cx="306" cy="270" rx="14" ry="22" fill="#efb79e"/>
+  <path d="M135 245c0-79 37-122 94-122 62 0 95 47 86 130-22-25-39-58-48-86-25 35-67 60-132 78Z" fill="url(#hair)"/>
+  <path d="M163 180c18-45 65-70 106-45-39-5-69 11-91 46-18 29-34 43-48 49 9-16 20-32 33-50Z" fill="#68425f" opacity=".46"/>
+  <path d="M160 244c15-11 31-12 47-3M234 241c16-9 32-7 46 4" fill="none" stroke="#5b3d46" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="184" cy="266" rx="9" ry="12" fill="#302333"/>
+  <ellipse cx="257" cy="266" rx="9" ry="12" fill="#302333"/>
+  <circle cx="181" cy="262" r="3" fill="#fff"/>
+  <circle cx="254" cy="262" r="3" fill="#fff"/>
+  <path d="M217 268c-3 13-6 23-2 29 4 4 10 4 15 1" fill="none" stroke="#d99a86" stroke-width="4" stroke-linecap="round"/>
+  <path d="M190 316c19 17 42 17 61 0" fill="#fff" stroke="#b96770" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="164" cy="296" r="13" fill="#ef8f9c" opacity=".22"/>
+  <circle cx="277" cy="296" r="13" fill="#ef8f9c" opacity=".22"/>
+  <g fill="none" stroke="#493d57" stroke-width="5">
+    <rect x="153" y="248" width="55" height="39" rx="18"/>
+    <rect x="232" y="248" width="55" height="39" rx="18"/>
+    <path d="M208 262h24M149 258l-16-5M291 258l15-5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M132 391c21-31 52-44 89-44 44 0 77 15 96 48l20 150H105l27-154Z" fill="url(#jacket)"/>
+  <path d="M184 357h74l-12 120h-52l-10-120Z" fill="#fff"/>
+  <path d="m183 358 37 50 38-50-13 91-25-34-25 34-12-91Z" fill="#f7f4ff"/>
+  <path d="M220 405v78" stroke="#715ac8" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="220" cy="441" r="5" fill="#725ccc"/>
+  <circle cx="220" cy="464" r="5" fill="#725ccc"/>
+  <path d="M142 386c-33 35-47 84-50 129l48 9 37-105-35-33Z" fill="#9b88ef"/>
+  <path d="M299 386c25 15 39 37 52 60l-35 25-46-61 29-24Z" fill="#8974df"/>
+  <path d="M345 444c23-15 43-38 60-56 8-9 21-9 27-1 6 8 3 18-5 26-21 21-40 45-72 68l-10-37Z" fill="url(#skin)"/>
+  <path d="M403 390c8-4 17-11 24-18M408 398c9-2 18-7 25-12M410 406c8 0 17-3 24-7" fill="none" stroke="#d89984" stroke-width="4" stroke-linecap="round"/>
+  <path d="M315 437c12-7 24-12 36-14l22 43c-9 8-19 15-30 20l-28-49Z" fill="#7962d2"/>
+
+  <rect x="74" y="424" width="119" height="154" rx="23" fill="url(#tablet)" transform="rotate(-7 74 424)"/>
+  <rect x="85" y="437" width="96" height="128" rx="15" fill="#f4f1ff" opacity=".9" transform="rotate(-7 85 437)"/>
+  <circle cx="133" cy="478" r="21" fill="#8a73e7"/>
+  <path d="M124 478h18M133 469v18" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M111 518h51M107 536h57" stroke="#a99ce0" stroke-width="7" stroke-linecap="round"/>
+  <path d="M137 492c-16-2-30 1-41 12-8 8-8 20-1 27 8 7 20 5 28-3 9-9 15-10 25-8l-11-28Z" fill="url(#skin)"/>
+
+  <path d="M130 528h88v26c-11 20-74 20-88 0v-26Zm88 0h89v26c-17 19-78 20-89 0v-26Z" fill="#f7f6fb"/>
+  <path d="M133 547c-1 62-2 119-9 171h83l13-169-87-2Z" fill="url(#trousers)"/>
+  <path d="M220 549l15 169h83c-9-57-10-114-10-171l-88 2Z" fill="url(#trousers)"/>
+  <path d="M124 704c-20 2-33 8-41 18-5 7 1 15 10 15h106c10 0 14-7 10-19l-85-14Zm194 0c20 2 33 8 41 18 5 7-1 15-10 15H243c-10 0-14-7-10-19l85-14Z" fill="#fbfbff" stroke="#d7d5e4" stroke-width="3"/>
+  <path d="M220 549v162" stroke="#d7d6e3" stroke-width="3" opacity=".7"/>
+
+  <g transform="translate(254 365)">
+    <rect width="64" height="78" rx="15" fill="#fff" opacity=".94"/>
+    <path d="M16 22h32M16 36h24M16 50h28" stroke="#8068dc" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="32" cy="67" r="5" fill="#8068dc"/>
+  </g>
+  <path d="M284 351v14" stroke="#5e47b8" stroke-width="5" stroke-linecap="round"/>
+</svg>

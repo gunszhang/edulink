@@ -1,0 +1,1662 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>EduLink · 教育理论与实践智能工作台</title>
+    <link rel="icon" href="./assets/default-avatar.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=20260827-theory-map-v2" />
+    <link rel="stylesheet" href="./final-overrides.css?v=20260831-request-v1" />
+    <link rel="stylesheet" href="./mentor-final.css?v=20260831-mentor-v4" />
+    <link rel="stylesheet" href="./latest-overrides.css?v=20260911-observation-cases-v2" />
+    <link rel="stylesheet" href="./textbook-resources.css?v=20260910-training-history-v5" />
+    <link rel="stylesheet" href="./literature-navigation.css?v=20260911-references-v2" />
+    <link rel="stylesheet" href="./sixarts-evaluation.css?v=20260912-evaluation-v2" />
+    <link rel="stylesheet" href="./sixarts-polish.css?v=20260912-visuals-v2" />
+    <link rel="stylesheet" href="./sixarts-detailed-template.css?v=20260913-detailed-v1" />
+    <link rel="stylesheet" href="./observation-overview.css?v=20260914-layout-v1" />
+  </head>
+  <body>
+    <div class="entry-experience" id="entry-experience">
+      <header class="entry-header">
+        <a class="entry-brand" href="#entry-top" aria-label="EduLink 首页">
+          <span><i data-lucide="sparkles"></i></span>
+          <b>EduLink</b>
+        </a>
+        <nav class="entry-nav" aria-label="首页导航">
+          <button type="button" data-entry-scroll="entry-method">工作方式</button>
+          <button type="button" data-entry-scroll="entry-assistants">智能助手</button>
+        </nav>
+        <button class="entry-login" type="button" id="entry-login">
+          <span>登录工作台</span><i data-lucide="arrow-up-right"></i>
+        </button>
+      </header>
+
+      <main id="entry-top">
+        <section class="entry-hero" aria-labelledby="entry-title">
+          <img class="entry-hero-image" src="./assets/entry-hero-background.jpg" alt="师生在课堂中开展学习活动" />
+          <div class="entry-hero-shade" aria-hidden="true"></div>
+          <div class="entry-hero-grid" aria-hidden="true"></div>
+
+          <div class="entry-hero-copy">
+            <p class="entry-kicker"><span></span> EDUCATIONAL INTELLIGENCE / 2026</p>
+            <h1 id="entry-title">EduLink</h1>
+            <p class="entry-lead">让每一次课堂发生，都成为可解释、可改进、可沉淀的专业证据。</p>
+            <div class="entry-actions">
+              <button class="entry-primary" type="button" id="entry-primary">
+                登录并进入 <i data-lucide="arrow-right"></i>
+              </button>
+              <button class="entry-secondary" type="button" data-entry-scroll="entry-method">
+                了解工作方式 <i data-lucide="move-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="entry-evidence-stage" aria-label="课堂分析能力预览">
+            <article class="entry-evidence entry-evidence-main" data-entry-destination="observe-overview" role="button" tabindex="0" aria-label="进入课堂观察助手">
+              <header><span>CLASSROOM PULSE</span><b><i></i> LIVE</b></header>
+              <div class="entry-pulse-value"><strong>86</strong><span>综合证据完整度</span></div>
+              <svg viewBox="0 0 520 146" role="img" aria-label="课堂互动趋势预览">
+                <path class="entry-grid-line" d="M10 28H510M10 73H510M10 118H510"></path>
+                <path class="entry-line entry-line-a" d="M10 103 C62 86,78 52,126 69 S205 122,252 75 S329 42,374 59 S450 105,510 37"></path>
+                <path class="entry-line entry-line-b" d="M10 120 C63 111,83 82,132 91 S205 107,254 98 S323 74,371 87 S455 83,510 68"></path>
+              </svg>
+              <footer><span><i class="entry-dot coral"></i>教师话语</span><span><i class="entry-dot lime"></i>学生话语</span><b>6 层分析链</b></footer>
+            </article>
+
+            <article class="entry-evidence entry-evidence-score" data-entry-destination="sixarts-overview" role="button" tabindex="0" aria-label="进入艺智备课助手">
+              <span class="entry-mini-icon"><i data-lucide="palette"></i></span>
+              <small>艺智备课</small><strong>6</strong><em>维</em>
+              <p>新六艺融合模型已连接</p>
+            </article>
+
+            <article class="entry-evidence entry-evidence-theory" data-entry-destination="theory-overview" role="button" tabindex="0" aria-label="进入理论学习助手">
+              <header><span>THEORY MATCH</span><i data-lucide="book-open-check"></i></header>
+              <b>建构主义学习理论</b>
+              <div><span style="--match: 92%"></span></div>
+              <small>课堂证据已建立双向关联</small>
+            </article>
+
+            <article class="entry-evidence entry-evidence-note" data-entry-destination="reflect-overview" role="button" tabindex="0" aria-label="进入反思与成果转化助手">
+              <i data-lucide="sparkles"></i>
+              <span><small>下一步建议</small><b>增加学生主动提问</b></span>
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+          </div>
+
+          <div class="entry-hero-foot">
+            <span>01 / CLASSROOM EVIDENCE</span>
+            <button type="button" data-entry-scroll="entry-method" title="向下浏览"><i data-lucide="arrow-down"></i></button>
+            <span>OBSERVE · EXPLAIN · TRANSFORM</span>
+          </div>
+        </section>
+
+        <section class="entry-method" id="entry-method">
+          <div class="entry-method-heading">
+            <p>FROM MOMENT TO METHOD</p>
+            <h2><span>不止看见课堂，</span><span>更要解释课堂。</span></h2>
+            <p>EduLink 将逐字稿、音视频时间点、行为编码与教育理论放在同一条证据链中，让观察结论有出处，让改进建议能落地。</p>
+          </div>
+          <div class="entry-method-flow" aria-label="EduLink 工作流程">
+            <article class="method-video-card" tabindex="0" data-method-video>
+              <div class="method-media">
+                <video muted loop playsinline preload="none" aria-label="课堂事实采集场景"></video>
+                <span class="method-media-label"><i></i> EVIDENCE INTAKE</span>
+                <span class="method-play"><i data-lucide="play"></i></span>
+              </div>
+              <div class="method-card-copy"><span>01</span><i data-lucide="file-audio"></i><b>采集课堂事实</b><p>导入逐字稿、文档或音视频，保留可回看的证据位置。</p></div>
+            </article>
+            <i data-lucide="arrow-right"></i>
+            <article class="method-video-card" tabindex="0" data-method-video>
+              <div class="method-media">
+                <video muted loop playsinline preload="none" aria-label="数据分析与解释场景"></video>
+                <span class="method-media-label"><i></i> THEORY MAPPING</span>
+                <span class="method-play"><i data-lucide="play"></i></span>
+              </div>
+              <div class="method-card-copy"><span>02</span><i data-lucide="waypoints"></i><b>建立解释链</b><p>识别行为、匹配理论、判断理论在真实课堂中的落地程度。</p></div>
+            </article>
+            <i data-lucide="arrow-right"></i>
+            <article class="method-video-card" tabindex="0" data-method-video>
+              <div class="method-media">
+                <video muted loop playsinline preload="none" aria-label="教师整理专业成果场景"></video>
+                <span class="method-media-label"><i></i> OUTCOME STUDIO</span>
+                <span class="method-play"><i data-lucide="play"></i></span>
+              </div>
+              <div class="method-card-copy"><span>03</span><i data-lucide="file-chart-column"></i><b>生成专业成果</b><p>形成可编辑报告、教学反思、研究框架与完整成果包。</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="entry-assistants" id="entry-assistants">
+          <div class="entry-assistant-copy">
+            <p>ONE SYSTEM / FOUR ASSISTANTS</p>
+            <h2>从理论，到课堂，再到成果。</h2>
+            <button class="entry-primary dark" type="button" id="entry-open-workspace">进入智能工作台 <i data-lucide="arrow-right"></i></button>
+          </div>
+          <div class="entry-assistant-list">
+            <article data-entry-destination="theory-overview" role="button" tabindex="0">
+              <span>01</span><i data-lucide="library-big"></i>
+              <div><b>理论学习</b><p>从理论地图、案例范本到对话学习与情境判断，建立自己的理论解释力。</p></div>
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+            <article data-entry-destination="sixarts-overview" role="button" tabindex="0">
+              <span>02</span><i data-lucide="palette"></i>
+              <div><b>艺智备课</b><p>把说、唱、弹、舞、书、画融入教学设计、课堂过程与课后评价。</p></div>
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+            <article data-entry-destination="observe-overview" role="button" tabindex="0">
+              <span>03</span><i data-lucide="scan-eye"></i>
+              <div><b>课堂观察</b><p>材料采集、行为编码、事件识别、理论映射与报告生成。</p></div>
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+            <article data-entry-destination="reflect-overview" role="button" tabindex="0">
+              <span>04</span><i data-lucide="notebook-tabs"></i>
+              <div><b>反思与成果转化</b><p>将课堂证据转化为反思正文、研究框架和成果包。</p></div>
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="app-frame" id="workspace-app" hidden>
+      <canvas class="workspace-atmosphere" id="workspace-atmosphere" aria-hidden="true"></canvas>
+      <div class="workspace-motion-curtain" id="workspace-motion-curtain" aria-hidden="true">
+        <div class="workspace-curtain-strips" id="workspace-curtain-strips"></div>
+        <div class="workspace-curtain-meta">
+          <span id="workspace-curtain-index">01 / 04</span>
+          <strong id="workspace-curtain-title">课堂观察助手</strong>
+          <small>EDULINK / EDUCATIONAL INTELLIGENCE</small>
+        </div>
+      </div>
+      <div class="shell">
+        <aside class="rail" aria-label="主导航">
+          <div class="brand">
+            <span class="brand-logo" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+            <div>
+              <b>EduLink</b>
+              <small>教育理论实践链接智能体</small>
+            </div>
+            <button class="workspace-exit" type="button" id="workspace-exit" title="返回首页"><i data-lucide="house"></i></button>
+          </div>
+
+          <p class="nav-caption">智能助手</p>
+          <nav class="nav assistant-tree">
+            <div class="assistant-branch" data-assistant-branch="theory">
+              <button class="nav-link assistant-nav theory-nav" type="button" data-view="theory" title="理论学习" aria-expanded="false">
+                <span><i data-lucide="library-big"></i></span>
+                理论学习
+                <i class="nav-arrow" data-lucide="chevron-down"></i>
+              </button>
+              <div class="nav-subtree" data-assistant-subtree="theory">
+                <button class="subnav-link" type="button" data-workspace-section="theory-overview"><i data-lucide="orbit"></i><span>理论总览</span><b>01</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="theory-library"><i data-lucide="library"></i><span>理论库</span><b>02</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="theory-dialogue"><i data-lucide="messages-square"></i><span>对话学习</span><b>03</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="theory-scenario"><i data-lucide="list-checks"></i><span>专项训练</span><b>04</b></button>
+              </div>
+            </div>
+
+            <div class="assistant-branch" data-assistant-branch="sixarts">
+              <button class="nav-link assistant-nav sixarts-nav" type="button" data-view="sixarts" title="艺智备课" aria-expanded="false">
+                <span><i data-lucide="palette"></i></span>
+                艺智备课
+                <i class="nav-arrow" data-lucide="chevron-down"></i>
+              </button>
+              <div class="nav-subtree" data-assistant-subtree="sixarts">
+                <button class="subnav-link" type="button" data-workspace-section="sixarts-overview"><i data-lucide="layout-dashboard"></i><span>六艺总览</span><b>01</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="sixarts-course"><i data-lucide="file-pen-line"></i><span>课情设置</span><b>02</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="sixarts-design"><i data-lucide="wand-sparkles"></i><span>六艺智教坊</span><b>03</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="sixarts-library"><i data-lucide="images"></i><span>活动资源</span><b>04</b></button>
+              </div>
+            </div>
+
+            <div class="assistant-branch open" data-assistant-branch="observe">
+              <button class="nav-link assistant-nav observe-nav active" type="button" data-view="observe" title="课堂观察" aria-expanded="true">
+                <span><i data-lucide="scan-eye"></i></span>
+                课堂观察
+                <i class="nav-arrow" data-lucide="chevron-down"></i>
+              </button>
+              <div class="nav-subtree" data-assistant-subtree="observe">
+                <button class="subnav-link active" type="button" data-workspace-section="observe-overview"><i data-lucide="layout-dashboard"></i><span>分析总览</span><b>01</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="observe-material"><i data-lucide="file-input"></i><span>课堂材料</span><b>02</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="observe-decoder"><i data-lucide="scan-search"></i><span>课堂深度解码台</span><b>03</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="observe-theory"><i data-lucide="git-branch"></i><span>理论证据链</span><b>04</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="observe-report"><i data-lucide="file-chart-column"></i><span>分析报告</span><b>05</b></button>
+              </div>
+            </div>
+
+            <div class="assistant-branch" data-assistant-branch="reflect">
+              <button class="nav-link assistant-nav reflect-nav" type="button" data-view="reflect" title="反思与成果转化" aria-expanded="false">
+                <span><i data-lucide="notebook-tabs"></i></span>
+                反思与成果转化
+                <i class="nav-arrow" data-lucide="chevron-down"></i>
+              </button>
+              <div class="nav-subtree" data-assistant-subtree="reflect">
+                <button class="subnav-link" type="button" data-workspace-section="reflect-overview"><i data-lucide="panels-top-left"></i><span>转化总览</span><b>01</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="reflect-material"><i data-lucide="file-input"></i><span>反思材料</span><b>02</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="reflect-diagnosis"><i data-lucide="route"></i><span>知行转化路径</span><b>03</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="reflect-outcomes"><i data-lucide="files"></i><span>成果生成</span><b>04</b></button>
+                <button class="subnav-link" type="button" data-workspace-section="reflect-trajectory"><i data-lucide="chart-no-axes-combined"></i><span>改进历程全像</span><b>05</b></button>
+              </div>
+            </div>
+          </nav>
+
+          <p class="nav-caption nav-caption-spaced">资源</p>
+          <nav class="nav secondary-nav">
+            <button class="nav-link" type="button" data-workspace-section="theory-library" title="教育理论库">
+              <span><i data-lucide="book-open-text"></i></span>
+              教育理论库
+              <b class="nav-count" id="theory-count">606</b>
+            </button>
+            <button class="nav-link" type="button" data-workspace-section="sixarts-library" title="六艺活动资源">
+              <span><i data-lucide="images"></i></span>
+              六艺活动资源
+            </button>
+            <button class="nav-link" type="button" data-workspace-section="resource-navigation" title="权威信息与资源导航">
+              <span><i data-lucide="landmark"></i></span>
+              权威信息与资源导航
+            </button>
+            <button class="nav-link" type="button" data-workspace-section="cloud-drive" title="云盘">
+              <span><i data-lucide="cloud"></i></span>
+              云盘
+            </button>
+            <button class="nav-link sidebar-guide-trigger" type="button" id="workspace-guide-open-sidebar" title="打开使用指南" aria-controls="workspace-guide-layer">
+              <span><i data-lucide="compass"></i></span>
+              使用指南
+            </button>
+          </nav>
+
+          <button class="rail-mentor-card" type="button" data-workspace-section="theory-dialogue" title="与理论学习助手对话">
+            <img src="./assets/nav-mentor-female.png?v=20260830-mentor-v2" data-assistant-mentor-image alt="导航助手小智" />
+            <span><b>小智在线</b><small>点击进入对话学习</small></span>
+            <i data-lucide="message-circle-more"></i>
+          </button>
+
+          <section class="rail-progress">
+            <div class="rail-progress-head">
+              <span>本次分析</span>
+              <b id="rail-progress-value">86%</b>
+            </div>
+            <div class="signal"><span id="rail-progress-bar"></span></div>
+            <p>材料、行为编码与理论证据已关联</p>
+          </section>
+
+          <div class="rail-footer">
+            <span class="avatar avatar-purple">教</span>
+            <div>
+              <b>课堂研究项目</b>
+              <small id="save-status">本地工作区已就绪</small>
+            </div>
+            <button class="icon-button" type="button" id="save-session" title="保存当前工作区">
+              <i data-lucide="save"></i>
+            </button>
+          </div>
+        </aside>
+
+        <main class="main">
+          <div class="workspace-scroll-progress" aria-hidden="true"><span id="workspace-scroll-progress"></span></div>
+          <header class="topbar">
+            <div class="workspace-browser-controls" aria-label="工作台页面导航">
+              <button type="button" id="workspace-history-back" title="返回上一个页面"><i data-lucide="arrow-left"></i><span>返回</span></button>
+              <button type="button" id="workspace-history-forward" title="前往下一个页面"><i data-lucide="arrow-right"></i><span>前进</span></button>
+              <button type="button" id="workspace-page-refresh" title="刷新当前页面"><i data-lucide="refresh-cw"></i><span>刷新</span></button>
+            </div>
+            <label class="workspace-search">
+              <i data-lucide="search"></i>
+              <input id="workspace-search" type="search" placeholder="检索逐字稿、理论或课堂事件" />
+              <button class="search-clear" id="search-clear" type="button" title="清除检索">
+                <i data-lucide="x"></i>
+              </button>
+            </label>
+            <div class="top-actions">
+              <span class="sync-state"><i data-lucide="cloud-check"></i> 本地实时保存</span>
+              <button class="ghost workspace-guide-trigger" type="button" id="workspace-guide-open" title="打开功能导航">
+                <i data-lucide="compass"></i><span>功能导航</span>
+              </button>
+              <div class="render-quality-control" id="render-quality-control">
+                <button class="ghost render-quality-trigger" type="button" id="render-quality-trigger" aria-haspopup="menu" aria-expanded="false" title="渲染质量">
+                  <i data-lucide="gauge"></i><span>画质</span><b id="render-quality-current">中</b>
+                </button>
+                <div class="render-quality-menu" id="render-quality-menu" role="menu" aria-hidden="true">
+                  <header><i data-lucide="sliders-horizontal"></i><span><b>渲染质量</b><small>工作台显示</small></span></header>
+                  <button type="button" role="menuitemradio" data-render-quality="low"><span>低</span><b>流畅优先</b><i data-lucide="check"></i></button>
+                  <button type="button" role="menuitemradio" data-render-quality="medium"><span>中</span><b>平衡</b><i data-lucide="check"></i></button>
+                  <button type="button" role="menuitemradio" data-render-quality="high"><span>高</span><b>视觉优先</b><i data-lucide="check"></i></button>
+                </div>
+              </div>
+              <button class="ghost" type="button" id="load-sample" title="载入示例">
+                <i data-lucide="wand-sparkles"></i>
+                载入示例
+              </button>
+              <button class="primary" type="button" id="run-analysis" title="开始分析">
+                <i data-lucide="play"></i>
+                开始分析
+              </button>
+              <div class="user-account" id="user-account">
+                <button class="user-entry" type="button" id="user-entry" aria-haspopup="menu" aria-expanded="false">
+                  <img id="header-avatar" src="./assets/default-avatar.svg" alt="用户头像" />
+                  <span>
+                    <small id="header-user-state">个人账户</small>
+                    <b id="header-username">登录</b>
+                  </span>
+                  <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="user-menu" id="user-menu" role="menu">
+                  <div class="user-menu-profile">
+                    <img id="menu-avatar" src="./assets/default-avatar.svg" alt="用户头像" />
+                    <div><b id="menu-username">未登录</b><small>EduLink 本地账户</small></div>
+                  </div>
+                  <label class="user-menu-action" role="menuitem">
+                    <i data-lucide="image-up"></i>
+                    更换头像
+                    <input type="file" id="menu-avatar-input" accept="image/png,image/jpeg,image/webp,image/gif" />
+                  </label>
+                  <button class="user-menu-action" type="button" id="workspace-settings-open" role="menuitem">
+                    <i data-lucide="settings-2"></i>
+                    偏好设置
+                  </button>
+                  <button class="user-menu-action" type="button" id="switch-account" role="menuitem">
+                    <i data-lucide="refresh-cw"></i>
+                    切换账户
+                  </button>
+                  <button class="user-menu-action danger" type="button" id="logout-user" role="menuitem">
+                    <i data-lucide="log-out"></i>
+                    退出登录
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow" id="page-eyebrow">CLASSROOM OBSERVATION</p>
+              <h1 id="page-title">课堂观察助手</h1>
+              <p class="page-purpose" id="page-purpose">从课堂材料进入证据分析，并逐步形成理论解释和专业报告。</p>
+            </div>
+            <div class="page-heading-actions">
+              <div class="assistant-switcher" id="assistant-switcher" aria-label="当前助手任务导航"></div>
+            </div>
+          </div>
+
+          <section class="view" id="theory">
+            <div class="theory-map-expanded-host" id="theory-map-expanded-host" hidden></div>
+            <div class="theory-assistant-panel" data-workspace-panel="theory-overview">
+              <section class="workspace-banner theory-banner">
+                <div class="banner-copy">
+                  <div class="banner-status"><span></span> 理论知识图谱已就绪</div>
+                  <h2>让理论照进教学判断</h2>
+                  <p>覆盖教育学基础、心理学、课堂与班级管理、学科教学、教育技术五大理论板块。</p>
+                  <div class="banner-actions">
+                    <button class="banner-button" type="button" data-workspace-section="theory-library">进入理论库 <i data-lucide="arrow-right"></i></button>
+                    <span><i data-lucide="database"></i> 606 条理论索引</span>
+                  </div>
+                </div>
+                <div class="theory-orbit" aria-hidden="true">
+                  <span class="orbit-core"><i data-lucide="brain-circuit"></i><b>理论学习</b></span>
+                  <i class="orbit-ring ring-one"></i><i class="orbit-ring ring-two"></i>
+                  <span class="orbit-node node-a">学习理论</span><span class="orbit-node node-b">课程教学</span>
+                  <span class="orbit-node node-c">教育评价</span><span class="orbit-node node-d">课堂管理</span>
+                </div>
+              </section>
+
+              <section class="theory-stat-grid" aria-label="理论库概览">
+                <article class="theory-stat"><span><i data-lucide="library-big"></i></span><div><b>606 <span class="theory-stat-unit">条</span></b><small>教育理论索引</small></div><em>持续扩充</em></article>
+                <article class="theory-stat"><span><i data-lucide="network"></i></span><div><b>5 <span class="theory-stat-unit">类</span></b><small>核心理论板块</small></div><em>跨域关联</em></article>
+                <article class="theory-stat"><span><i data-lucide="book-open-check"></i></span><div><b id="theory-learned-count">0 <span class="theory-stat-unit">项</span></b><small>已加入学习计划</small></div><em>个人进度</em></article>
+                <article class="theory-stat"><span><i data-lucide="trophy"></i></span><div><b id="theory-quiz-score">0%</b><small>情境判断正确率</small></div><em>即时反馈</em></article>
+              </section>
+
+              <section class="theory-overview-layout">
+                <article class="card theory-map-card">
+                  <div class="card-head">
+                    <div><p class="kicker">THEORY LANDSCAPE</p><h2>五大理论板块</h2></div>
+                    <button class="ghost small" type="button" data-workspace-section="theory-library">查看全部 <i data-lucide="arrow-up-right"></i></button>
+                  </div>
+                  <div class="theory-category-map" id="theory-category-map"></div>
+                </article>
+                <article class="card theory-plan-card">
+                  <div class="card-head compact-head"><div><p class="kicker">LEARNING PATH</p><h2>我的学习计划</h2></div><span class="mini-chip" id="theory-plan-count">0 项</span></div>
+                  <div class="theory-plan-list" id="theory-plan-list"></div>
+                  <button class="theory-plan-action" type="button" data-workspace-section="theory-dialogue"><i data-lucide="messages-square"></i><span><b>开始对话学习</b><small>围绕计划中的理论追问与应用</small></span><i data-lucide="arrow-right"></i></button>
+                </article>
+              </section>
+            </div>
+
+            <section class="theory-assistant-panel theory-library-panel" data-workspace-panel="theory-library">
+              <div class="section-lead">
+                <div><p class="kicker">THEORY LIBRARY</p><h2>教育理论库</h2><span>按理论板块、课堂问题和应用关键词快速定位。</span></div>
+                <div class="theory-library-commandbar">
+                  <label class="theory-search"><i data-lucide="search"></i><input id="theory-library-query" type="search" placeholder="搜索理论、机制或课堂问题" /></label>
+                  <div class="theory-library-view-switch" aria-label="理论库视图">
+                    <button class="active" type="button" data-theory-library-view="overview"><i data-lucide="layout-dashboard"></i>知识总览</button>
+                    <button type="button" data-theory-library-view="categories"><i data-lucide="list-tree"></i>分类浏览</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="theory-library-overview" id="theory-library-overview">
+                <section class="theory-library-metrics" id="theory-library-metrics" aria-label="理论库统计"></section>
+                <div class="theory-library-overview-layout">
+                  <aside class="theory-library-overview-directory">
+                    <header><div><b>知识体系目录</b><span id="theory-overview-directory-total">606</span></div><small>选择目录，知识视图同步聚焦</small></header>
+                    <label><i data-lucide="search"></i><input id="theory-overview-directory-query" type="search" placeholder="搜索分类或理论" /></label>
+                    <nav id="theory-overview-directory-nav" aria-label="知识体系总览目录"></nav>
+                    <footer><i data-lucide="sparkles"></i><span><b>持续建设中</b><small>理论内容将随研究与课堂实践持续补充。</small></span></footer>
+                  </aside>
+
+                  <section class="theory-library-lens-card" id="theory-library-lens-card">
+                    <header>
+                      <div class="theory-library-lenses" aria-label="知识展示方式">
+                        <button class="active" type="button" data-theory-library-lens="map">知识地图</button>
+                        <button type="button" data-theory-library-lens="structure">分类结构</button>
+                        <button type="button" data-theory-library-lens="index">理论索引</button>
+                      </div>
+                      <button class="theory-library-expand" type="button" id="theory-library-expand" title="展开知识视图"><i data-lucide="expand"></i><span>展开查看</span></button>
+                    </header>
+                    <div class="theory-library-lens-stage" id="theory-library-lens-stage"></div>
+                    <aside class="theory-map-expanded-info" id="theory-map-expanded-info" aria-live="polite"></aside>
+                  </section>
+
+                  <aside class="theory-library-abilities">
+                    <header><div><p>KNOWLEDGE PATH</p><h3>理论应用路径</h3><span>从当前理论范围进入阅读、应用与训练</span></div><b>6<small> 项能力</small></b></header>
+                    <div class="theory-library-ability-list" id="theory-library-ability-list"></div>
+                    <div class="theory-library-ability-detail" id="theory-library-ability-detail"></div>
+                  </aside>
+                </div>
+              </div>
+
+              <button class="theory-directory-mobile-trigger" type="button" id="theory-directory-mobile-trigger"><i data-lucide="list-tree"></i>选择理论目录</button>
+              <button class="theory-directory-mobile-backdrop" type="button" id="theory-directory-mobile-backdrop" aria-label="关闭理论目录" hidden></button>
+              <div class="theory-directory-layout" id="theory-library-categories" hidden>
+                <aside class="theory-directory-sidebar">
+                  <header><span><i data-lucide="library-big"></i></span><div><b>理论知识库</b><small><em id="theory-directory-total">606</em> 条理论索引</small></div><button type="button" id="theory-directory-mobile-close" title="关闭目录"><i data-lucide="x"></i></button></header>
+                  <nav id="theory-directory-nav" aria-label="理论知识库目录"></nav>
+                </aside>
+                <section class="theory-directory-content">
+                  <header class="theory-directory-content-head"><div><p id="theory-directory-level">一级领域</p><h2 id="theory-directory-title">教育学基础理论类</h2><span id="theory-directory-breadcrumb">教育学基础理论类</span></div><strong id="theory-directory-count">0 条理论</strong></header>
+                  <div class="learning-theory-grid theory-directory-grid" id="learning-theory-grid"></div>
+                  <nav class="theory-library-pagination" id="theory-library-pagination" aria-label="理论列表分页"></nav>
+                  <aside class="theory-library-preview" id="theory-library-preview" hidden></aside>
+                </section>
+              </div>
+            </section>
+
+            <section class="theory-assistant-panel" data-workspace-panel="theory-detail">
+              <article class="theory-detail-hero">
+                <span class="theory-detail-icon"><i data-lucide="book-open-check"></i></span>
+                <div><p id="theory-detail-category">教育心理学 · 学习理论</p><h2 id="theory-detail-name">建构主义学习理论</h2><div id="theory-detail-tags"></div></div>
+                <div class="theory-detail-actions">
+                  <button class="ghost" type="button" id="theory-plan-toggle"><i data-lucide="bookmark-plus"></i><span>加入学习计划</span></button>
+                  <button class="primary" type="button" id="theory-start-scenario"><i data-lucide="library"></i>返回理论库</button>
+                </div>
+              </article>
+              <nav class="theory-detail-tabs" id="theory-detail-tabs" aria-label="理论详情维度">
+                <button class="active" type="button" data-theory-tab="explanation"><i data-lucide="text-search"></i>理论解释</button>
+                <button type="button" data-theory-tab="paradigm"><i data-lucide="waypoints"></i>教理范式</button>
+                <button type="button" data-theory-tab="application"><i data-lucide="shapes"></i>学科应用</button>
+                <button type="button" data-theory-tab="example"><i data-lucide="presentation"></i>课堂范本</button>
+                <button type="button" data-theory-tab="comparison"><i data-lucide="scale"></i>理论辨析</button>
+                <button type="button" data-theory-tab="training"><i data-lucide="badge-help"></i>专项训练</button>
+              </nav>
+              <div class="theory-detail-content" id="theory-detail-content"></div>
+            </section>
+
+            <section class="theory-assistant-panel theory-dialogue-panel" data-workspace-panel="theory-dialogue">
+              <aside class="theory-dialogue-aside">
+                <p class="kicker">LEARNING COPILOT</p><h2>理论学习助手</h2>
+                <p>围绕理论核心、课堂应用、适用边界与教学改进进行连续追问。</p>
+                <div class="theory-dialogue-tabs" role="tablist"><button class="active" type="button" data-dialogue-sidebar-tab="topics">理论主题</button><button type="button" data-dialogue-sidebar-tab="history">历史对话</button></div>
+                <section class="theory-dialogue-side-panel active" data-dialogue-sidebar-panel="topics">
+                  <div class="dialogue-topic-list" id="dialogue-topic-list"></div>
+                  <button class="ghost small" type="button" id="clear-theory-dialogue"><i data-lucide="plus"></i>开始新对话</button>
+                </section>
+                <section class="theory-dialogue-side-panel" data-dialogue-sidebar-panel="history" hidden>
+                  <label class="theory-history-search"><i data-lucide="search"></i><input id="theory-history-query" type="search" placeholder="搜索历史对话" /></label>
+                  <div class="theory-history-list" id="theory-history-list"></div>
+                  <button class="ghost small" type="button" id="new-theory-dialogue-history"><i data-lucide="message-square-plus"></i>新建对话</button>
+                </section>
+              </aside>
+              <section class="theory-chat-shell">
+                <header><div><span class="chat-agent-icon"><i data-lucide="sparkles"></i></span><div><b>EduLink 理论导师</b><small><i></i> 基于本地理论库</small></div></div><div class="theory-chat-head-actions"><button type="button" id="theory-history-toggle"><i data-lucide="history"></i><span>历史对话</span></button><span class="mini-chip" id="theory-chat-context">建构主义学习理论</span></div></header>
+                <aside class="theory-chat-history-float" aria-label="本轮历史提问">
+                  <header><i data-lucide="history"></i><span>历史提问</span></header>
+                  <div class="theory-chat-history-float-list" id="theory-chat-history-float-list"></div>
+                </aside>
+                <div class="theory-chat-messages" id="theory-chat-messages"></div>
+                <div class="theory-starter-row">
+                  <button type="button" data-theory-prompt="这个理论的核心观点是什么？" data-theory-mode="core_viewpoints">核心观点</button>
+                  <button type="button" data-theory-prompt="这个理论在课堂教学中如何落实？" data-theory-mode="classroom_implementation">课堂落实</button>
+                  <button type="button" data-theory-prompt="请给我一个具体的课堂案例。" data-theory-mode="classroom_case">课堂案例</button>
+                  <button type="button" data-theory-prompt="使用这个理论时最容易出现什么误区？" data-theory-mode="common_misconceptions">常见误区</button>
+                </div>
+                <form class="theory-chat-form" id="theory-chat-form"><textarea id="theory-chat-input" rows="2" placeholder="例如：教育本质论的核心观点，在教学中如何落实？"></textarea><button class="primary" type="submit" title="发送问题"><i data-lucide="send"></i><span>发送</span></button></form>
+              </section>
+            </section>
+
+            <section class="theory-assistant-panel theory-scenario-panel" data-workspace-panel="theory-scenario">
+              <div class="scenario-head"><div><p class="kicker">THEORY PRACTICE</p><h2>情境训练</h2><span>在真实课堂情境中检验教育理论的理解与应用。</span></div><div class="scenario-score"><b id="scenario-score-value">0</b><small>累计得分</small></div></div>
+              <div class="scenario-feature-row" aria-label="专项训练特点">
+                <span><i data-lucide="badge-check"></i><b>贴近真实课堂</b><small>基于真实教学语境设计</small></span>
+                <span><i data-lucide="messages-square"></i><b>即时反馈解析</b><small>答题后查看完整理论依据</small></span>
+              </div>
+              <div class="scenario-training-layout">
+                <div class="scenario-main-column">
+                  <section class="scenario-mode-panel" aria-label="训练范围">
+                    <header><div><i data-lucide="scan-search"></i><span><b>训练范围</b><small>选择生成方式后开始练习</small></span></div><em>即时反馈并展示完整解析</em></header>
+                    <div class="scenario-mode-options">
+                      <button type="button" data-scenario-mode="random"><span><i data-lucide="dices"></i></span><div><b>随机训练</b><small>不限定理论，即时生成综合判断题</small></div><i data-lucide="circle"></i></button>
+                      <button class="active" type="button" data-scenario-mode="specialized"><span><i data-lucide="target"></i></span><div><b>专项训练</b><small>围绕当前理论集中练习</small></div><i data-lucide="circle-check"></i></button>
+                    </div>
+                    <div class="scenario-theory-context"><span>当前理论</span><b id="scenario-theory-name">建构主义学习理论</b><small>可从理论库切换训练对象</small></div>
+                    <div class="scenario-theory-input">
+                      <label for="scenario-theory-input-field">输入理论</label>
+                      <div class="scenario-theory-input-shell"><i data-lucide="book-open-check"></i><input id="scenario-theory-input-field" type="text" value="建构主义学习理论" aria-label="训练理论" /><button type="button" id="scenario-theory-clear" title="清除理论"><i data-lucide="x-circle"></i></button></div>
+                      <small>如：建构主义、人本主义、最近发展区</small>
+                      <div class="scenario-suggestion-tags" aria-label="常用理论推荐">
+                        <button type="button" data-scenario-theory-suggestion="建构主义学习理论">建构主义</button>
+                        <button type="button" data-scenario-theory-suggestion="人本主义学习理论">人本主义</button>
+                        <button type="button" data-scenario-theory-suggestion="最近发展区理论">最近发展区</button>
+                        <button type="button" data-scenario-theory-suggestion="多元智能理论">多元智能理论</button>
+                        <button type="button" data-scenario-theory-suggestion="核心素养理论">核心素养理论</button>
+                      </div>
+                      <label class="scenario-count-field" for="scenario-question-count">
+                        <span>题目数量</span>
+                        <select id="scenario-question-count" aria-label="训练题目数量">
+                          <option value="3">3 题</option>
+                          <option value="5" selected>5 题</option>
+                          <option value="10">10 题</option>
+                          <option value="15">15 题</option>
+                          <option value="20">20 题</option>
+                        </select>
+                      </label>
+                      <button class="primary scenario-start-button" type="button" id="scenario-start"><i data-lucide="play"></i>开始训练</button>
+                    </div>
+                  </section>
+                  <div class="scenario-progress"><span id="scenario-progress-bar"></span></div>
+                  <article class="scenario-card">
+                    <div class="scenario-meta"><span id="scenario-index">第 1 题</span><em id="scenario-difficulty" hidden></em></div>
+                    <blockquote id="scenario-stem" hidden></blockquote>
+                    <p id="scenario-question"></p>
+                    <div class="scenario-options" id="scenario-options"></div>
+                    <div class="scenario-feedback" id="scenario-feedback" hidden></div>
+                    <div class="scenario-actions"><button class="ghost" type="button" id="scenario-retry"><i data-lucide="rotate-ccw"></i>重新训练</button><button class="primary" type="button" id="scenario-next" disabled>下一题 <i data-lucide="arrow-right"></i></button></div>
+                  </article>
+                </div>
+                <aside class="scenario-tip-card">
+                  <header><i data-lucide="lightbulb"></i><b>小贴士</b></header>
+                  <p>专项训练将理论放回真实课堂语境，先辨认关键行为，再结合解析判断它与理论的对应关系。</p>
+                  <div class="scenario-tip-visual" aria-hidden="true"><img src="./assets/theory-overview-background.png" alt="" /><i data-lucide="book-open"></i></div>
+                </aside>
+              </div>
+              <section class="scenario-recent-card" aria-label="训练历史">
+                <span class="scenario-recent-icon"><i data-lucide="history"></i></span>
+                <div><b id="scenario-recent-title">最近训练：建构主义学习理论 · 3 题</b><small id="scenario-recent-meta">从理论库进入专项训练，答题后会在这里保留进度</small></div>
+                <div class="scenario-recent-actions">
+                  <button type="button" id="scenario-history-toggle" aria-expanded="false" aria-controls="scenario-history-list"><i data-lucide="list-collapse"></i><span>查看历史</span></button>
+                  <button type="button" id="scenario-recent-continue">继续 <i data-lucide="arrow-right"></i></button>
+                </div>
+                <div class="scenario-history-list" id="scenario-history-list" hidden></div>
+              </section>
+            </section>
+          </section>
+
+          <section class="view" id="sixarts">
+            <div class="sixarts-assistant-panel" data-workspace-panel="sixarts-overview">
+              <section class="workspace-banner sixarts-banner">
+                <div class="banner-copy">
+                  <div class="banner-status"><span></span> 新六艺育人模型已连接</div>
+                  <h2>以美润教，以艺育德</h2>
+                  <p>面向师范生与中小学教师，把说、唱、弹、舞、书、画转化为可执行的课堂设计。</p>
+                  <div class="banner-actions"><button class="banner-button" type="button" data-workspace-section="sixarts-course">创建融合教案 <i data-lucide="arrow-right"></i></button><span><i data-lucide="sparkles"></i> 知行合一 · 守正创新</span></div>
+                </div>
+                <div class="sixarts-wheel" aria-hidden="true"><span class="wheel-center">六艺</span><i>说</i><i>唱</i><i>弹</i><i>舞</i><i>书</i><i>画</i></div>
+              </section>
+              <section class="sixarts-stat-grid">
+                <article><i data-lucide="palette"></i><span>育人维度</span><small>说唱弹舞书画</small></article>
+                <article><i data-lucide="calendar-range"></i><span>六艺节届次</span><small>始于 2005 年</small></article>
+                <article><i data-lucide="route"></i><span>备课阶段</span><small>课情到评价</small></article>
+                <article><i data-lucide="award"></i><span>品牌成果</span><small>国家与省级荣誉</small></article>
+              </section>
+              <section class="sixarts-dimension-grid" id="sixarts-overview-grid">
+                <button type="button" data-sixart="说"><img src="./assets/sixarts/speak.jpg" alt="六艺节朗诵比赛" /><span><b>说</b><small>语言表达 · 教学建构</small></span></button>
+                <button type="button" data-sixart="唱"><img src="./assets/sixarts/sing.jpg" alt="六艺节合唱比赛" /><span><b>唱</b><small>审美情操 · 协作精神</small></span></button>
+                <button type="button" data-sixart="弹"><img src="./assets/sixarts/play.jpg" alt="六艺节器乐比赛" /><span><b>弹</b><small>艺术实操 · 专注坚持</small></span></button>
+                <button type="button" data-sixart="舞"><img src="./assets/sixarts/dance.jpg" alt="六艺节舞蹈比赛" /><span><b>舞</b><small>具身认知 · 文化传承</small></span></button>
+                <button type="button" data-sixart="书"><img src="./assets/sixarts/write.jpg" alt="六艺节书法比赛" /><span><b>书</b><small>静心修身 · 教师基本功</small></span></button>
+                <button type="button" data-sixart="画"><img src="./assets/sixarts/draw.jpg" alt="六艺节绘画比赛" /><span><b>画</b><small>视觉表达 · 创造思维</small></span></button>
+              </section>
+            </div>
+
+            <section class="sixarts-assistant-panel sixarts-course-panel" data-workspace-panel="sixarts-course">
+              <section class="sixarts-course-hero">
+                <div class="sixarts-course-hero-copy">
+                  <p>NEW SIX ARTS / COURSE CONTEXT</p>
+                  <h2>以课情为起点，<br />构建六艺融合课堂</h2>
+                  <span>把真实学情、教学目标与说、唱、弹、舞、书、画连接起来，让每一次融合都有清晰依据。</span>
+                  <div><button class="sixarts-hero-action" type="button" data-scroll-target="sixarts-course-form">开始设置课情</button><button class="sixarts-hero-link" type="button" data-scroll-target="sixarts-course-form">查看融合方法</button></div>
+                </div>
+                <div class="sixarts-wheel sixarts-course-wheel" aria-hidden="true"><span class="wheel-center">六艺</span><i>说</i><i>唱</i><i>弹</i><i>舞</i><i>书</i><i>画</i></div>
+              </section>
+              <nav class="sixarts-course-stepper" aria-label="六艺备课步骤"><b class="active"><span>01</span>课情</b><i></i><b><span>02</span>设计</b><i></i><b><span>03</span>过程</b><i></i><b><span>04</span>评价</b></nav>
+              <form class="sixarts-course-form" id="sixarts-course-form">
+                <div class="sixarts-workflow-head sixarts-form-heading"><div><p class="kicker">COURSE CONTEXT</p><h2>课情信息</h2><span>信息越具体，六艺融合点越能贴合真实教学任务。</span></div></div>
+                <div class="sixarts-form-grid">
+                  <label>学段<select id="sixarts-stage"><option>小学</option><option>初中</option><option>高中</option><option>师范生课程</option></select></label>
+                  <label>年级<select id="sixarts-grade"><option>六年级</option><option>一年级</option><option>二年级</option><option>三年级</option><option>四年级</option><option>五年级</option></select></label>
+                  <label>学科<select id="sixarts-subject"><option>小学数学</option><option>小学语文</option><option>道德与法治</option><option>科学</option><option>综合实践</option></select></label>
+                  <label>教材版本<select id="sixarts-edition"><option>人教版</option><option>统编版</option><option>浙教版</option><option>自定义课程</option></select></label>
+                  <label>册次<select id="sixarts-term"><option value="">不指定</option><option value="上册">上册</option><option value="下册">下册</option></select></label>
+                  <label class="span-two">课题<input id="sixarts-title" value="《圆的认识》" maxlength="60" /></label>
+                  <label>课时<input id="sixarts-lessons" type="number" min="1" max="8" value="1" /></label>
+                  <label>课堂时长<input id="sixarts-duration" type="number" min="20" max="180" value="40" /></label>
+                  <label class="sixarts-summary-field">教学内容概述<textarea id="sixarts-summary" rows="3" maxlength="5000">认识圆心、半径和直径，掌握圆的基本特征与规范画圆方法，理解“一中同长”的数学内涵。</textarea></label>
+                  <label class="sixarts-requirement-field">核心要求<textarea id="sixarts-requirement" rows="3" maxlength="5000">在语言品读、情境体验与视觉表达中理解文本，避免六艺活动与学科目标脱节。</textarea></label>
+                  <label class="sixarts-student-analysis-field">学情分析<textarea id="sixarts-student-analysis" rows="3" maxlength="5000" placeholder="填写学生已有经验、认知基础、学习困难与个体差异"></textarea></label>
+                  <div class="sixarts-material-field">
+                    <span>教材与参考资料</span>
+                    <label class="sixarts-material-dropzone" id="sixarts-material-dropzone"><i data-lucide="cloud-upload"></i><b>点击或拖拽文件到这里</b><small>支持文档、表格、图片、音视频等课堂资料</small><input id="sixarts-material-input" type="file" multiple /></label>
+                    <div class="sixarts-material-list" id="sixarts-material-list"></div>
+                  </div>
+                </div>
+                <fieldset class="sixarts-selector"><legend>选择本课重点融合的“新六艺”</legend><div id="sixarts-selector"></div><small>建议选择 2-4 项，系统会保留学科目标作为主线。</small><div class="sixarts-detail-level" role="group" aria-label="教案版本"><span>教案版本</span><label><input type="radio" name="sixarts-detail-level" value="concise" /><i></i><b>简案版</b><small>突出关键任务与执行要点</small></label><label><input type="radio" name="sixarts-detail-level" value="detailed" checked /><i></i><b>详案版</b><small>展开依据、过程、证据与评价</small></label></div></fieldset>
+                <input class="sixarts-mode-default" type="radio" name="sixarts-mode" value="complete" checked hidden />
+                <div class="sixarts-form-actions"><button class="ghost sixarts-save-draft" type="button" id="sixarts-save-draft"><i data-lucide="save"></i><span>保存草稿</span></button><button class="primary sixarts-generate" type="submit" id="sixarts-generate"><i data-lucide="sparkles"></i><span>生成教案</span></button></div>
+              </form>
+            </section>
+
+            <section class="sixarts-assistant-panel" data-workspace-panel="sixarts-design">
+              <div class="sixarts-result-head"><div><p class="kicker">PEDAGOGICAL DESIGN</p><h2>教学设计</h2><h3 id="sixarts-design-course-title">《小马过河》教学设计</h3><span id="sixarts-design-meta">四年级 · 小学语文 · 40 分钟</span></div><div class="sixarts-design-actions"><div class="sixarts-design-version-switch" role="group" aria-label="切换教案版本"><span>版本</span><button type="button" data-sixarts-detail-switch="concise">简案版</button><button type="button" data-sixarts-detail-switch="detailed">详案版</button></div><button class="ghost" type="button" id="sixarts-copy-design"><i data-lucide="copy"></i>复制设计</button><button class="ghost" type="button" id="sixarts-download-word-design"><i data-lucide="file-down"></i>下载 Word</button><button class="primary" type="button" id="sixarts-design-next">查看教学过程 <i data-lucide="arrow-right"></i></button></div></div>
+              <div class="sixarts-generation-progress" data-sixarts-progress></div>
+              <div class="sixarts-design-layout"><div class="sixarts-design-main" id="sixarts-design-output"></div><aside class="sixarts-design-aside"><div><p>六艺融合指数</p><strong id="sixarts-fusion-score">82</strong><span>/ 100</span></div><section id="sixarts-fusion-breakdown"></section><p>评价以学科目标一致性、活动可实施性、学生参与度和六艺育人价值为依据。</p></aside></div>
+              <nav class="sixarts-section-pager" aria-label="六艺教学设计板块导航">
+                <button type="button" class="sixarts-section-pager-button is-previous" data-workspace-section="sixarts-course"><i data-lucide="arrow-left"></i><span>上一板块</span></button>
+                <button type="button" class="sixarts-section-pager-button is-next" data-workspace-section="sixarts-process"><span>下一板块</span><i data-lucide="arrow-right"></i></button>
+              </nav>
+            </section>
+
+            <section class="sixarts-assistant-panel" data-workspace-panel="sixarts-process">
+              <div class="sixarts-result-head"><div><p class="kicker">TEACHING PROCESS</p><h2>教学过程</h2><span>教师活动、学生活动与按需出现的“学生六艺渗透”同屏呈现。</span></div><div><button class="ghost" type="button" data-workspace-section="sixarts-design"><i data-lucide="arrow-left"></i>返回修改设计</button><button class="ghost" type="button" id="sixarts-copy-process"><i data-lucide="copy"></i>复制流程</button><button class="primary" type="button" id="sixarts-process-next">进入评价 <i data-lucide="arrow-right"></i></button></div></div>
+              <div class="sixarts-generation-progress" data-sixarts-progress></div>
+              <div class="sixarts-process-timeline" id="sixarts-process-output"></div>
+              <nav class="sixarts-section-pager" aria-label="六艺教学过程板块导航">
+                <button type="button" class="sixarts-section-pager-button is-previous" data-workspace-section="sixarts-design"><i data-lucide="arrow-left"></i><span>上一板块</span></button>
+                <button type="button" class="sixarts-section-pager-button is-next" data-workspace-section="sixarts-evaluate"><span>下一板块</span><i data-lucide="arrow-right"></i></button>
+              </nav>
+            </section>
+
+            <section class="sixarts-assistant-panel" data-workspace-panel="sixarts-evaluate">
+              <div class="sixarts-result-head"><div><p class="kicker">SIX ARTS ASSESSMENT</p><h2>六艺课堂评价与项目拓展</h2><span>把“是否开展活动”转化为可观察、可记录的学习证据。</span></div><div><button class="ghost" type="button" id="sixarts-export-plan"><i data-lucide="download"></i>导出 Markdown</button><button class="primary" type="button" id="sixarts-download-word"><i data-lucide="file-down"></i>下载 Word 教案</button></div></div>
+              <div class="sixarts-generation-progress" data-sixarts-progress></div>
+              <section class="sixarts-rubric-shell"><table class="sixarts-rubric"><thead><tr><th>六艺</th><th>评价维度</th><th>可观察行为</th><th>学习证据</th><th>本课目标</th></tr></thead><tbody id="sixarts-rubric-body"></tbody></table></section>
+              <section class="sixarts-evaluation-details" id="sixarts-evaluation-details"></section>
+              <section class="sixarts-reference-panel" id="sixarts-reference-list"></section>
+              <section class="sixarts-pbl" id="sixarts-pbl"><div><p class="kicker">PBL EXTENSION</p><h2>课后项目式拓展</h2><span>围绕本课核心问题形成可展示、可核查的真实成果。</span></div><div class="sixarts-pbl-grid"><article><i data-lucide="clipboard-list"></i><b>成果要求</b><p>完成与本课课题直接相关的六艺表达作品。</p></article><article><i data-lucide="users-round"></i><b>实施步骤</b><p>提取证据、设计作品、同伴试讲、依据反馈修改。</p></article><article><i data-lucide="package-check"></i><b>提交成果</b><p>提交最终作品、过程记录与学习反思。</p></article></div></section>
+              <nav class="sixarts-section-pager" aria-label="六艺课堂评价板块导航">
+                <button type="button" class="sixarts-section-pager-button is-previous" data-workspace-section="sixarts-process"><i data-lucide="arrow-left"></i><span>上一板块</span></button>
+                <button type="button" class="sixarts-section-pager-button is-next" data-workspace-section="sixarts-library"><span>下一板块</span><i data-lucide="arrow-right"></i></button>
+              </nav>
+            </section>
+
+            <section class="sixarts-assistant-panel" data-workspace-panel="sixarts-library">
+              <div class="section-lead"><div><p class="kicker">SIX ARTS ARCHIVE</p><h2>六艺活动资源</h2><span>来自杭州师范大学“六艺节”的真实活动案例与育人内涵。</span></div><div class="sixarts-resource-filter" id="sixarts-resource-filter"></div></div>
+              <div class="sixarts-resource-grid" id="sixarts-resource-grid"></div>
+              <nav class="sixarts-section-pager" aria-label="六艺活动资源板块导航">
+                <button type="button" class="sixarts-section-pager-button is-previous" data-workspace-section="sixarts-evaluate"><i data-lucide="arrow-left"></i><span>上一板块</span></button>
+                <button type="button" class="sixarts-section-pager-button is-next" disabled><span>已到最后</span><i data-lucide="check"></i></button>
+              </nav>
+            </section>
+          </section>
+
+          <section class="view active" id="observe">
+            <section class="workspace-banner observe-banner" data-workspace-panel="observe-overview">
+              <div class="banner-copy">
+                <div class="banner-status"><span></span> 分析项目进行中</div>
+                <h2>《9 加几》课堂观察</h2>
+                <p>人教版一年级上册 · 小学数学 · 40 分钟课堂实录</p>
+                <div class="banner-actions">
+                  <button class="banner-button" type="button" data-scroll-target="material-panel">
+                    查看课堂材料 <i data-lucide="arrow-right"></i>
+                  </button>
+                  <span id="analysis-status"><i data-lucide="circle-check"></i> 示例分析已完成</span>
+                </div>
+              </div>
+              <div class="banner-visual journey-preview" aria-hidden="true">
+                <div class="journey-preview-head">
+                  <span>ANALYSIS JOURNEY</span>
+                  <b><i data-lucide="radio"></i> READY</b>
+                </div>
+                <div class="journey-preview-track">
+                  <span class="journey-node is-complete">
+                    <i data-lucide="file-audio"></i><b>证据采集</b><small>L1</small>
+                  </span>
+                  <i class="journey-connector"></i>
+                  <span class="journey-node is-complete">
+                    <i data-lucide="tags"></i><b>行为编码</b><small>L2</small>
+                  </span>
+                  <i class="journey-connector coral"></i>
+                  <span class="journey-node is-active">
+                    <i data-lucide="book-open-check"></i><b>理论匹配</b><small>L3-L5</small>
+                  </span>
+                  <i class="journey-connector"></i>
+                  <span class="journey-node">
+                    <i data-lucide="file-chart-column"></i><b>报告生成</b><small>L6</small>
+                  </span>
+                </div>
+                <div class="journey-preview-foot">
+                  <span><i data-lucide="circle-check"></i> 六层证据链已就绪</span>
+                  <strong>86%</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="metric-grid" aria-label="课堂核心指标" data-workspace-panel="observe-overview">
+              <article class="metric metric-lilac">
+                <span class="metric-icon"><i data-lucide="messages-square"></i></span>
+                <div><small>教师提问</small><b id="m-questions">0</b><em>问题发起总量</em></div>
+                <i class="metric-trend" data-lucide="trending-up"></i>
+              </article>
+              <article class="metric metric-pink">
+                <span class="metric-icon"><i data-lucide="message-circle-reply"></i></span>
+                <div><small>学生应答</small><b id="m-answers">0</b><em>课堂回应总量</em></div>
+                <i class="metric-trend" data-lucide="activity"></i>
+              </article>
+              <article class="metric metric-blue">
+                <span class="metric-icon"><i data-lucide="git-branch"></i></span>
+                <div><small>追问反馈</small><b id="m-feedback">0</b><em>深层对话线索</em></div>
+                <i class="metric-trend" data-lucide="waypoints"></i>
+              </article>
+              <article class="metric metric-amber">
+                <span class="metric-icon"><i data-lucide="lightbulb"></i></span>
+                <div><small>学生主动提问</small><b id="m-student-q">0</b><em>学习主体性</em></div>
+                <i class="metric-trend" data-lucide="sparkles"></i>
+              </article>
+            </section>
+
+            <section class="overview-ribbon" aria-label="课堂分析概览" data-workspace-panel="observe-overview">
+              <article class="card trend-panel">
+                <div class="card-head compact-head">
+                  <div><p class="kicker">CLASSROOM PULSE</p><h2>互动走势</h2></div>
+                  <div class="chart-periods" aria-label="课堂阶段"><button class="active" type="button" data-period="all">全课</button><button type="button" data-period="first">前段</button><button type="button" data-period="last">后段</button></div>
+                </div>
+                <div class="trend-meta"><strong id="trend-total">0 条</strong><span id="trend-caption">逐字稿记录按课堂阶段分布</span></div>
+                <div class="trend-chart-wrap">
+                  <svg id="interaction-line-chart" class="interaction-line-chart" viewBox="0 0 560 170" role="img" aria-label="教师与学生互动走势折线图"></svg>
+                  <div class="trend-axis"><span>导入</span><span>探究</span><span>归纳</span><span>迁移</span><span>收束</span><span>延伸</span></div>
+                </div>
+                <div class="chart-legend"><span><i class="legend-line teacher-line"></i>教师话语</span><span><i class="legend-line student-line"></i>学生话语</span><b id="trend-insight">正在读取互动分布</b></div>
+              </article>
+
+              <article class="card signal-panel">
+                <div class="card-head compact-head">
+                  <div><p class="kicker">SIGNAL BOARD</p><h2>课堂信号</h2></div>
+                  <span class="live-mark"><i></i>LIVE</span>
+                </div>
+                <div class="signal-grid">
+                  <div class="signal-stat signal-purple"><span>理论覆盖</span><b id="signal-theory">0 类</b><small id="signal-theory-note">尚未匹配</small><i data-lucide="layers-3"></i></div>
+                  <div class="signal-stat signal-blue"><span>主体参与</span><b id="signal-participation">0%</b><small id="signal-participation-note">按话语记录</small><i data-lucide="users-round"></i></div>
+                  <div class="signal-stat signal-pink"><span>反馈密度</span><b id="signal-feedback">0 次</b><small id="signal-feedback-note">追问与反馈</small><i data-lucide="messages-square"></i></div>
+                  <div class="signal-stat signal-lime"><span>证据链</span><b id="signal-chains">0 条</b><small id="signal-chain-note">待建立</small><i data-lucide="git-branch"></i></div>
+                </div>
+                <div class="signal-foot"><span><i data-lucide="scan-line"></i> 自动标注已同步</span><b id="signal-confidence">0%</b></div>
+              </article>
+
+              <article class="card focus-panel">
+                <div class="card-head compact-head">
+                  <div><p class="kicker">NEXT MOVES</p><h2>优先关注</h2></div>
+                  <button class="icon-button subtle" type="button" data-scroll-target="analysis-chain-panel" title="查看分析链"><i data-lucide="arrow-up-right"></i></button>
+                </div>
+                <div class="focus-list" id="focus-list"></div>
+              </article>
+            </section>
+
+            <section class="observe-overview-filters" data-workspace-panel="observe-overview" aria-label="课堂观察筛选">
+              <div class="observe-filter-group"><b>学段</b><button type="button" class="active" data-observe-filter="stage" data-value="小学">小学</button></div>
+              <div class="observe-filter-group"><b>学科</b><button type="button" class="active" data-observe-filter="subject" data-value="all">全部学科</button><button type="button" data-observe-filter="subject" data-value="语文">语文</button><button type="button" data-observe-filter="subject" data-value="数学">数学</button><button type="button" data-observe-filter="subject" data-value="英语">英语</button><button type="button" data-observe-filter="subject" data-value="科学">科学</button></div>
+            </section>
+
+            <section class="observe-overview-showcase" data-workspace-panel="observe-overview" aria-label="多学科课堂观察案例与分析流程">
+              <div class="observe-case-panel card">
+                <div class="observe-section-heading"><div><p class="kicker">CASE LIBRARY</p><h2>多学科课堂观察案例</h2></div><button class="text-button" type="button" data-observe-case-more aria-expanded="false" aria-controls="observe-case-grid"><span>查看更多案例</span> <i data-lucide="arrow-right"></i></button></div>
+                <div class="observe-case-grid" id="observe-case-grid" aria-live="polite"></div>
+              </div>
+              <aside class="observe-journey-panel card">
+                <div class="observe-section-heading"><div><p class="kicker">ANALYSIS JOURNEY</p><h2>课堂分析流程</h2></div><span class="status ready"><i></i> READY</span></div>
+                <div class="observe-journey-steps">
+                  <button type="button" data-workspace-section="observe-material"><span><i data-lucide="file-audio"></i></span><b>课堂材料</b><small>多源证据上传</small></button><i data-lucide="chevron-right"></i>
+                  <button type="button" data-observe-decoder-target="observe-coding"><span><i data-lucide="scan-search"></i></span><b>行为编码</b><small>师生行为识别</small></button><i data-lucide="chevron-right"></i>
+                  <button type="button" data-observe-decoder-target="observe-insights"><span><i data-lucide="chart-no-axes-combined"></i></span><b>数据洞察</b><small>多维数据分析</small></button><i data-lucide="chevron-right"></i>
+                  <button type="button" data-workspace-section="observe-theory"><span><i data-lucide="link-2"></i></span><b>理论匹配</b><small>证据映射解释</small></button><i data-lucide="chevron-right"></i>
+                  <button type="button" data-workspace-section="observe-report"><span><i data-lucide="file-chart-column"></i></span><b>分析报告</b><small>生成专业报告</small></button>
+                </div>
+                <p class="observe-journey-note"><i data-lucide="sparkles"></i> 支持不同学段、不同学科课堂沿同一分析链路完成诊断。</p>
+              </aside>
+            </section>
+
+            <section class="observe-overview-capabilities" data-workspace-panel="observe-overview" aria-label="课堂观察能力">
+              <article class="card"><span><i data-lucide="book-open"></i></span><div><b>多学科适配</b><small>覆盖语文、数学、英语、科学等主要学科</small></div></article>
+              <article class="card"><span><i data-lucide="files"></i></span><div><b>多源材料解析</b><small>支持视频、音频、逐字稿、教案等多种材料</small></div></article>
+              <article class="card"><span><i data-lucide="users-round"></i></span><div><b>课堂行为识别</b><small>提问、回答、互动、任务和情绪等多维识别</small></div></article>
+              <article class="card"><span><i data-lucide="link-2"></i></span><div><b>理论证据关联</b><small>连接606条教育理论，形成证据化分析</small></div></article>
+            </section>
+
+            <section class="observe-overview-lower" data-workspace-panel="observe-overview" aria-label="课堂观察概览洞察">
+              <article class="card observe-overview-pulse-card">
+                <div class="observe-section-heading">
+                  <div><p class="kicker">CLASSROOM PULSE</p><h2>课堂互动特征</h2></div>
+                  <div class="chart-periods overview-chart-periods" aria-label="课堂互动统计周期"><button class="active" type="button" data-period="all">全课</button><button type="button" data-period="first">前段</button><button type="button" data-period="last">后段</button></div>
+                </div>
+                <div class="overview-pulse-meta"><strong id="overview-pulse-total">21</strong><span id="overview-pulse-caption">条逐字稿互动分布</span></div>
+                <div class="overview-pulse-chart-wrap"><svg id="overview-interaction-chart" viewBox="0 0 560 170" role="img" aria-label="课堂互动特征折线图"></svg><div class="overview-pulse-axis"><span>导入</span><span>探究</span><span>交流</span><span>深化</span><span>总结</span><span>延伸</span></div></div>
+                <div class="overview-pulse-legend"><span><i class="overview-legend-line teacher"></i>教师话语</span><span><i class="overview-legend-line student"></i>学生话语</span><b id="overview-pulse-insight">师生话语比 1.3:1</b></div>
+              </article>
+              <article class="card observe-key-signals-card">
+                <div class="observe-section-heading"><div><p class="kicker">KEY INSIGHTS</p><h2>典型课堂信号</h2></div></div>
+                <div class="observe-signal-list">
+                  <div><span class="observe-signal-icon language"><i data-lucide="book-open-text"></i></span><div><b>语文</b><strong>文本询问深度</strong><small>关注学生对文本的理解与表达</small></div></div>
+                  <div><span class="observe-signal-icon math"><i data-lucide="square-function"></i></span><div><b>数学</b><strong>思维暴露程度</strong><small>关注解释思路与数学表达</small></div></div>
+                  <div><span class="observe-signal-icon english"><i data-lucide="languages"></i></span><div><b>英语</b><strong>学生语言产出</strong><small>关注口语互动与语境运用</small></div></div>
+                  <div><span class="observe-signal-icon science"><i data-lucide="sprout"></i></span><div><b>科学</b><strong>探究证据质量</strong><small>关注观察、实验与证据意识</small></div></div>
+                </div>
+              </article>
+              <article class="card observe-recent-card">
+                <div class="observe-section-heading"><div><p class="kicker">RECENT ANALYSES</p><h2>最近分析</h2></div><button class="text-button" type="button" data-observe-recent-more aria-expanded="false" aria-controls="observe-recent-list"><span>查看更多</span> <i data-lucide="arrow-right"></i></button></div>
+                <div class="observe-recent-list" id="observe-recent-list" aria-live="polite"></div>
+              </article>
+            </section>
+
+            <section class="observe-decoder-shell" data-workspace-panel="observe-decoder" aria-label="课堂深度解码台">
+              <header class="observe-decoder-header">
+                <div><p class="kicker">CLASSROOM DEEP DECODER</p><h2>课堂深度解码台</h2><span>从原始话语到关键事件，再到量化洞察，沿同一条证据路径复盘课堂。</span></div>
+              </header>
+              <nav class="observe-decoder-navigation" aria-label="深度解码台内部导航">
+                <button type="button" class="active" data-observe-decoder-target="observe-coding"><span>01</span><b>逐字稿编码</b><small>识别师生话轮与课堂行为</small></button>
+                <i data-lucide="arrow-right"></i>
+                <button type="button" data-observe-decoder-target="observe-events"><span>02</span><b>关键事件</b><small>定位值得解释的课堂片段</small></button>
+                <i data-lucide="arrow-right"></i>
+                <button type="button" data-observe-decoder-target="observe-insights"><span>03</span><b>数据洞察</b><small>比较互动节奏与参与结构</small></button>
+              </nav>
+            </section>
+
+            <div class="dashboard-layout">
+              <div class="dashboard-main">
+                <section class="card input-card" id="material-panel" data-workspace-panel="observe-material">
+                  <div class="card-head">
+                    <div>
+                      <p class="kicker">01 · MATERIAL</p>
+                      <h2>课堂材料</h2>
+                    </div>
+                    <label class="upload-button">
+                      <input type="file" id="file-input" accept=".txt,.md,.csv,.docx" />
+                      <i data-lucide="upload"></i>
+                      导入文件
+                    </label>
+                  </div>
+
+                  <div class="meta-grid">
+                    <label>课题<input id="lesson-title" value="人教版一年级上册《9 加几》" /></label>
+                    <label>学科<input id="subject" value="小学数学" /></label>
+                    <label>年级<input id="grade" value="一年级" /></label>
+                    <label>课堂时长<input id="duration" value="约 40 分钟" /></label>
+                    <label>授课教师<input id="teacher-name" placeholder="待补充" /></label>
+                    <label>分析日期<input id="analysis-date" type="date" /></label>
+                  </div>
+
+                  <div class="dual-input-panel">
+                    <div class="dual-input-head">
+                      <div>
+                        <span class="source-number">A</span>
+                        <div><b>课堂逐字稿</b><small>提供课堂真实发生的事实与证据</small></div>
+                      </div>
+                      <i data-lucide="move-right"></i>
+                      <div>
+                        <span class="source-number theory-source">B</span>
+                        <div><b>教育理论库</b><small>提供解释机制与判断框架</small></div>
+                      </div>
+                    </div>
+                    <div class="theory-selector-head"><div><b>理论分析范围</b><small>勾选需要参与本次课堂分析的理论</small></div><strong id="theory-selection-summary">已选择 0 项</strong></div>
+                    <div class="theory-selector" id="theory-selector"></div>
+                    <div class="custom-theory-row">
+                      <input id="custom-theory-name" placeholder="补充自定义理论名称" maxlength="30" />
+                      <input id="custom-theory-keywords" placeholder="证据关键词，用顿号分隔" maxlength="80" />
+                      <button class="ghost small" type="button" id="add-custom-theory"><i data-lucide="plus"></i>加入理论库</button>
+                    </div>
+                  </div>
+
+                  <div class="media-evidence-panel">
+                    <div class="media-evidence-head">
+                      <div><span class="source-number media-source">M</span><div><b>音视频证据核验</b><small id="media-file-status">尚未载入课堂音视频</small></div></div>
+                      <label class="upload-button small">
+                        <input type="file" id="media-input" accept="audio/*,video/*" />
+                        <i data-lucide="audio-lines"></i>载入音视频
+                      </label>
+                    </div>
+                    <div class="transcription-inline-status" id="transcription-status" role="status" aria-live="polite" hidden></div>
+                    <div class="media-player-wrap" id="media-player-wrap" hidden>
+                      <audio id="audio-player" controls hidden></audio>
+                      <video id="video-player" controls hidden></video>
+                      <button class="ghost small" type="button" id="capture-media-time"><i data-lucide="timer"></i>记录当前时间点</button>
+                      <div class="media-markers" id="media-markers"></div>
+                    </div>
+                  </div>
+
+                  <label class="textarea-label">
+                    <span>课堂逐字稿 / 教学实录 <em id="transcript-count">0 字</em></span>
+                    <textarea id="transcript" spellcheck="false" maxlength="120000"></textarea>
+                  </label>
+
+                  <div class="transcript-refinement-result" id="transcript-refinement" role="status" aria-live="polite" hidden></div>
+
+                  <div class="input-actions">
+                    <button class="primary" type="button" id="analyze-bottom"><i data-lucide="scan-line"></i>重新分析</button>
+                    <button class="ghost" type="button" id="refine-transcript"><i data-lucide="wand-sparkles"></i>优化并标注话轮</button>
+                    <button class="ghost" type="button" id="clear-transcript"><i data-lucide="eraser"></i>清空</button>
+                    <span class="action-spacer"></span>
+                    <button class="ghost" type="button" id="copy-report"><i data-lucide="copy"></i>复制报告</button>
+                    <button class="ghost" type="button" id="download-report"><i data-lucide="file-type-2"></i>导出 Word</button>
+                  </div>
+                </section>
+
+                <section class="card transcript-card" data-workspace-panel="observe-coding" data-workspace-group="observe-decoder" id="observe-coding-panel">
+                  <div class="card-head">
+                    <div>
+                      <p class="kicker">02 · TRANSCRIPT CODING</p>
+                      <h2>逐字稿编码结果</h2>
+                    </div>
+                    <label class="tag-filter-control"><span>类别选择</span><select id="tag-filter" aria-label="类别选择">
+                      <option value="all">全部标注</option>
+                      <option value="teacher-question">教师提问</option>
+                      <option value="deep-question">高阶追问</option>
+                      <option value="student-answer">学生应答</option>
+                      <option value="feedback">教师反馈</option>
+                      <option value="theory">理论证据</option>
+                      <option value="collaboration">合作交流</option>
+                      <option value="wait-evidence">等待证据</option>
+                    </select></label>
+                  </div>
+                  <div class="coded-list" id="coded-list"></div>
+                </section>
+
+                <section class="card events-card" data-workspace-panel="observe-events" data-workspace-group="observe-decoder" id="observe-events-panel">
+                  <div class="card-head">
+                    <div>
+                      <p class="kicker">03 · KEY MOMENTS</p>
+                      <h2>关键课堂事件</h2>
+                    </div>
+                    <span class="status warm" id="event-count">0 个事件</span>
+                  </div>
+                  <div class="events" id="events"></div>
+                </section>
+
+                <section class="card chain-card" id="analysis-chain-panel" data-workspace-panel="observe-theory">
+                  <div class="card-head">
+                    <div>
+                      <p class="kicker">04 · SIX-LEVEL ANALYSIS</p>
+                      <h2>六层课堂分析链</h2>
+                    </div>
+                    <span class="status" id="chain-count">0 条证据链</span>
+                  </div>
+                  <div class="layer-map" aria-label="六层分析结构">
+                    <span><b>L1</b><span>课堂事实</span></span><i data-lucide="chevron-right"></i>
+                    <span><b>L2</b><span>行为识别</span></span><i data-lucide="chevron-right"></i>
+                    <span><b>L3</b><span>教学机制</span></span><i data-lucide="chevron-right"></i>
+                    <span><b>L4</b><span>理论匹配</span></span><i data-lucide="chevron-right"></i>
+                    <span><b>L5</b><span>落地判断</span></span><i data-lucide="chevron-right"></i>
+                    <span><b>L6</b><span>教学改进</span></span>
+                  </div>
+                  <div class="analysis-chain" id="analysis-chain"></div>
+                </section>
+
+                <section class="card landing-matrix-card" data-workspace-panel="observe-theory">
+                  <div class="card-head">
+                    <div>
+                      <p class="kicker">05 · THEORY IMPLEMENTATION</p>
+                      <h2>课堂关键理论匹配与落地矩阵</h2>
+                    </div>
+                    <button class="ghost small" type="button" id="copy-landing-cards"><i data-lucide="copy"></i>复制落地卡</button>
+                  </div>
+                  <div class="landing-legend">
+                    <span class="level deep">深度落地</span>
+                    <span class="level sufficient">较充分落地</span>
+                    <span class="level partial">部分落地</span>
+                    <span class="level surface">表层呈现</span>
+                    <span class="level insufficient">证据不足</span>
+                  </div>
+                  <div class="landing-table-wrap">
+                    <table class="landing-table">
+                      <thead><tr><th>课堂事件</th><th>主要理论</th><th>辅助理论</th><th>匹配强度</th><th>落地判断</th></tr></thead>
+                      <tbody id="landing-table-body"></tbody>
+                    </table>
+                  </div>
+                  <div class="landing-cards" id="landing-cards"></div>
+                </section>
+
+                <section class="card report-card" id="report-panel" data-workspace-panel="observe-report">
+                  <div class="card-head">
+                    <div>
+                      <p class="kicker">06 · EDITABLE REPORT</p>
+                      <h2>课堂观察分析报告</h2>
+                    </div>
+                    <div class="top-actions">
+                      <button class="icon-button" type="button" id="regenerate-report" title="重新生成报告"><i data-lucide="refresh-cw"></i></button>
+                      <button class="ghost small" type="button" id="download-word"><i data-lucide="file-type-2"></i>导出 Word</button>
+                      <button class="primary small" type="button" data-view="reflect">转入反思 <i data-lucide="arrow-up-right"></i></button>
+                    </div>
+                  </div>
+                  <textarea id="report-output" class="report-output" spellcheck="false"></textarea>
+                </section>
+
+                <section class="card observation-extras-card" id="observation-extras" data-workspace-panel="observe-insights" data-workspace-group="observe-decoder" hidden>
+                  <div class="card-head">
+                    <div><p class="kicker">EVIDENCE DETAILS</p><h2>课堂热词与五维评价</h2><span id="observation-evidence-notice"></span></div>
+                  </div>
+                  <div class="observation-extras-grid">
+                    <section><h3>课堂热词</h3><div id="observation-hotwords"></div></section>
+                    <section><h3>评价指标雷达图</h3><svg id="observation-radar-chart" viewBox="0 0 360 320" role="img" aria-label="课堂观察五维评价雷达图"></svg></section>
+                  </div>
+                </section>
+              </div>
+
+              <aside class="insight-column" aria-label="分析洞察">
+                <section class="card score-card" data-workspace-panel="observe-insights" data-workspace-group="observe-decoder">
+                  <div class="card-head compact-head">
+                    <div><p class="kicker">QUALITY SCORE</p><h2>课堂质量</h2></div>
+                    <button class="icon-button subtle" type="button" title="评分由课堂行为数据综合计算"><i data-lucide="info"></i></button>
+                  </div>
+                  <div class="score-orbit">
+                    <svg viewBox="0 0 120 120" aria-hidden="true">
+                      <circle class="score-track" cx="60" cy="60" r="49"></circle>
+                      <circle class="score-value" id="score-ring" cx="60" cy="60" r="49"></circle>
+                    </svg>
+                    <div><strong id="quality-score">0.0</strong><span>/ 10</span></div>
+                  </div>
+                  <div class="score-caption"><span class="status-dot"></span><b>结构清晰，证据充分</b></div>
+                  <p id="quality-text">系统将依据问题质量、反馈深度、理论证据与学生参与度形成综合评价。</p>
+                </section>
+
+                <section class="card rhythm-card" data-workspace-panel="observe-insights" data-workspace-group="observe-decoder">
+                  <div class="card-head compact-head">
+                    <div><p class="kicker">INTERACTION</p><h2>互动节奏</h2></div>
+                    <span class="mini-chip">全课</span>
+                  </div>
+                  <div class="rhythm-legend"><span><i class="legend-teacher"></i>教师</span><span><i class="legend-student"></i>学生</span></div>
+                  <div class="bars" id="heat-bars"></div>
+                  <div class="chart-axis"><span>导入</span><span>探究</span><span>归纳</span><span>迁移</span></div>
+                </section>
+
+                <section class="card structure-card" data-workspace-panel="observe-insights" data-workspace-group="observe-decoder">
+                  <div class="card-head compact-head">
+                    <div><p class="kicker">DIALOGUE STRUCTURE</p><h2>互动结构</h2></div>
+                    <span class="mini-chip">逐字稿测算</span>
+                  </div>
+                  <div class="structure-stats" id="structure-stats"></div>
+                  <p class="evidence-notice" id="evidence-notice"></p>
+                </section>
+
+                <section class="card theory-card" id="theory-panel" data-workspace-panel="observe-theory">
+                  <div class="card-head compact-head">
+                    <div><p class="kicker">THEORY MAPPING</p><h2>理论证据链</h2></div>
+                    <button class="icon-button subtle" type="button" id="copy-theory" title="复制理论证据链"><i data-lucide="copy"></i></button>
+                  </div>
+                  <div class="theory-list" id="theory-list"></div>
+                </section>
+              </aside>
+            </div>
+
+            <nav class="observe-section-footer-pager" data-workspace-panel="observe-decoder" aria-label="课堂观察板块导航">
+              <button type="button" class="observe-section-pager-button is-previous" data-workspace-section="observe-material"><i data-lucide="arrow-left"></i><span><small>上一板块</small><b>课堂材料</b></span></button>
+              <button type="button" class="observe-section-pager-button is-next" data-workspace-section="observe-theory"><span><small>下一板块</small><b>理论证据链</b></span><i data-lucide="arrow-right"></i></button>
+            </nav>
+          </section>
+
+          <section class="view reflection-studio" id="reflect">
+            <section class="workspace-banner reflect-banner" data-workspace-panel="reflect-overview">
+              <div class="banner-copy">
+                <div class="banner-status"><span></span> 课堂观察与理论库已接通</div>
+                <h2>从课后复盘走向教学进阶</h2>
+                <p id="reflect-banner-copy">上传反思，建立“证据—问题—理论—行动—验证”专业闭环</p>
+                <div class="banner-actions">
+                  <button class="banner-button" type="button" data-workspace-section="reflect-material">
+                    开始新一轮反思 <i data-lucide="arrow-right"></i>
+                  </button>
+                  <span><i data-lucide="refresh-cw"></i> 单轮诊断 + 跨轮追踪</span>
+                </div>
+              </div>
+              <div class="reflection-q-scene" aria-label="反思与成果转化视觉">
+              <img class="reflection-banner-art" src="./assets/reflection-icon.png?v=20260827-reflection-icon" alt="课堂反思与成果转化" />
+                <div class="reflection-q-floaters" aria-hidden="true">
+                  <span>课堂证据</span>
+                  <span>问题诊断</span>
+                  <span>理论映射</span>
+                  <span>行动验证</span>
+                  <span>成长轨迹</span>
+                  <span>证据回看</span>
+                  <span>共识提炼</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="reflection-overview reflection-command" aria-label="反思转化概览" data-workspace-panel="reflect-overview">
+              <article class="card conversion-board">
+                <div class="card-head compact-head">
+                  <div><p class="kicker">REFLECTION LOOP</p><h2>专业反思闭环</h2></div>
+                  <span class="mini-chip">6 个阶段</span>
+                </div>
+                <div class="conversion-flow reflection-loop-flow">
+                  <button class="conversion-step is-done" type="button" data-workspace-section="reflect-material"><span>01</span><b>材料输入</b><small id="conversion-evidence">观察数据已同步</small></button>
+                  <i data-lucide="arrow-right"></i>
+                  <button class="conversion-step is-active" type="button" data-workspace-section="reflect-diagnosis"><span>02</span><b>问题识别</b><small id="conversion-diagnosis">待运行诊断</small></button>
+                  <i data-lucide="arrow-right"></i>
+                  <button class="conversion-step" type="button" data-workspace-section="reflect-theory"><span>03</span><b>理论解释</b><small id="conversion-theory">待匹配理论</small></button>
+                  <i data-lucide="arrow-right"></i>
+                  <button class="conversion-step" type="button" data-workspace-section="reflect-action"><span>04</span><b>行动改进</b><small id="conversion-action">待生成策略</small></button>
+                  <i data-lucide="arrow-right"></i>
+                  <button class="conversion-step" type="button" data-workspace-section="reflect-outcomes"><span>05</span><b>成果沉淀</b><small id="conversion-reflection">待生成成果</small></button>
+                  <i data-lucide="arrow-right"></i>
+                  <button class="conversion-step" type="button" data-workspace-section="reflect-trajectory"><span>06</span><b>下一轮验证</b><small id="conversion-export">持续追踪</small></button>
+                </div>
+              </article>
+
+              <article class="card readiness-card">
+                <div class="card-head compact-head">
+                  <div><p class="kicker">PROJECT STATUS</p><h2>《平均数》改进项目</h2></div>
+                  <strong id="readiness-score">72%</strong>
+                </div>
+                <div class="readiness-track"><span id="readiness-bar"></span></div>
+                <div class="readiness-list" id="readiness-list"></div>
+              </article>
+            </section>
+
+            <section class="reflection-overview reflection-overview-grid" data-workspace-panel="reflect-overview">
+              <article class="card reflection-signal-card">
+                <div class="card-head compact-head"><div><p class="kicker">CURRENT DIAGNOSIS</p><h2>本轮关键发现</h2></div><button class="ghost small" type="button" data-workspace-section="reflect-diagnosis">查看诊断 <i data-lucide="arrow-up-right"></i></button></div>
+                <div class="reflection-signal-list" id="reflection-overview-signals"></div>
+              </article>
+              <article class="card theory-rank-card">
+                <div class="card-head compact-head"><div><p class="kicker">THEORY MATCH</p><h2>理论匹配 TOP 5</h2></div><span class="mini-chip">理论库</span></div>
+                <div class="reflection-theory-ranks" id="reflection-overview-theories"></div>
+              </article>
+              <article class="card trajectory-mini-card">
+                <div class="card-head compact-head"><div><p class="kicker">IMPROVEMENT TRACE</p><h2>最近改进轨迹</h2></div><button class="icon-button subtle" type="button" data-workspace-section="reflect-trajectory" title="查看完整轨迹"><i data-lucide="arrow-up-right"></i></button></div>
+                <div class="trajectory-sparkline" aria-hidden="true"><svg viewBox="0 0 420 110" preserveAspectRatio="none"><path class="trajectory-grid" d="M8 22H412M8 55H412M8 88H412"></path><path class="trajectory-line" d="M70 88 C125 84,150 67,210 61 S300 42,350 20"></path><circle cx="70" cy="88" r="5"></circle><circle cx="210" cy="61" r="5"></circle><circle cx="350" cy="20" r="6"></circle></svg></div>
+                <div class="trajectory-mini-meta"><span><b>第 1 轮</b><small>发现问题</small></span><span><b>第 2 轮</b><small>策略验证</small></span><span><b>第 3 轮</b><small>持续改善</small></span></div>
+              </article>
+            </section>
+
+            <div class="reflection-layout">
+              <div class="reflection-main">
+                <section class="card reflection-material-panel" data-workspace-panel="reflect-material">
+                  <div class="reflection-panel-head">
+                    <div><p class="kicker">01 · MATERIAL INTAKE</p><h2>导入真实教学反思</h2><span>支持独立反思材料，也可接入课堂观察报告作为补充证据。</span></div>
+                    <button class="primary" type="button" id="run-reflection-analysis"><i data-lucide="scan-search"></i>开始诊断</button>
+                  </div>
+                  <div class="reflection-context-grid">
+                    <label>项目名称<input id="reflection-project" value="平均数课堂持续改进" /></label>
+                    <label>课例名称<input id="reflection-lesson" value="人教版四年级下册《平均数》" /></label>
+                    <label>当前轮次<select id="reflection-round"><option value="1">第 1 轮 · 初始诊断</option><option value="2" selected>第 2 轮 · 改进验证</option><option value="3">第 3 轮 · 持续优化</option></select></label>
+                    <label>材料类型<select id="reflection-source-type"><option>课后教学反思</option><option>听评课记录</option><option>课堂观察报告</option><option>教研活动记录</option></select></label>
+                  </div>
+                  <div class="reflection-intake-grid">
+                    <div class="reflection-dropzone" id="reflection-dropzone" tabindex="0">
+                      <input id="reflection-file-input" type="file" accept=".docx,.txt,.md,.pdf" hidden />
+                      <span class="reflection-upload-icon"><i data-lucide="file-up"></i></span>
+                      <h3>拖放或选择反思文件</h3>
+                      <p>Word、PDF、TXT、Markdown · 单文件不超过 20MB</p>
+                      <button class="ghost" type="button" id="choose-reflection-file"><i data-lucide="folder-open"></i>选择文件</button>
+                      <div class="reflection-file-state" id="reflection-file-state"><i data-lucide="circle-dashed"></i><span>尚未选择文件</span></div>
+                    </div>
+                    <label class="textarea-label reflection-source-editor"><span>反思原文</span><textarea id="reflection-source" spellcheck="false" maxlength="80000">执教《平均数》后，我围绕理解平均数统计意义组织了情境导入、探究新知、应用拓展和总结提升。学生通过移多补少理解了平均数的代表性，但探究环节耗时较长，逆推练习被压缩。小组汇报主要集中于表达能力较强的学生，基础薄弱学生参与不足。生活应用更多停留在举例，没有形成真实的数据决策任务。</textarea><small id="reflection-source-count">0 字</small></label>
+                  </div>
+                  <div class="reflection-evidence-options">
+                    <span id="source-metrics"><i data-lucide="bar-chart-3"></i>课堂指标：自动接入</span>
+                    <span id="source-theories"><i data-lucide="library"></i>理论证据：自动匹配</span>
+                    <span id="source-events"><i data-lucide="bookmark"></i>关键事件：自动接入</span>
+                    <label><input id="reflection-use-observation" type="checkbox" checked />合并课堂观察数据</label>
+                  </div>
+                  <label class="textarea-label reflection-brief-field"><span>教师最想解决的问题</span><textarea id="reflection-brief">如何在保证概念探究深度的同时控制课堂节奏，并让不同基础的学生都获得真实的表达和展示机会？</textarea></label>
+                </section>
+
+                <section class="reflection-path-navigation" id="reflection-path-navigation" aria-label="知行转化路径" hidden>
+                  <div class="reflection-path-navigation-copy"><span>KNOWLEDGE TO ACTION</span><b>知行转化路径</b></div>
+                  <nav class="reflection-path-micro-nav" aria-label="知行转化子步骤">
+                    <button type="button" data-reflection-path-section="reflect-diagnosis"><span>01</span><b>问题诊断</b><small>事实与判断</small></button>
+                    <i data-lucide="chevron-right" aria-hidden="true"></i>
+                    <button type="button" data-reflection-path-section="reflect-theory"><span>02</span><b>理论匹配</b><small>解释机制</small></button>
+                    <i data-lucide="chevron-right" aria-hidden="true"></i>
+                    <button type="button" data-reflection-path-section="reflect-action"><span>03</span><b>改进行动</b><small>实践验证</small></button>
+                  </nav>
+                </section>
+
+                <section class="card reflection-diagnosis-panel" data-workspace-panel="reflect-diagnosis">
+                  <div class="reflection-panel-head"><div><p class="kicker">PATH 01 · EVIDENCE DIAGNOSIS</p><h2>从经验描述中识别真正问题</h2><span>先呈现课堂事实，再给出判断；证据不足时明确提示补充。</span></div><button class="primary" type="button" data-workspace-section="reflect-theory">进入理论解释 <i data-lucide="arrow-right"></i></button></div>
+                  <div class="diagnosis-summary" id="reflection-diagnostic-stats"></div>
+                  <div class="diagnosis-workbench">
+                    <section class="diagnosis-list-wrap"><div class="section-inline-head"><h3>核心问题清单</h3><span>按改进优先级排序</span></div><div class="reflection-diagnosis-list" id="reflection-diagnosis-list"></div></section>
+                    <section class="evidence-matrix-wrap"><div class="section-inline-head"><h3>事实与判断对照</h3><span>保留证据边界</span></div><div class="reflection-evidence-matrix" id="reflection-evidence-matrix"></div></section>
+                  </div>
+                </section>
+
+                <section class="card reflection-theory-panel" data-workspace-panel="reflect-theory">
+                  <div class="reflection-panel-head"><div><p class="kicker">PATH 02 · THEORY EXPLANATION</p><h2>建立“现象—原因—理论”解释链</h2><span>理论不是标签，而是对具体课堂机制的解释工具。</span></div><button class="primary" type="button" id="confirm-reflection-theories"><i data-lucide="check-check"></i>确认理论组合</button></div>
+                  <div class="reflection-theory-layout">
+                    <div><div class="section-inline-head"><h3>推荐理论</h3><span>可多选并调整</span></div><div class="reflection-theory-list" id="reflection-theory-list"></div></div>
+                    <aside class="reflection-theory-detail" id="reflection-theory-detail"></aside>
+                  </div>
+                  <div class="section-inline-head mapping-head"><h3>课堂问题与理论映射</h3><span>点击行可查看依据</span></div>
+                  <div class="reflection-mapping-table" id="reflection-mapping-table"></div>
+                </section>
+
+                <section class="card reflection-action-panel" data-workspace-panel="reflect-action">
+                  <div class="reflection-panel-head"><div><p class="kicker">PATH 03 · ACTION DESIGN</p><h2>把诊断转化为下一节课能实施的改变</h2><span>每项行动同时配置课堂话术、观察指标和判断标准。</span></div><button class="primary" type="button" id="regenerate-reflection-actions"><i data-lucide="refresh-cw"></i>重新生成策略</button></div>
+                  <div class="reflection-action-list" id="reflection-action-list"></div>
+                  <div class="experiment-planner">
+                    <div class="section-inline-head"><div><p class="kicker">NEXT ROUND IMPROVEMENT</p><h3>教学改进方案</h3></div><span class="mini-chip">第 3 轮</span></div>
+                    <div class="experiment-grid">
+                      <label>核心改进目标<textarea id="reflection-experiment-goal">压缩重复汇报时间，通过分层提问和结构化小组角色扩大参与，并保留概念深化与真实数据决策任务。</textarea></label>
+                      <label>实施策略<textarea id="reflection-experiment-strategy">1. 探究、讨论、汇报设置明确时间节点；2. 先独立思考，再组内按角色发言；3. 使用极端数据和反例深化代表性；4. 用真实数据完成比较、计算、解释和决策。</textarea></label>
+                    </div>
+                    <div class="observation-indicators" id="reflection-indicators"></div>
+                  </div>
+                </section>
+
+                <nav class="reflection-path-pager" id="reflection-path-pager" aria-label="知行转化路径翻页" hidden>
+                  <button type="button" class="reflection-path-pager-button is-previous" id="reflection-path-previous" data-reflection-path-target="" disabled><i data-lucide="arrow-left"></i><span><small>上一步</small><b>已是第一步</b></span></button>
+                  <span class="reflection-path-position" id="reflection-path-position">1 / 3</span>
+                  <button type="button" class="reflection-path-pager-button is-next" id="reflection-path-next" data-reflection-path-target="reflect-theory"><span><small>下一步</small><b>理论匹配</b></span><i data-lucide="arrow-right"></i></button>
+                </nav>
+
+                <section class="card reflection-outcome-panel" data-workspace-panel="reflect-outcomes">
+                  <div class="reflection-panel-head"><div><p class="kicker">05 · OUTCOME STUDIO</p><h2>将一次反思转化为专业成果</h2><span>选择成果形态后生成可编辑正文，并可导出 Word 或完整成果包。</span></div><div class="top-actions"><button class="ghost" type="button" id="download-reflection"><i data-lucide="download"></i>导出 Markdown</button><button class="primary" type="button" id="generate-reflection"><i data-lucide="sparkles"></i>生成当前成果</button></div></div>
+                  <div class="outcome-type-grid" id="reflection-output-types">
+                    <button class="active" type="button" data-reflection-output="reflection"><i data-lucide="notebook-pen"></i><span><b>反思深化版</b><small>证据化、理论化复盘</small></span></button>
+                    <button type="button" data-reflection-output="case"><i data-lucide="book-open-text"></i><span><b>理论教学案例</b><small>完整案例叙事</small></span></button>
+                    <button type="button" data-reflection-output="research"><i data-lucide="presentation"></i><span><b>教研报告</b><small>适合一课一研交流</small></span></button>
+                    <button type="button" data-reflection-output="paper"><i data-lucide="file-text"></i><span><b>论文框架</b><small>提炼研究问题与结构</small></span></button>
+                    <button type="button" data-reflection-output="lesson"><i data-lucide="repeat-2"></i><span><b>课例研究</b><small>支持多轮持续改进</small></span></button>
+                    <button type="button" data-reflection-output="experiment"><i data-lucide="route"></i><span><b>教学改进方案</b><small>下一轮直接实施</small></span></button>
+                  </div>
+                  <div class="outcome-toolbar">
+                    <input id="output-type" type="hidden" value="reflection" />
+                    <label>表达风格<select id="writing-style"><option value="teacher">教师教研表达</option><option value="student">师范生课程作业</option><option value="paper">论文式表达</option><option value="competition">教学比赛材料</option></select></label>
+                    <span class="edit-state"><i data-lucide="circle-check"></i>可继续编辑</span>
+                    <button class="ghost small" type="button" id="copy-reflection"><i data-lucide="copy"></i>复制正文</button>
+                    <button class="ghost small" type="button" id="download-reflection-word"><i data-lucide="file-down"></i>导出 Word</button>
+                  </div>
+                  <textarea id="reflection-output" class="report-output reflection-document-editor" spellcheck="false"></textarea>
+                  <div class="outcome-support-grid">
+                    <section><div class="section-inline-head"><h3>成果结构</h3><span>自动提炼</span></div><div class="framework" id="framework"></div></section>
+                    <section><div class="section-inline-head"><h3>成果包组件</h3><button class="icon-button subtle" type="button" id="download-portfolio" title="导出成果包"><i data-lucide="download"></i></button></div><div class="portfolio">
+                      <label><input type="checkbox" checked /><span><i data-lucide="scan-text"></i>原始反思与课堂证据</span></label>
+                      <label><input type="checkbox" checked /><span><i data-lucide="git-merge"></i>理论映射证据链</span></label>
+                      <label><input type="checkbox" checked /><span><i data-lucide="notebook-pen"></i>理论化反思正文</span></label>
+                      <label><input type="checkbox" checked /><span><i data-lucide="route"></i>下一轮改进方案</span></label>
+                      <label><input type="checkbox" /><span><i data-lucide="chart-no-axes-combined"></i>改进轨迹对比</span></label>
+                      <label><input type="checkbox" /><span><i data-lucide="chart-radar"></i>教师成长画像</span></label>
+                    </div><button class="portfolio-download" type="button" id="download-portfolio-secondary"><i data-lucide="package-check"></i><span><b>导出完整成果包</b><small>Markdown · 前端本地生成</small></span><i data-lucide="arrow-up-right"></i></button></section>
+                  </div>
+                </section>
+
+                <section class="card reflection-trajectory-panel" data-workspace-panel="reflect-trajectory">
+                  <div class="reflection-panel-head"><div><p class="kicker">IMPROVEMENT PORTRAIT · TRAJECTORY</p><h2>同一课例如何被一轮轮改进</h2><span>对比已改善、持续存在、新出现和暂缺证据的问题。</span></div><button class="primary" type="button" id="add-reflection-round"><i data-lucide="plus"></i>新增一轮实践</button></div>
+                  <div class="round-switcher" id="reflection-round-switcher"></div>
+                  <div class="round-comparison" id="reflection-round-comparison"></div>
+                  <div class="reflection-timeline" id="reflection-timeline"></div>
+                </section>
+
+                <section class="card reflection-profile-panel" data-workspace-panel="reflect-profile">
+                  <div class="reflection-panel-head"><div><p class="kicker">IMPROVEMENT PORTRAIT · GROWTH</p><h2>教师专业成长画像</h2><span>基于多个课例与多轮反思形成趋势判断，不以单节课给教师贴标签。</span></div><button class="ghost" type="button" id="export-growth-profile"><i data-lucide="download"></i>导出成长简报</button></div>
+                  <div class="growth-profile-grid">
+                    <section class="growth-radar-wrap"><div class="section-inline-head"><h3>能力发展雷达</h3><span>近 6 次反思</span></div><svg class="growth-radar" id="growth-radar" viewBox="0 0 360 320" role="img" aria-label="教师专业成长能力雷达图"></svg></section>
+                    <section class="growth-insight-wrap"><div class="growth-insight-grid" id="growth-insight-grid"></div></section>
+                  </div>
+                  <div class="growth-bottom-grid">
+                    <section><div class="section-inline-head"><h3>反思能力评估</h3><span>基于当前材料</span></div><div class="rubric-list" id="rubric-list"></div></section>
+                    <section><div class="section-inline-head"><h3>课例成长档案</h3><button class="ghost small" type="button" id="new-reflection-project"><i data-lucide="folder-plus"></i>新建项目</button></div><div class="reflection-archive" id="reflection-archive"></div></section>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+
+          <section class="view" id="resources">
+            <section class="resource-hub-panel" data-workspace-panel="resource-navigation">
+              <div class="resource-hub-head">
+                <div><p class="kicker">AUTHORITATIVE EDUCATION RESOURCES</p><h2>权威信息与资源导航</h2><span>集中访问教育政策、课程资源、高校平台与可信教学素材。</span></div>
+              </div>
+              <div class="resource-navigation-grid">
+                <a href="https://www.moe.gov.cn/" target="_blank" rel="noopener noreferrer"><span><i data-lucide="landmark"></i></span><div><b>中华人民共和国教育部</b><small>政策文件、通知公告与教育数据</small></div><i data-lucide="arrow-up-right"></i></a>
+                <a href="https://www.pep.com.cn/" target="_blank" rel="noopener noreferrer"><span><i data-lucide="book-copy"></i></span><div><b>人民教育出版社</b><small>教材研究、教学资源与课程服务</small></div><i data-lucide="arrow-up-right"></i></a>
+                <a href="https://www.smartedu.cn/" target="_blank" rel="noopener noreferrer"><span><i data-lucide="school"></i></span><div><b>国家智慧教育公共服务平台</b><small>基础教育、高等教育与教师研修资源</small></div><i data-lucide="arrow-up-right"></i></a>
+                <a href="https://www.neea.edu.cn/" target="_blank" rel="noopener noreferrer"><span><i data-lucide="badge-check"></i></span><div><b>中国教育考试网</b><small>权威考试信息与评价服务</small></div><i data-lucide="arrow-up-right"></i></a>
+                <a href="https://jyt.zj.gov.cn/" target="_blank" rel="noopener noreferrer"><span><i data-lucide="landmark"></i></span><div><b>浙江省教育厅</b><small>地方教育政策、通知公告与教师教育资源</small></div><i data-lucide="arrow-up-right"></i></a>
+                <a href="https://fe.bnu.edu.cn/" target="_blank" rel="noopener noreferrer"><span><i data-lucide="library-big"></i></span><div><b>北京师范大学 · 教育学部</b><small>教育学科研究、人才培养与师范教育资源</small></div><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </section>
+
+            <section class="resource-hub-panel" data-workspace-panel="cloud-drive">
+              <div class="resource-hub-head">
+                <div><p class="kicker">EDULINK CLOUD DRIVE</p><h2>云盘</h2><span>统一查看历次上传文件、生成成果与下载记录。</span></div>
+              </div>
+              <input id="cloud-drive-input" type="file" multiple hidden />
+              <div class="cloud-drive-summary">
+                <article><span><i data-lucide="files"></i></span><div><b id="cloud-drive-file-count">0</b><small>已上传文件</small></div></article>
+                <article><span><i data-lucide="download"></i></span><div><b id="cloud-drive-download-count">0</b><small>成果下载记录</small></div></article>
+                <article><span><i data-lucide="hard-drive"></i></span><div><b>本地</b><small>当前前端存储方式</small></div></article>
+              </div>
+              <div class="cloud-drive-layout">
+                <section class="cloud-drive-files"><header><div><h3>我的文件</h3><span>后端接入后将同步跨设备文件</span></div><button type="button" data-cloud-drive-filter="all">全部文件</button></header><div id="cloud-drive-file-list"></div></section>
+                <aside class="cloud-drive-dropzone" id="cloud-drive-dropzone" tabindex="0"><i data-lucide="cloud-upload"></i><h3>拖拽文件到这里</h3><p>支持文档、表格、图片、音视频等教学材料</p><button type="button">选择文件</button></aside>
+              </div>
+            </section>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <div class="workspace-guide-layer" id="workspace-guide-layer" aria-hidden="true">
+      <div class="workspace-guide-backdrop" id="workspace-guide-backdrop" aria-hidden="true"></div>
+      <div class="workspace-tour-spotlight" id="workspace-tour-spotlight" aria-hidden="true">
+        <span id="workspace-tour-focus-label">当前区域</span>
+      </div>
+      <button class="workspace-tour-skip" type="button" id="workspace-guide-skip">
+        跳过本次 <i data-lucide="skip-forward"></i>
+      </button>
+      <div class="workspace-tour-companion" id="workspace-tour-companion">
+        <figure class="workspace-tour-mentor" aria-hidden="true">
+          <span class="workspace-tour-mentor-glow"></span>
+          <img src="./assets/nav-mentor-female.png?v=20260830-mentor-v2" data-assistant-mentor-image alt="" />
+          <figcaption><i data-lucide="sparkles"></i><span><b>小智</b><small>EduLink 引导员</small></span></figcaption>
+        </figure>
+        <aside class="workspace-guide" role="dialog" aria-modal="true" aria-labelledby="workspace-guide-title" aria-describedby="workspace-guide-copy">
+          <header>
+            <div class="workspace-tour-stepmark"><i id="workspace-guide-icon" data-lucide="sparkles"></i></div>
+            <div><p id="workspace-guide-eyebrow">WELCOME TO EDULINK</p><h2 id="workspace-guide-title">和小智一起认识工作台</h2></div>
+          </header>
+          <p class="workspace-tour-copy" id="workspace-guide-copy">我会用 6 个步骤带你找到助手、任务导航、工作区和常用设置。</p>
+          <div class="workspace-tour-tip" id="workspace-guide-tip"><i data-lucide="mouse-pointer-2"></i><span>跟随高亮区域完成浏览</span></div>
+          <nav class="workspace-tour-progress" id="workspace-guide-progress" aria-label="引导进度"></nav>
+          <footer>
+            <span class="workspace-tour-counter"><b id="workspace-guide-current-index">01</b><small>/<em id="workspace-guide-total">20</em></small></span>
+            <div>
+              <button class="ghost" type="button" id="workspace-guide-prev"><i data-lucide="arrow-left"></i>上一步</button>
+              <button class="primary" type="button" id="workspace-guide-next">下一步<i data-lucide="arrow-right"></i></button>
+            </div>
+          </footer>
+        </aside>
+      </div>
+    </div>
+
+    <div class="workspace-settings-layer" id="workspace-settings-layer" aria-hidden="true">
+      <button class="workspace-settings-backdrop" type="button" id="workspace-settings-backdrop" aria-label="关闭偏好设置"></button>
+      <section class="workspace-settings-dialog" role="dialog" aria-modal="true" aria-labelledby="workspace-settings-title">
+        <header>
+          <span><i data-lucide="settings-2"></i></span>
+          <div><p>PERSONAL PREFERENCES</p><h2 id="workspace-settings-title">偏好设置</h2><small>设置会长期保存在当前浏览器中</small></div>
+          <button class="icon-button" type="button" id="workspace-settings-close" title="关闭设置"><i data-lucide="x"></i></button>
+        </header>
+
+        <div class="workspace-setting-row">
+          <span class="workspace-setting-icon"><i data-lucide="graduation-cap"></i></span>
+          <div><b>自动显示新手引导</b><p>尚未完成引导时进入工作台自动继续；关闭后不再自动出现。</p><small id="workspace-guide-status">等待完成 20 步引导</small></div>
+          <label class="workspace-setting-switch" title="自动显示新手引导">
+            <input type="checkbox" id="workspace-guide-enabled" checked />
+            <span></span>
+          </label>
+        </div>
+
+        <div class="workspace-setting-row">
+          <span class="workspace-setting-icon"><i data-lucide="mouse-pointer-2"></i></span>
+          <div><b>鼠标液态玻璃</b><p>控制跟随鼠标移动的折射光斑；关闭后仍保留工作台静态玻璃质感。</p><small id="pointer-glass-status">已开启鼠标跟随效果</small></div>
+          <label class="workspace-setting-switch" title="鼠标液态玻璃" aria-label="启用或关闭鼠标液态玻璃">
+            <input type="checkbox" id="pointer-glass-enabled" checked />
+            <span></span>
+          </label>
+        </div>
+
+        <div class="workspace-setting-row workspace-font-setting-row" hidden aria-hidden="true">
+          <span class="workspace-setting-icon"><i data-lucide="text-cursor-input"></i></span>
+          <div>
+            <b>界面字号</b>
+            <p>拖动滑杆实时预览；点击保存后长期记忆，也可以按当前屏幕自动适配。</p>
+            <small id="workspace-font-size-status">最低字号跟随左侧导航文字</small>
+            <div class="workspace-font-actions">
+              <button class="ghost small" type="button" id="workspace-font-adapt"><i data-lucide="monitor-cog"></i>适配当前屏幕</button>
+              <button class="ghost small" type="button" id="workspace-font-restore"><i data-lucide="rotate-ccw"></i>恢复已保存</button>
+              <button class="ghost small" type="button" id="workspace-font-editor-open"><i data-lucide="scan-text"></i>局部样式</button>
+            </div>
+          </div>
+          <output class="workspace-font-size-output" id="workspace-font-size-value" for="workspace-font-scale">100%</output>
+          <input class="workspace-font-scale" id="workspace-font-scale" type="range" min="80" max="180" step="1" value="100" aria-label="调整工作台界面字号" />
+        </div>
+
+        <div class="workspace-setting-quality">
+          <div class="workspace-setting-quality-head"><span class="workspace-setting-icon"><i data-lucide="gauge"></i></span><div><b>工作台渲染质量</b><p>下次打开时自动沿用最后一次选择。</p></div></div>
+          <div class="workspace-setting-segments" id="workspace-settings-quality" role="radiogroup" aria-label="工作台渲染质量">
+            <button type="button" role="radio" data-settings-render-quality="low"><i data-lucide="battery-charging"></i><span><b>低</b><small>流畅优先</small></span><i data-lucide="check"></i></button>
+            <button type="button" role="radio" data-settings-render-quality="medium"><i data-lucide="blend"></i><span><b>中</b><small>平衡</small></span><i data-lucide="check"></i></button>
+            <button type="button" role="radio" data-settings-render-quality="high"><i data-lucide="sparkles"></i><span><b>高</b><small>视觉优先</small></span><i data-lucide="check"></i></button>
+          </div>
+        </div>
+
+        <footer>
+          <button class="ghost" type="button" id="workspace-guide-replay"><i data-lucide="play-circle"></i>重新播放 20 步引导</button>
+          <button class="primary" type="button" id="workspace-settings-done"><i data-lucide="save"></i>保存设置</button>
+        </footer>
+      </section>
+    </div>
+
+    <aside class="workspace-font-editor" id="workspace-font-editor" hidden aria-hidden="true" aria-label="局部视觉编辑器">
+      <header>
+        <div class="workspace-font-editor-drag-handle" data-workspace-editor-drag-handle>
+          <p>LOCAL VISUAL CONTROL</p>
+          <b>局部视觉调整</b>
+        </div>
+        <div class="workspace-font-editor-header-actions">
+          <button class="icon-button" type="button" id="workspace-font-editor-reset-position" title="将面板放回右上角"><i data-lucide="locate-fixed"></i></button>
+          <button class="icon-button" type="button" id="workspace-font-editor-close" title="退出局部调整"><i data-lucide="x"></i></button>
+        </div>
+      </header>
+      <div class="workspace-visual-editor-tabs" role="tablist" aria-label="局部编辑类型">
+        <button class="active" type="button" role="tab" aria-selected="true" data-visual-editor-mode="text"><i data-lucide="type"></i>文字</button>
+        <button type="button" role="tab" aria-selected="false" data-visual-editor-mode="box"><i data-lucide="scan"></i>框体</button>
+      </div>
+      <section class="workspace-visual-editor-panel active" data-visual-editor-panel="text">
+      <div class="workspace-font-editor-status" id="workspace-font-editor-status">点击文字块，或拖选一段文字</div>
+      <div class="workspace-font-editor-target" id="workspace-font-editor-target">尚未选择文字</div>
+      <label class="workspace-font-editor-range">
+        <span>字号</span>
+        <output id="workspace-font-editor-value">15px</output>
+        <input id="workspace-font-editor-range" type="range" min="8" max="96" step="1" value="15" aria-label="调整当前文字字号" />
+      </label>
+      <div class="workspace-font-editor-grid">
+        <label class="workspace-font-editor-range">
+          <span>字重</span>
+          <output id="workspace-font-editor-weight-value">400</output>
+          <input id="workspace-font-editor-weight-range" type="range" min="300" max="800" step="100" value="400" aria-label="调整当前文字字重" />
+        </label>
+        <label class="workspace-font-editor-range">
+          <span>行高</span>
+          <output id="workspace-font-editor-line-height-value">140%</output>
+          <input id="workspace-font-editor-line-height-range" type="range" min="100" max="220" step="5" value="140" aria-label="调整当前文字行高" />
+        </label>
+      </div>
+      <label class="workspace-font-editor-range">
+        <span>字间距</span>
+        <output id="workspace-font-editor-letter-spacing-value">0px</output>
+        <input id="workspace-font-editor-letter-spacing-range" type="range" min="-1" max="6" step="0.5" value="0" aria-label="调整当前文字字间距" />
+      </label>
+      <div class="workspace-font-color-control">
+        <label><span>字体颜色</span><input id="workspace-font-editor-color" type="color" value="#43384f" /></label>
+        <output id="workspace-font-editor-color-value">#43384F</output>
+        <div class="workspace-font-swatches" aria-label="常用文字颜色">
+          <button type="button" data-font-color="#29203d" style="--swatch:#29203d" title="深墨紫"></button>
+          <button type="button" data-font-color="#6546bd" style="--swatch:#6546bd" title="品牌紫"></button>
+          <button type="button" data-font-color="#276a8b" style="--swatch:#276a8b" title="湖蓝"></button>
+          <button type="button" data-font-color="#2e7358" style="--swatch:#2e7358" title="松绿"></button>
+          <button type="button" data-font-color="#b24b72" style="--swatch:#b24b72" title="莓红"></button>
+          <button type="button" data-font-color="#ffffff" style="--swatch:#ffffff" title="白色"></button>
+        </div>
+      </div>
+      <div class="workspace-font-editor-actions">
+        <button class="ghost small" type="button" id="workspace-font-editor-reset"><i data-lucide="rotate-ccw"></i>恢复当前</button>
+        <button class="primary small" type="button" id="workspace-font-editor-save"><i data-lucide="save"></i>保存当前</button>
+      </div>
+      </section>
+      <section class="workspace-visual-editor-panel" data-visual-editor-panel="box" hidden>
+        <div class="workspace-font-editor-status" id="workspace-box-editor-status">点击要调整的卡片、按钮、表格或信息框</div>
+        <div class="workspace-font-editor-target" id="workspace-box-editor-target">尚未选择框体</div>
+        <label class="workspace-font-editor-range">
+          <span>宽度</span>
+          <output id="workspace-box-width-value">100%</output>
+          <input id="workspace-box-width-range" type="range" min="60" max="180" step="1" value="100" aria-label="调整当前框体宽度" />
+        </label>
+        <div class="workspace-box-color-control">
+          <label><span>框体底色</span><input id="workspace-box-fill-color" type="color" value="#ffffff" /></label>
+          <output id="workspace-box-fill-value">#FFFFFF</output>
+          <label><span>描边颜色</span><input id="workspace-box-border-color" type="color" value="#d9d2ef" /></label>
+          <output id="workspace-box-border-value">#D9D2EF</output>
+        </div>
+        <small class="workspace-box-color-note">颜色修改会同步作用于当前卡片、浮动模块或图表的可视外框。</small>
+        <label class="workspace-font-editor-range">
+          <span>高度</span>
+          <output id="workspace-box-height-value">100%</output>
+          <input id="workspace-box-height-range" type="range" min="60" max="220" step="1" value="100" aria-label="调整当前框体高度" />
+        </label>
+        <div class="workspace-font-editor-grid">
+          <label class="workspace-font-editor-range">
+            <span>圆角</span>
+            <output id="workspace-box-radius-value">24px</output>
+            <input id="workspace-box-radius-range" type="range" min="0" max="80" step="1" value="24" aria-label="调整当前框体圆角" />
+          </label>
+          <label class="workspace-font-editor-range">
+            <span>透明度</span>
+            <output id="workspace-box-opacity-value">100%</output>
+            <input id="workspace-box-opacity-range" type="range" min="20" max="100" step="1" value="100" aria-label="调整当前框体透明度" />
+          </label>
+        </div>
+        <div class="workspace-font-editor-grid">
+          <label class="workspace-font-editor-range">
+            <span>边框粗细</span>
+            <output id="workspace-box-border-width-value">1px</output>
+            <input id="workspace-box-border-width-range" type="range" min="0" max="6" step="1" value="1" aria-label="调整当前框体边框粗细" />
+          </label>
+          <label class="workspace-font-editor-range">
+            <span>阴影</span>
+            <output id="workspace-box-shadow-value">0%</output>
+            <input id="workspace-box-shadow-range" type="range" min="0" max="100" step="1" value="0" aria-label="调整当前框体阴影强度" />
+          </label>
+        </div>
+        <div class="workspace-font-editor-actions">
+          <button class="ghost small" type="button" id="workspace-box-editor-reset"><i data-lucide="rotate-ccw"></i>恢复当前</button>
+          <button class="primary small" type="button" id="workspace-box-editor-save"><i data-lucide="save"></i>保存当前</button>
+        </div>
+      </section>
+      <button class="workspace-font-editor-export ghost small" type="button" id="workspace-font-editor-export"><i data-lucide="file-json"></i>导出完整视觉配置</button>
+      <div class="workspace-font-editor-transfer">
+        <button class="ghost small" type="button" id="workspace-visual-config-save-all"><i data-lucide="save-all"></i>保存全部</button>
+        <label class="ghost small" for="workspace-visual-config-import"><i data-lucide="upload"></i>导入配置<input id="workspace-visual-config-import" type="file" accept="application/json,.json" /></label>
+      </div>
+      <small class="workspace-font-editor-note">文字、框体、图表和颜色独立保存；导出文件会包含当前屏幕与视口信息。</small>
+    </aside>
+
+    <div class="portal-wipe" id="portal-wipe" aria-hidden="true" hidden>
+      <div class="portal-wipe-layer portal-wipe-accent"></div>
+      <div class="portal-wipe-layer portal-wipe-underlay"></div>
+      <div class="portal-wipe-layer portal-wipe-panel"></div>
+      <div class="portal-wipe-content">
+        <div class="portal-wipe-mark">
+          <span><i data-lucide="sparkles"></i></span>
+          <div>
+            <strong>EduLink</strong>
+            <small id="portal-wipe-label">进入智能工作台</small>
+          </div>
+        </div>
+        <div class="portal-wipe-track"><i></i></div>
+        <p>EDUCATIONAL INTELLIGENCE / 2026</p>
+      </div>
+    </div>
+
+    <div class="auth-modal" id="auth-modal" aria-hidden="true">
+      <button class="auth-backdrop" type="button" id="auth-backdrop" aria-label="关闭登录窗口"></button>
+      <section class="auth-dialog" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+        <button class="auth-close icon-button" type="button" id="auth-close" title="关闭">
+          <i data-lucide="x"></i>
+        </button>
+        <div class="auth-heading">
+          <p class="kicker">PERSONAL WORKSPACE</p>
+          <h2 id="auth-title">登录你的工作台</h2>
+          <p id="auth-description">登录后进入你的个人学习与教学工作区</p>
+        </div>
+
+        <div class="auth-mode-switch" role="tablist" aria-label="账户操作">
+          <button class="active" type="button" role="tab" data-auth-mode="login">登录</button>
+          <button type="button" role="tab" data-auth-mode="register">注册</button>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="avatar-editor">
+            <div class="avatar-preview-wrap">
+              <img id="login-avatar-preview" src="./assets/default-avatar.svg" alt="头像预览" />
+              <span><i data-lucide="camera"></i></span>
+            </div>
+            <div>
+              <b>个人头像</b>
+              <p>支持 JPG、PNG、WEBP，未上传时使用默认头像</p>
+              <label class="avatar-upload">
+                <i data-lucide="upload"></i>
+                上传头像
+                <input type="file" id="login-avatar-input" accept="image/png,image/jpeg,image/webp,image/gif" />
+              </label>
+              <button class="avatar-reset" type="button" id="reset-avatar">恢复默认</button>
+            </div>
+          </div>
+
+          <label class="auth-field">
+            <span>用户名</span>
+            <div><i data-lucide="user-round"></i><input id="login-username" type="text" autocomplete="username" placeholder="请输入用户名" maxlength="24" /></div>
+          </label>
+          <label class="auth-field">
+            <span>密码</span>
+            <div>
+              <i data-lucide="lock-keyhole"></i>
+              <input id="login-password" type="password" autocomplete="current-password" placeholder="请输入至少 4 位密码" maxlength="48" />
+              <button class="password-toggle" type="button" id="password-toggle" title="显示密码"><i data-lucide="eye"></i></button>
+            </div>
+          </label>
+          <label class="auth-field auth-register-field" id="auth-confirm-field" hidden>
+            <span>确认密码</span>
+            <div><i data-lucide="shield-check"></i><input id="register-password-confirm" type="password" autocomplete="new-password" placeholder="请再次输入密码" maxlength="48" /></div>
+          </label>
+          <fieldset class="auth-gender-field auth-register-field" id="auth-gender-field" hidden>
+            <legend>性别 <small>用于匹配导航助手形象</small></legend>
+            <label><input type="radio" name="auth-gender" value="female" checked /><span><i data-lucide="user-round"></i><b>女</b><small>使用女导航助手</small></span></label>
+            <label><input type="radio" name="auth-gender" value="male" /><span><i data-lucide="user-round"></i><b>男</b><small>使用男导航助手</small></span></label>
+          </fieldset>
+          <p class="auth-error" id="auth-error" role="alert"></p>
+          <label class="remember-login"><input id="remember-login" type="checkbox" checked /><span>在这台设备上保持登录</span></label>
+          <button class="auth-submit" type="submit"><span id="auth-submit-label">登录工作台</span><i data-lucide="arrow-right"></i></button>
+        </form>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./runtime-config.js?v=20260909-runtime-v1"></script>
+    <script src="./runtime-config.override.js?v=20260909-runtime-v1"></script>
+    <script src="./assets/theory-directory-data.js?v=20260910-training-history-v5"></script>
+    <script src="./assets/theory-source-data.js?v=20260910-training-history-v5"></script>
+    <script src="./assets/theory-representative-links-data.js?v=20260910-training-history-v5"></script>
+    <script src="./assets/sixarts-links-data.js?v=20260910-training-history-v5"></script>
+    <script src="./assets/observation-case-data.js?v=20260911-observation-cases-v2"></script>
+    <script src="./textbook-resources.js?v=20260910-training-history-v5"></script>
+    <script src="./assets/vendor/jszip-3.10.1.min.js"></script>
+    <script src="./assets/vendor/lucide-0.468.0.min.js"></script>
+    <script src="./assets/theory-references-data.js?v=20260911-references-v3"></script>
+    <script src="./theory-references.js?v=20260911-references-v1"></script>
+    <script src="./sixarts-evaluation.js?v=20260913-detailed-v1"></script>
+    <script src="./sixarts-polish.js?v=20260912-visuals-v1"></script>
+    <script src="./sixarts-detailed-template.js?v=20260913-detailed-v1"></script>
+    <script src="./lesson-visuals.js?v=20260912-board-only-v1"></script>
+    <script src="./script.js?v=20260913-detailed-template-v1"></script>
+  </body>
+</html>
