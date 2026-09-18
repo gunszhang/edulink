@@ -1,4 +1,4 @@
-# EduLink 作品代码交付副本
+# EduLink 作品代码
 
 整理日期：2026-09-14。正式前端目录：`EduLink-backend-handoff-2026-09-06`。
 
